@@ -1,20 +1,6 @@
 <template>
   <div class="page home-page">
 	<div class="banner">
-		<video 
-			v-if="false"
-			ref="videoPlayer"
-			src="/assets/cover.mp4" 
-			autoplay 
-			loop 
-			muted 
-			playsinline
-			class="cover-video"
-			@click="togglePlayPause"
-		>
-			Your browser does not support the video tag.
-		</video>
-		
 		<picture>
 			<source srcset="/assets/images/cover.jpg 1x, /assets/images/cover@2x.jpg 2x" type="image/jpeg">
 			<img 
@@ -44,21 +30,6 @@
 </template>
 
 <script setup>
-import { useSiteStore } from '~/stores/site.js'
-import { ref } from 'vue'
-
-const store = useSiteStore()
-const videoPlayer = ref(null)
-
-const togglePlayPause = () => {
-  if (videoPlayer.value) {
-    if (videoPlayer.value.paused) {
-      videoPlayer.value.play()
-    } else {
-      videoPlayer.value.pause()
-    }
-  }
-}
 
 </script>
 
