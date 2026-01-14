@@ -2,15 +2,16 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@pinia/nuxt', '@nuxtjs/i18n'],
+  modules: ['@pinia/nuxt', '@nuxtjs/i18n', "@nuxt/content"],
   components: true, // Auto imports
 
-	css: [
-		'@/assets/css/normalize.scss',
-		'@/assets/css/common.scss',
-		'@/assets/css/forms.scss',
-		'@/assets/css/general.scss'
-	],
+    css: [
+        '@/assets/css/normalize.scss',
+        '@/assets/css/common.scss',
+        '@/assets/css/forms.scss',
+        '@/assets/css/general.scss',
+        '@/assets/css/content.scss'
+    ],
 
   // i18n configuration
   i18n: {

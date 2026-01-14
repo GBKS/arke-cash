@@ -1,0 +1,172 @@
+
+@use '@/assets/css/variables.scss' as variables;
+@use '@/assets/css/animations.scss' as animations;
+
+.content-page {
+  background: linear-gradient(to bottom, #2F010A 0%, #020101 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > .header {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    > a {
+      font-size: 88px;
+      line-height: 1;
+      color: white;
+      font-family: 'DM Serif Display';
+    }
+
+    h1 {
+      font-size: 64px;
+      line-height: 1;
+      color: white;
+      font-family: 'DM Serif Display';
+    }
+
+    .tech-toggle {
+      margin-top: 40px;
+      align-self: flex-start;
+
+      a {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1;
+        color: white;
+        padding: 8px 16px;
+        display: inline-block;
+
+        &.router-link-active {
+          background-color: white;
+          color: #2F010A;
+          border: 2px solid white;
+        }
+
+        &:not(.router-link-active) {
+          background-color: rgba(black, 0.2);
+          border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        &:first-child {
+          border-right-width: 0px;
+        }
+
+        &:last-child {
+          border-left-width: 0px;
+        }
+      }
+    }
+  }
+
+  > .header,
+  > .content {
+    width: 100%;
+    max-width: 800px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  > .content {
+    padding-bottom: 60px;
+
+    ol li,
+    ul li,
+    p {
+      font-size: 24px;
+      line-height: 1.4;
+      color: white;
+      opacity: 0.85;
+
+      a {
+        color: white;
+        text-decoration: underline;
+        opacity: 1;
+      }
+    }
+
+    ol,
+    ul {
+      margin-top: 10px;
+      padding-left: 30px;
+
+      & + * {
+        margin-top: 20px;
+      }
+    }
+
+    ol {
+      list-style-type: decimal;
+    }
+
+    ul {
+      list-style-type: disc;
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: white;
+      font-weight: 600;
+
+      a {
+        color: white;
+      }
+
+      & + * {
+        margin-top: 20px;
+      }
+    }
+
+    p {
+      & + p {
+        margin-top: 20px;
+      }
+    }
+
+    hr {
+      margin-top: 30px;
+      opacity: 0.15;
+
+      & + * {
+        margin-top: 30px;
+      }
+    }
+
+    pre {
+      color: rgba(255, 255, 255, 0.8)
+    }
+
+    table {
+      width: 100%;
+
+      tr {
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+        th,
+        td {
+          padding: 10px 15px;
+          text-align: left;
+          color: rgba(255, 255, 255, 0.8);
+        }
+
+        th {
+          font-weight: 600;
+          color: white;
+        }
+      }
+
+      & + * {
+        margin-top: 30px;
+      }
+    }
+  }
+}

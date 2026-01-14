@@ -1,31 +1,96 @@
 <template>
   <div class="page home-page">
-	<div class="banner">
-		<picture>
-			<source srcset="/assets/images/cover.jpg 1x, /assets/images/cover@2x.jpg 2x" type="image/jpeg">
-			<img 
-				src="/assets/images/cover.jpg" 
-				alt="Arké Cover"
-				class="cover-image"
-			>
-		</picture>
+	<HomeBanner />
 
-		<div class="copy">
-			<h1>
-				<svg viewBox="0 0 810 279" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M201.3 273.3C201.3 275.1 199.8 276 196.8 276C194.8 276 193 275.9 191.4 275.7L153.3 275.1L115.2 275.7C113.8 275.9 112.3 276 110.7 276C106.7 276 104.7 275 104.7 273C104.7 270.8 107.4 269.7 112.8 269.7C130.4 269.5 139.2 267.7 139.2 264.3C139.2 264.1 139 263.3 138.6 261.9L136.2 253.8L134.7 249.6C132.9 243.4 128.5 229.7 121.5 208.5H57.3C45.3 240.5 39.3 258.9 39.3 263.7C39.3 266.5 40.5 268.2 42.9 268.8C43.5 269 48.5 269.4 57.9 270C63.7 270.2 66.6 271.2 66.6 273C66.6 275 64 276 58.8 276C49.6 276 38.9 275.6 26.7 274.8C23.7 274.6 20.6 274.5 17.4 274.5C14.2 274.5 11.1 274.7 8.1 275.1C6.5 275.3 5.2 275.4 4.2 275.4C1.4 275.4 0 274.5 0 272.7C0 270.9 3.1 269.9 9.3 269.7C15.7 269.5 20.3 268.6 23.1 267C25.9 265.2 28.1 261.9 29.7 257.1C55.5 183.5 76.5 124.4 92.7 79.8C93.1 77.4 93.9 74.7 95.1 71.7L96.6 66.3C97.2 64.1 98 63 99 63C99.6 63 100.1 63.6 100.5 64.8C103.1 72.6 109 88.9 118.2 113.7C125.4 133.1 143.3 181.8 171.9 259.8C173.5 264.2 175.5 267 177.9 268.2C180.5 269.4 185.7 270.1 193.5 270.3C198.7 270.5 201.3 271.5 201.3 273.3ZM119.7 201.6C116.5 192.6 111.2 177.7 103.8 156.9L89.4 115.8C81 137.8 70.9 166.4 59.1 201.6H119.7Z" fill="currentColor"/>
-					<path d="M394.869 266.4C394.869 274.8 387.869 279 373.869 279C358.269 279 346.069 272.5 337.269 259.5C333.469 253.9 330.969 248.5 329.769 243.3C328.769 238.1 327.169 224.9 324.969 203.7C323.769 190.9 319.669 181.9 312.669 176.7C305.669 171.3 294.269 168.4 278.469 168V262.5C278.469 266.5 281.669 269 288.069 270C289.869 270.2 294.469 270.4 301.869 270.6C304.469 270.6 305.769 271.4 305.769 273C305.769 274.8 304.069 275.7 300.669 275.7H297.069C295.269 275.5 286.569 275.4 270.969 275.4C267.969 275.4 262.869 275.5 255.669 275.7C248.669 275.7 244.069 275.7 241.869 275.7H230.169C225.769 275.7 223.569 274.8 223.569 273C223.569 271.6 226.469 270.8 232.269 270.6C241.669 270.4 246.769 269.2 247.569 267C248.369 266 248.769 262.1 248.769 255.3V89.7C248.769 81.7 247.869 76.9 246.069 75.3C244.469 73.7 239.369 72.8 230.769 72.6C225.769 72.6 223.269 71.7 223.269 69.9C223.269 67.9 224.869 66.9 228.069 66.9C228.669 66.9 229.569 67 230.769 67.2L270.669 68.1C274.669 68.1 280.269 68 287.469 67.8C295.469 67.4 301.069 67.2 304.269 67.2C322.869 67.2 337.569 71.4 348.369 79.8C359.369 88 364.869 99.2 364.869 113.4C364.869 127.4 359.269 139 348.069 148.2C336.869 157.2 321.669 162.5 302.469 164.1C300.669 164.3 299.669 164.6 299.469 165C299.469 165.8 300.469 166.2 302.469 166.2C323.469 169.8 337.869 177.2 345.669 188.4C353.669 199.4 358.969 219.4 361.569 248.4C363.169 264.8 368.769 273 378.369 273C381.369 273 382.869 272.4 382.869 271.2C382.869 271 382.769 270.8 382.569 270.6C381.569 268.4 381.069 266.6 381.069 265.2C381.069 261 383.269 258.9 387.669 258.9C392.469 258.9 394.869 261.4 394.869 266.4ZM332.769 116.1C332.769 87.5 320.369 73.2 295.569 73.2C288.969 73.2 284.469 74.1 282.069 75.9C279.669 77.7 278.469 80.9 278.469 85.5V161.7C297.669 161.9 311.469 158.4 319.869 151.2C328.469 144 332.769 132.3 332.769 116.1Z" fill="currentColor"/>
-					<path d="M625.236 273C625.236 274.8 623.836 275.7 621.036 275.7H618.636L582.636 275.4L547.536 275.7C546.336 275.9 545.036 276 543.636 276C539.836 276 537.936 275.2 537.936 273.6C537.936 272 540.436 271 545.436 270.6C555.836 269.6 561.036 267.9 561.036 265.5C561.036 262.9 533.736 230.4 479.136 168V254.7C479.136 261.7 480.236 266.1 482.436 267.9C484.636 269.5 490.536 270.3 500.136 270.3C502.336 270.3 503.436 271.3 503.436 273.3C503.436 275.1 502.036 276 499.236 276C497.236 276 495.436 275.9 493.836 275.7L452.136 275.1C449.536 275.1 446.436 275.2 442.836 275.4C439.436 275.8 435.936 276 432.336 276H429.636C426.636 276 425.136 275.1 425.136 273.3C425.136 271.3 428.836 270.2 436.236 270C443.036 269.8 447.036 268.3 448.236 265.5C448.836 264.5 449.136 258.2 449.136 246.6L448.836 79.5C448.636 75.3 443.236 73.2 432.636 73.2C427.836 73.2 425.436 72.1 425.436 69.9C425.436 68.1 427.136 67.2 430.536 67.2C431.536 67.2 432.836 67.3 434.436 67.5C437.636 67.9 446.536 68.1 461.136 68.1C476.736 68.1 486.636 67.9 490.836 67.5C493.036 67.3 495.336 67.2 497.736 67.2C501.336 67.2 503.136 68.3 503.136 70.5C503.136 71.7 502.536 72.5 501.336 72.9C500.336 73.1 496.936 73.3 491.136 73.5C485.336 73.7 481.836 74.5 480.636 75.9C479.636 77.3 479.136 81.8 479.136 89.4V162.6L504.636 137.1C543.236 98.5 562.536 78.4 562.536 76.8C562.536 74.2 557.836 73 548.436 73.2C542.436 73.4 539.436 72.4 539.436 70.2C539.436 68.8 540.836 68 543.636 67.8C546.436 67.6 556.136 67.5 572.736 67.5H589.236C596.236 67.5 600.236 67.6 601.236 67.8C603.236 68.2 604.236 69.2 604.236 70.8C604.236 73 602.036 74.1 597.636 74.1C588.436 73.9 582.536 74.1 579.936 74.7C577.336 75.3 574.736 76.9 572.136 79.5C559.136 93.1 539.336 113.5 512.736 140.7L504.936 148.5L501.036 152.7C502.236 154.1 507.236 159.5 516.036 168.9C532.836 186.3 556.936 214.2 588.336 252.6C594.936 260.6 599.436 265.4 601.836 267C604.436 268.6 609.336 269.6 616.536 270C622.336 270.4 625.236 271.4 625.236 273Z" fill="currentColor"/>
-					<path d="M775.541 0.599992L748.241 28.8C736.041 41.4 729.041 47.7 727.241 47.7C726.041 47.7 725.441 47.2 725.441 46.2C725.441 45.8 725.641 45.2 726.041 44.4C728.241 39 731.541 31.2 735.941 21L745.541 0.299996C748.541 0.0999987 751.841 0 755.441 0C761.641 0 766.541 0.0999987 770.141 0.299996L775.541 0.599992ZM809.441 226.8C809.441 227.6 809.241 232.5 808.841 241.5C808.441 250.5 808.241 259.1 808.241 267.3V277.2C788.641 276.2 749.841 275.7 691.841 275.7C684.841 275.7 677.941 275.8 671.141 276C664.341 276 659.741 276 657.341 276H654.341C650.541 276 648.641 275.1 648.641 273.3C648.641 272.1 649.241 271.4 650.441 271.2C651.041 271.2 654.841 270.9 661.841 270.3C667.041 269.9 670.141 268.8 671.141 267C672.341 265.2 672.941 260.5 672.941 252.9V84.3C672.941 78.5 672.041 75.1 670.241 74.1C668.641 72.9 663.241 72.3 654.041 72.3C650.841 72.3 649.241 71.4 649.241 69.6C649.241 67.8 651.441 66.9 655.841 66.9L707.141 67.2C708.941 67.2 720.241 67.1 741.041 66.9C761.841 66.9 775.841 66.9 783.041 66.9C789.041 66.9 794.541 66.5 799.541 65.7C799.941 74.3 800.841 86.2 802.241 101.4L803.441 114.3C803.641 115.3 803.741 116.6 803.741 118.2C803.741 120.2 802.841 121.2 801.041 121.2C798.841 121.2 797.241 118.7 796.241 113.7C792.441 95.7 786.241 84.3 777.641 79.5C771.241 75.9 754.441 74.1 727.241 74.1H702.641V162H709.841C732.241 162 745.841 160.3 750.641 156.9C755.641 153.5 759.041 143.6 760.841 127.2C761.241 123 762.341 120.9 764.141 120.9C766.341 120.9 767.441 122.7 767.441 126.3C767.441 129.9 767.241 135.2 766.841 142.2C766.441 149.2 766.241 154.5 766.241 158.1C766.241 179.5 766.641 194.2 767.441 202.2C767.641 204.2 767.741 205.9 767.741 207.3C767.741 209.9 766.641 211.2 764.441 211.2C763.041 211.2 762.041 210.4 761.441 208.8C761.041 207 760.241 201.4 759.041 192C757.441 180.2 752.541 172.9 744.341 170.1C740.741 168.9 731.341 168.3 716.141 168.3H702.641V269.1C746.641 269.1 772.441 268.2 780.041 266.4C793.241 263.4 800.741 250.6 802.541 228C802.941 223 804.241 220.5 806.441 220.5C808.441 220.5 809.441 222.6 809.441 226.8Z" fill="currentColor"/>
-				</svg>
-			</h1>
-			<p>Pay with bitcoin</p>
-			<div class="options">
-				<a href="https://community.second.tech/t/arke-macos-prototype/156/7" target="_blank">Updates</a>
-				<a href="https://github.com/gbks/arke" target="_blank">Code</a>
-			</div>
-		</div>
-	</div>
+	<HomeSection
+		title="Yours."
+		description="Your keys. Your phone. Your bitcoin. That's the whole arrangement."
+		color="#231610"
+		image="/assets/images/bright-beige.jpg"
+		imageSourceSet="/assets/images/bright-beige.jpg 1x, /assets/images/bright-beige@2x.jpg 2x"
+		imageAlt=""
+		:flip="true"
+	/>
+
+	<HomeSection
+		title="No middlemen."
+		description="You send it. They receive it. No bank in between, no approval, no waiting."
+		color="#20080F"
+		image="/assets/images/dark-red-blue.jpg"
+		imageSourceSet="/assets/images/dark-red-blue.jpg 1x, /assets/images/dark-red-blue@2x.jpg 2x"
+		imageAlt=""
+	/>
+
+	<HomeSection
+		title="Instant."
+		description="Payments settle in seconds. This is what bitcoin is supposed to feel like."
+		color="#30010A"
+		image="/assets/images/red.jpg"
+		imageSourceSet="/assets/images/red.jpg 1x, /assets/images/red@2x.jpg 2x"
+		imageAlt=""
+		:flip="true"
+	/>
+
+	<HomeSection
+		title="One tap."
+		description="Pay anyone who accepts bitcoin. As simple as it sounds."
+		color="#3B2428"
+		image="/assets/images/light-pink-blue.jpg"
+		imageSourceSet="/assets/images/light-pink-blue.jpg 1x, /assets/images/light-pink-blue@2x.jpg 2x"
+		imageAlt=""
+	/>
+
+	<HomeSection
+		title="Recoverable."
+		description="Phone gone? Bitcoin isn't. Back up once, restore anywhere."
+		color="#132D43"
+		image="/assets/images/skull.jpg"
+		imageSourceSet="/assets/images/skull.jpg 1x, /assets/images/skull@2x.jpg 2x"
+		imageAlt=""
+		:flip="true"
+	/>
+
+	<HomeSection
+		title="Everyday."
+		description="Coffee. Flights. Rent. Whatever you're buying, it comes with you."
+		color="#2D1C2D"
+		image="/assets/images/pink-puppy.jpg"
+		imageSourceSet="/assets/images/pink-puppy.jpg 1x, /assets/images/pink-puppy@2x.jpg 2x"
+		imageAlt=""
+	/>
+
+	<HomeSection
+		title="Dark mode."
+		description="Obviously."
+		color="#131212"
+		image="/assets/images/black-snakeskin.jpg"
+		imageSourceSet="/assets/images/black-snakeskin.jpg 1x, /assets/images/black-snakeskin@2x.jpg 2x"
+		imageAlt=""
+		:flip="true"
+	/>
+
+	<HomeSection
+		title="Secure."
+		description="Built on cryptography that doesn't ask you to trust anyone. Including us."
+		color="#2B2422"
+		image="/assets/images/alligator.jpg"
+		imageSourceSet="/assets/images/alligator.jpg 1x, /assets/images/alligator@2x.jpg 2x"
+		imageAlt=""
+	/>
+
+	<HomeSection
+		title="Private."
+		description="What you spend is your business. We don't see it. No one does."
+		color="#302B24"
+		image="/assets/images/venetian-mask.jpg"
+		imageSourceSet="/assets/images/venetian-mask.jpg 1x, /assets/images/venetian-mask@2x.jpg 2x"
+		imageAlt=""
+		:flip="true"
+	/>
+
+	<TrySection />
+
+	<SiteFooter />
   </div>
 </template>
 
@@ -42,92 +107,6 @@
 .home-page {
 	display: flex;
 	flex-direction: column;
-	gap: 25px;
-
-	.banner {
-		position: relative;
-		width: 100%;
-		height: 100vh;
-		// max-height: 85vh;
-		overflow: hidden;
-		cursor: pointer;
-
-		.cover-video {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-		}
-
-		img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-		}
-
-		.copy {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-
-			h1 {
-				color: white;
-				width: 40vw;
-				filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.7));
-			}
-
-			p {
-				margin-top: 20px;
-				font-size: 24px;
-				line-height: 1.2;
-				text-transform: uppercase;
-				font-weight: 600;
-				letter-spacing: 15px;
-				color: white;
-				text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
-				text-align: center;
-				@include mixins.r('font-size', 32, 32);
-			}
-
-			.options {
-				margin-top: 35px;
-				display: flex;
-				gap: 20px;
-
-				a {
-					background-color: black;
-					font-size: 21px;
-					font-weight: 600;
-					padding: 10px 35px 12px 35px;
-					border-radius: 100px;
-					color: white;
-				}
-			}
-		}
-	}
-	
-	@include mixins.media-query(small) {
-		.banner {
-			.copy {
-				h1 {
-					width: 80vw;
-				}
-			}
-		}
-	}
-	
-	@include mixins.media-query(medium-up) {
-		.banner {
-			.copy {
-				h1 {
-					width: 40vw;
-				}
-			}
-		}
-	}
 }
 
 </style>
