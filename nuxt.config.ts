@@ -63,6 +63,9 @@ export default defineNuxtConfig({
         { rel: "shortcut icon", href: "/favicon.ico" },
         { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png" },
         { rel: "manifest", href: "/site.webmanifest" },
+      ],
+      script: [
+        { src: "https://cloud.umami.is/script.js", defer: true, "data-website-id": "738c8ecc-0ba6-4286-8594-3cb5db32167a" }
       ]
     }
   }
