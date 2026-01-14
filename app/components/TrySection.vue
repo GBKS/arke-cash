@@ -51,7 +51,7 @@
 		.copy {
 			h2 {
 				font-size: 64px;
-				font-family: serif;
+				font-family: 'DM Serif Display';
 				color: white;
 			}
 
