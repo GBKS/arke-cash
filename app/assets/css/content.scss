@@ -74,7 +74,7 @@
     ol li,
     ul li,
     p {
-      font-size: 24px;
+      font-size: 21px;
       line-height: 1.4;
       color: white;
       opacity: 0.85;
@@ -126,6 +126,14 @@
     }
 
     p {
+      img {
+        &.diagram {
+          width: 100%;
+          max-width: 500px;
+          height: auto;
+        }
+      }
+
       & + p {
         margin-top: 20px;
       }

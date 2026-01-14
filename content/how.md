@@ -1,6 +1,6 @@
 ---
-title: The Mountains Website
-description: A website about the most iconic mountains in the world.
+title: How Arké works
+description: A bitcoin wallet focused on instant, low-fee payments.
 ---
 
 Arké is a bitcoin wallet. You hold your own bitcoin. You can send it to anyone, instantly. No one can stop you, freeze your account, or see what you're doing.
@@ -18,7 +18,7 @@ This is different from most apps that hold money. When you use a bank or an exch
 **What this means for you:**
 - No one can freeze your account
 - No one can block a payment
-- If Arké the company disappeared tomorrow, your bitcoin wouldn't
+- If Arké disappeared tomorrow, your bitcoin wouldn't
 
 ---
 
@@ -52,7 +52,7 @@ We don't see your transactions. We can't see your balance. There's no transactio
 
 Your phone can break, get lost, or go swimming. Your bitcoin doesn't have to.
 
-When you set up Arké, you'll write down a recovery phrase—twelve words in a specific order. These words can restore your wallet on any device. Keep them somewhere safe and offline. A piece of paper in a drawer works fine.
+When you set up Arké, you'll write down a recovery phrase—twelve words in a specific order. These words, along with the data in your iCloud account, can restore your wallet on any device. Keep them somewhere safe and offline.
 
 **What this means for you:**
 - Lose your phone, keep your bitcoin
@@ -63,10 +63,9 @@ When you set up Arké, you'll write down a recovery phrase—twelve words in a s
 
 ## How a payment actually happens
 
-1. You open Arké and enter an amount
-2. You scan a QR code or tap to pay
-3. The recipient's wallet confirms arrival
-4. Done
+1. You tap a contact, scan a QR code or manually enter an address
+2. The server you are connected to ensures the payment goes through
+3. Done
 
 The whole thing takes a few seconds. Behind the scenes, cryptographic signatures are flying around and the Ark protocol is doing its thing. You don't need to know about any of that. It just works.
 
@@ -93,7 +92,7 @@ There's no way to recover your wallet without it. This is the tradeoff for true 
 Yes. Arké can receive bitcoin from any wallet.
 
 **What happens if Arké shuts down?**
-Your bitcoin is still yours. You can move it out using your recovery phrase and another wallet. We've designed it so you're never dependent on us.
+Your bitcoin is still yours. You can move it out using your recovery phrase and another Ark wallet. We've designed it so you're never dependent on us.
 
 **Is this legal?**
 Using a self-custody bitcoin wallet is legal in most jurisdictions. You're responsible for any tax obligations on transactions you make.

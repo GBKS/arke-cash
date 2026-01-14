@@ -67,7 +67,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding-bottom: 40px;
+		padding-bottom: 60px;
 		background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 1) 100%);
 
 		h1 {

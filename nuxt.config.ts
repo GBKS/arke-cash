@@ -40,12 +40,12 @@ export default defineNuxtConfig({
         { name: "twitter:site", content: "@gbks" },
         { name: "twitter:title", content:  "Arké" },
         { name: "twitter:description", content: "Pay with bitcoin. In stylé." },
-        { name: "twitter:image", content: "https://www.arke.cash/preview.jpg" },
+        { name: "twitter:image", content: "https://www.arke.cash/assets/images/preview.jpg" },
 
         { property: "og:title", content: "Arké" },
         { property: "og:description", content: "Pay with bitcoin. In stylé." },
         { property: "og:type", content: "product" },
-        { property: "og:image", content: "https://www.arke.cash/preview.jpg" },
+        { property: "og:image", content: "https://www.arke.cash/assets/images/preview.jpg" },
         { property: "og:url", content: "https://www.arke.cash" },
 
         { name: "robots", content: "index,follow" },
