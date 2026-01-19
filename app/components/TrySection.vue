@@ -3,7 +3,7 @@
 	<div class="content">
 		<div class="video">
 			<video 
-				src="/assets/videos/puppy-idle.mp4" 
+				src="/assets/videos/puppy-male.mp4" 
 				autoplay 
 				muted 
 				loop 
@@ -29,7 +29,7 @@
 @use '@/assets/css/animations.scss' as animations;
 
 .try-section {
-	background-color: #475A5C;
+	background-color: #5E5E5E;
 	align-self: stretch;
 
 	.content {
