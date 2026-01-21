@@ -16,6 +16,7 @@ interface VideoSubtitle {
 interface IntroVideo {
   title: string
   thumbnailName: string
+  posterName: string
   videoAssetName: string
   subtitles: VideoSubtitle[]
 }
@@ -24,11 +25,12 @@ const videos: IntroVideo[] = [
   {
     title: "Welcome",
     thumbnailName: "1-intro-v2-small-image",
+    posterName: "1-intro-v2-poster",
     videoAssetName: "1-intro-v2-small",
     subtitles: [
       { startTime: 0.020, endTime: 1.520, text: "Hey, welcome to Arké." },
       { startTime: 2.420, endTime: 4.100, text: "You're about to try something new." },
-      { startTime: 4.760, endTime: 7.060, text: "A Bitcoin wallet built for real payments." },
+      { startTime: 4.760, endTime: 7.060, text: "A bitcoin wallet built for real payments." },
       { startTime: 7.860, endTime: 10.200, text: "Fast, cheap, and fully yours." },
       { startTime: 11.260, endTime: 15.200, text: "Before you dive in, my friends are going to walk you through how things work." }
     ]
@@ -36,12 +38,13 @@ const videos: IntroVideo[] = [
   {
     title: "You're early",
     thumbnailName: "2-testing-cherry-blossom-v2-small-image",
+    posterName: "2-testing-cherry-blossom-v2-poster",
     videoAssetName: "2-testing-cherry-blossom-v2-small",
     subtitles: [
       { startTime: 0.020, endTime: 1.300, text: "First, a heads up." },
       { startTime: 1.900, endTime: 2.280, text: "You're early." },
       { startTime: 3.000, endTime: 4.200, text: "Arké is still in testing." },
-      { startTime: 4.900, endTime: 6.320, text: "The Bitcoin in here isn't real." },
+      { startTime: 4.900, endTime: 6.320, text: "The bitcoin in here isn't real." },
       { startTime: 6.660, endTime: 7.320, text: "It's play money." },
       { startTime: 8.080, endTime: 10.080, text: "That means you can try everything without risk." },
       { startTime: 10.780, endTime: 12.720, text: "It also means things might break sometimes." },
@@ -52,6 +55,7 @@ const videos: IntroVideo[] = [
   {
     title: "It's yours",
     thumbnailName: "3-ownership-v2-small-image",
+    posterName: "3-ownership-v2-poster",
     videoAssetName: "3-ownership-v2-small",
     subtitles: [
       { startTime: 0.020, endTime: 2.260, text: "This wallet belongs entirely to you." },
@@ -65,20 +69,22 @@ const videos: IntroVideo[] = [
   {
     title: "Instant payments",
     thumbnailName: "4-speed-small-image",
+    posterName: "4-speed-poster",
     videoAssetName: "4-speed-small",
     subtitles: [
-      { startTime: 0.020, endTime: 2.720, text: "So why Arké instead of a regular Bitcoin wallet?" },
-      { startTime: 4.100, endTime: 5.560, text: "Normally Bitcoin payments are slow." },
+      { startTime: 0.020, endTime: 2.720, text: "So why Arké instead of a regular bitcoin wallet?" },
+      { startTime: 4.100, endTime: 5.560, text: "Normally bitcoin payments are slow." },
       { startTime: 6.600, endTime: 8.780, text: "You wait for confirmations, fees add up." },
       { startTime: 9.320, endTime: 10.660, text: "It's not great for grabbing coffee." },
       { startTime: 11.760, endTime: 12.620, text: "Arké fixes that." },
       { startTime: 13.520, endTime: 15.820, text: "Payments arrive in seconds, fees are almost nothing." },
-      { startTime: 16.580, endTime: 18.400, text: "Same Bitcoin, just a better experience." }
+      { startTime: 16.580, endTime: 18.400, text: "Same bitcoin, just a better experience." }
     ]
   },
   {
     title: "Two balances",
     thumbnailName: "5-two-balances-v2-small-image",
+    posterName: "5-two-balances-v2-poster",
     videoAssetName: "5-two-balances-v2-small",
     subtitles: [
       { startTime: 0.020, endTime: 3.780, text: "One thing to know, your wallet has two balances." },
@@ -94,10 +100,11 @@ const videos: IntroVideo[] = [
   {
     title: "Get started",
     thumbnailName: "6-get-started-small-image",
+    posterName: "6-get-started-poster",
     videoAssetName: "6-get-started-small",
     subtitles: [
       { startTime: 0.020, endTime: 1.440, text: "That's really all you need to know." },
-      { startTime: 2.620, endTime: 7.800, text: "Once you're set up, grab some free test Bitcoin and try your first payment." },
+      { startTime: 2.620, endTime: 7.800, text: "Once you're set up, grab some free test bitcoin and try your first payment." },
       { startTime: 8.660, endTime: 9.460, text: "See how it feels." },
       { startTime: 10.340, endTime: 11.080, text: "Break things." },
       { startTime: 11.780, endTime: 12.820, text: "Let us know what's broken." },
@@ -113,6 +120,7 @@ const videoElement = ref<HTMLVideoElement | null>(null)
 const currentSubtitle = ref('')
 const showMenu = ref(false)
 const isMuted = ref(false)
+const isPlaying = ref(false)
 
 const currentVideo = computed(() => videos[currentVideoIndex.value])
 
@@ -122,6 +130,7 @@ const playNextVideo = () => {
     nextTick(() => {
       if (videoElement.value) {
         videoElement.value.play()
+        isPlaying.value = true
       }
     })
   }
@@ -133,6 +142,7 @@ const selectVideo = (index: number) => {
   nextTick(() => {
     if (videoElement.value) {
       videoElement.value.play()
+      isPlaying.value = true
     }
   })
 }
@@ -141,8 +151,10 @@ const togglePlayPause = () => {
   if (videoElement.value) {
     if (videoElement.value.paused) {
       videoElement.value.play()
+      isPlaying.value = true
     } else {
       videoElement.value.pause()
+      isPlaying.value = false
     }
   }
 }
@@ -164,13 +176,6 @@ const updateSubtitle = () => {
   
   currentSubtitle.value = subtitle ? subtitle.text : ''
 }
-
-onMounted(() => {
-  if (videoElement.value) {
-    videoElement.value.muted = isMuted.value
-    videoElement.value.play()
-  }
-})
 </script>
 
 <template>
@@ -184,12 +189,26 @@ onMounted(() => {
         ref="videoElement"
         :key="currentVideo.videoAssetName"
         :src="`/assets/videos/${currentVideo.videoAssetName}.mp4`"
-        :poster="`/assets/images/${currentVideo.thumbnailName}.jpg`"
+        :poster="`/assets/images/${currentVideo.posterName}.jpg`"
         playsinline
         @ended="playNextVideo"
         @timeupdate="updateSubtitle"
         @click="togglePlayPause"
       />
+      
+      <Transition name="fade">
+        <button 
+          v-if="!isPlaying" 
+          class="play-button" 
+          @click="togglePlayPause"
+          aria-label="Play video"
+        >
+          <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+            <circle cx="40" cy="40" r="40" fill="rgba(255, 255, 255, 0.9)" />
+            <path d="M32 25 L32 55 L55 40 Z" fill="#000" />
+          </svg>
+        </button>
+      </Transition>
       
       <div v-if="currentSubtitle" class="subtitle">
         {{ currentSubtitle }}
@@ -293,6 +312,30 @@ onMounted(() => {
 
       @media (max-width: 768px) {
         object-fit: cover;
+      }
+    }
+
+    .play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: none;
+      background: none;
+      cursor: pointer;
+      z-index: 5;
+      transition: all 0.2s ease;
+      
+      &:hover {
+        transform: translate(-50%, -50%) scale(1.1);
+      }
+      
+      &:active {
+        transform: translate(-50%, -50%) scale(0.95);
+      }
+      
+      svg {
+        filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
       }
     }
 
@@ -437,6 +480,16 @@ onMounted(() => {
 .menu-leave-to {
   opacity: 0;
   transform: translateY(-10px);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>
 
