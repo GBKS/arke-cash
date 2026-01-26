@@ -5,6 +5,12 @@ export default defineNuxtConfig({
   modules: ['@pinia/nuxt', '@nuxtjs/i18n', "@nuxt/content"],
   components: true, // Auto imports
 
+  nitro: {
+    prerender: {
+      routes: ['/test']
+    }
+  },
+
     css: [
         '@/assets/css/normalize.scss',
         '@/assets/css/common.scss',
