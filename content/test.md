@@ -71,7 +71,7 @@ Arké runs on a test network called signet, which uses test bitcoin that have no
 
 ::screenshots
 ---
-images: ["send", "contacts", "faucetto-signetto", "activity-filled"]
+images: ["send", "contacts", "contact-faucetto", "activity-faucetto"]
 alts: ["", ""]
 captions: ["Navigate to \"Send\". Then tap the contacts icon on the left, right above the tabs.", "Tap \"Faucetto Signetto\".", "Tap the \"Request\" button.", "You should receive test bitcoin within a few minutes."]
 ---

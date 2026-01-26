@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 const { data: home } = await useAsyncData(() => 
   queryCollection('content').path('/test').first()
 )

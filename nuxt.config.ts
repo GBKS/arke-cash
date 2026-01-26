@@ -7,7 +7,7 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
-      routes: ['/test']
+      routes: ['/test', '/how', '/how-technical']
     }
   },
 
