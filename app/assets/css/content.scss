@@ -102,6 +102,9 @@
       &:nth-of-type(7)::before { background-color: #131212; } 
       &:nth-of-type(8)::before { background-color: #2B2422; } 
       &:nth-of-type(9)::before { background-color: #302B24; } 
+      &:nth-of-type(10)::before { background-color: #231610; } 
+      &:nth-of-type(11)::before { background-color: #20080F; } 
+      &:nth-of-type(12)::before { background-color: #30010A; } 
 
       & + section {
         &::before {
