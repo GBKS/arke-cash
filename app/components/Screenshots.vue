@@ -57,10 +57,11 @@ const props = defineProps([
 			height: auto;
 			line-height: 0;
 			border-radius: 35px;
+			border: 1px solid rgba(black, 0.1);
 		}
 
 		figcaption {
-			color: white;
+			color: #606060;
 			font-weight: 500;
 			font-size: 16px;
 			max-width: 250px;

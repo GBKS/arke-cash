@@ -7,7 +7,20 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
-      routes: ['/test', '/how', '/how-technical']
+      routes: [
+        '/how',
+        '/how-technical',
+        '/test',
+        '/test-1',
+        '/test-2',
+        '/test-3',
+        '/test-4',
+        '/test-5',
+        '/test-6',
+        '/test-7',
+        '/test-8',
+        '/test-9'
+      ]
     }
   },
 
@@ -16,7 +29,8 @@ export default defineNuxtConfig({
         '@/assets/css/common.scss',
         '@/assets/css/forms.scss',
         '@/assets/css/general.scss',
-        '@/assets/css/content.scss'
+        '@/assets/css/content.scss',
+        '@/assets/css/test.scss'
     ],
 
   // i18n configuration

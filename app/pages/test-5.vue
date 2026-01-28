@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { data: home } = await useAsyncData(() => 
-  queryCollection('content').path('/test').first()
+  queryCollection('content').path('/test-5').first()
 )
 
 useSeoMeta({
@@ -13,7 +13,7 @@ useSeoMeta({
   <div class="test-page">
     <div class="header">
       <NuxtLink to="/">Arké</NuxtLink>
-      <h1>Test guide.</h1>
+      <p><NuxtLink to="/test">← Test guide intro</NuxtLink></p>
     </div>
     <ContentRenderer v-if="home" class="content" :value="home" />
   </div>
