@@ -23,20 +23,20 @@ Before you start, [join us on Discord](https://discord.gg/THhNW5H26H). It's wher
 
 ## Table of contents
 
-1. [Phase 1: Create your wallet](#phase-1-create-your-wallet)
-2. [Phase 2: Get your first test bitcoin](#phase-2-get-your-first-test-bitcoin)
-3. [Phase 3: Make your first payments](#phase-3-make-your-first-payments)
-4. [Phase 4: Send and receive with others](#phase-4-send-and-receive-with-others)
-5. [Phase 5: Tag your transactions](#phase-5-tag-your-transactions)
-6. [Phase 6: Manage your balance](#phase-6-manage-your-balance)
-7. [Phase 7: Refresh your payments balance](#phase-7-refresh-your-payments-balance)
-8. [Phase 8: Recover your payments balance](#phase-8-recover-your-payments-balance)
-9. [Phase 9: Recover your wallet](#phase-9-recover-your-wallet)
-10. [Phase 10: Go wild](#phase-10-go-wild)
+1. [Test 1: Create your wallet](#test-1-create-your-wallet)
+2. [Test 2: Get your first test bitcoin](#test-2-get-your-first-test-bitcoin)
+3. [Test 3: Make your first payments](#test-3-make-your-first-payments)
+4. [Test 4: Send and receive with others](#test-4-send-and-receive-with-others)
+5. [Test 5: Tag your transactions](#test-5-tag-your-transactions)
+6. [Test 6: Manage your balance](#test-6-manage-your-balance)
+7. [Test 7: Refresh your payments balance](#test-7-refresh-your-payments-balance)
+8. [Test 8: Recover your payments balance](#test-8-recover-your-payments-balance)
+9. [Test 9: Recover your wallet](#test-9-recover-your-wallet)
+10. [Test 10: Go wild](#test-10-go-wild)
 
 <section>
 
-## Phase 1: Create your wallet
+## Test 1: Create your wallet
 
 When you first open Arké, you'll go through a simple setup process.
 
@@ -69,7 +69,7 @@ Once setup is complete, you'll land on the **Activity** view. This is your walle
 </section>
 <section>
 
-## Phase 2: Get your first test bitcoin
+## Test 2: Get your first test bitcoin
 
 Arké runs on a test network called signet, which uses test bitcoin that have no value. It's specifically for testing. Let's get some of those worthless test bitcoin into your wallet.
 
@@ -106,7 +106,7 @@ At this early stage, things might also break for other reasons. If they do, plea
 </section>
 <section>
 
-## Phase 3: Make your first payments
+## Test 3: Make your first payments
 
 Now let's practice sending bitcoin in two different ways.
 
@@ -145,7 +145,7 @@ captions: ["Visit the Byte Store (link above).", "Tap \"Buy now\" on the \"Kibbl
 </section>
 <section>
 
-## Phase 4: Send and receive with others
+## Test 4: Send and receive with others
 
 Now let's exchange bitcoin with other testers. You'll need to join the [Discord channel](https://discord.gg/THhNW5H26H) for this.
 
@@ -178,7 +178,7 @@ Now send them some bitcoin back to return the favour.
 </section>
 <section>
 
-## Phase 5: Tag your transactions
+## Test 5: Tag your transactions
 
 Once you have made a few transactions, you may want to organize them. Try the following tag and contact features.
 
@@ -207,7 +207,7 @@ Tapping a tag lets you filter your activity list by that tag.
 </section>
 <section>
 
-## Phase 6: Manage your balance
+## Test 6: Manage your balance
 
 Arké uses two balances: **Savings** (Bitcoin network) and **Payments** (Ark protocol). You can move bitcoin between these balances as needed.
 
@@ -249,7 +249,7 @@ You may have noticed different types of fees already:
 </section>
 <section>
 
-## Phase 7: Refresh your payments balance
+## Test 7: Refresh your payments balance
 
 As mentioned above, the **Payments** balance needs to be regularly refreshed, for the benefit of instant, low-fee transactions.
 
@@ -273,12 +273,12 @@ When the time is right, navigate to your balance details and tap the **Refresh**
 
 Start the refresh process in the modal. While this happens, some or all of your funds may be locked. This process should not take too long.
 
-If this fails, please try again. At this early phase, things can be a little shaky at times.
+If this fails, please try again. At this early test, things can be a little shaky at times.
 
 </section>
 <section>
 
-## Phase 8: Recover your payments balance
+## Test 8: Recover your payments balance
 
 Your payments balance, and payment with that balance, are facilitated by a third-party Ark server. The can never take your bitcoin, but they could potentially refuse payments, or shut down. Not to worry, there is a process for recovering your payments balance without the server.
 
@@ -307,7 +307,7 @@ The latest step involves withdrawing the bitcoin from your payments balance to y
 </section>
 <section>
 
-## Phase 9: Recover your wallet
+## Test 9: Recover your wallet
 
 Now let's wipe the wallet from this device and recover it with your recovery phrase.
 
@@ -346,7 +346,7 @@ Let us know if any of this did not work. It is essential that wallet recovery wo
 </section>
 <section>
 
-## Phase 10: Go wild
+## Test 10: Go wild
 
 Now it's up to you to really work Arké. Try weird things, bend it, break it, and share your experience in [Discord](https://discord.gg/THhNW5H26H).
 
