@@ -230,6 +230,11 @@
           color: #2F010A;
           transition: background-color 0.3s ease, color 0.3s ease;
         }
+
+        &.-dark {
+          background-color: rgba(#F8D175, 0.9);
+          color: black;
+        }
       }
     }
 

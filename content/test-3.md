@@ -5,7 +5,7 @@ description: Help us make Arké the best bitcoin wallet possible.
 
 # Test 3: Make your first payments
 
-Now let's practice sending bitcoin in two different ways.
+Now let's practice sending bitcoin in two different ways (using Ark and the Lightning Network respectively).
 
 ##### 3.1: Send bitcoin back to Faucetto Signetto
 
@@ -23,7 +23,7 @@ captions: ["Navigate to your contact list again. Tap the paper airplane on \"Fau
 
 Visit this [test pet store](https://signet.2nd.dev/store){target=_blank} and buy some virtual treats for Byte, the mascot of the Second team.
 
-Here we test making a payment over the lightning network.
+Here we test making a payment over the lightning network, which Arké is fully interoperable with.
 
 ::screenshots
 ---

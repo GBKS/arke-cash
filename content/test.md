@@ -5,11 +5,13 @@ description: Help us make Arké the best bitcoin wallet possible.
 
 Welcome to the Arké TestFlight beta. This guide walks you through the app's features in a logical sequence, helping you experience the full functionality while providing valuable feedback.
 
+Don't have access yet? <a href="https://tally.so/r/9qQJQ5" target="_blank">Join the Waitlist</a>.
+
 ## Join the community
 
 Before you start, [join us on Discord](https://discord.gg/THhNW5H26H). It's where testers share feedback, ask questions, and find partners for send/receive testing. You'll need a testing partner later in this guide, and it's helpful to have the community available if you get stuck.
 
-<a href="https://discord.gg/THhNW5H26H" class="prominent-button" target="_blank">Join us on Discord</a>
+<a href="https://discord.gg/THhNW5H26H" class="prominent-button -dark" target="_blank">Join us on Discord</a>
 
 ---
 

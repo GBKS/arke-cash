@@ -20,10 +20,11 @@
 			</svg>
 		</h1>
 		<p>Spend bitcoin. Instantly.</p>
+		<a href="https://tally.so/r/9qQJQ5" class="button -primary -large" target="_blank">Join the Waitlist</a>
 		<div class="options">
-			<NuxtLink to="/how">Info</NuxtLink>
-			<a href="https://community.second.tech/t/arke-macos-prototype/156/7" target="_blank">Updates</a>
-			<a href="https://github.com/gbks/arke" target="_blank">Code</a>
+			<NuxtLink to="/how" class="button -secondary -medium">Info</NuxtLink>
+			<a href="https://community.second.tech/t/arke-macos-prototype/156/7" class="button -secondary -medium" target="_blank">Updates</a>
+			<a href="https://github.com/gbks/arke" class="button -secondary -medium" target="_blank">Code</a>
 		</div>
 	</div>
   </div>
@@ -90,19 +91,23 @@
 			@include mixins.r('font-size', 32, 32);
 		}
 
+		> a {
+			margin-top: 25px;
+		}
+
 		.options {
-			margin-top: 35px;
+			margin-top: 25px;
 			display: flex;
 			gap: 20px;
 
 			a {
-				background-color: black;
-				font-size: 21px;
-				font-weight: 600;
-				padding: 10px 35px 12px 35px;
-				color: white;
-				background-color: rgba(0, 0, 0, 0.6);
-				border: 1px solid rgba(255, 255, 255, 0.2);
+				// background-color: black;
+				// font-size: 21px;
+				// font-weight: 600;
+				// padding: 10px 35px 12px 35px;
+				// color: white;
+				// background-color: rgba(0, 0, 0, 0.6);
+				// border: 1px solid rgba(255, 255, 255, 0.2);
 			}
 		}
 	}
