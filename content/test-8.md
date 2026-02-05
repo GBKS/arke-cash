@@ -5,9 +5,9 @@ description: Help us make Arké the best bitcoin wallet possible.
 
 # Test 8: Recover your payments balance
 
-Your payments balance, and payment with that balance, are facilitated by a third-party Ark server. The can never take your bitcoin, but they could potentially refuse payments, or shut down. Not to worry, there is a process for recovering your payments balance without the server.
+Your payments balance, and payments with that balance, are facilitated by a third-party Ark server. The can never take your bitcoin, but they could potentially refuse payments, or shut down.
 
-Note that this takes some time and also involves a fee. It is meant for emergency situations.
+If that happens, you can recover your payments balance without the server. Note that this takes some time and also involves a fee. It is meant for emergency situations.
 
 ::screenshots
 ---

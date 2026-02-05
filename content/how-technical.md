@@ -3,6 +3,8 @@ title: How Arké works, technically
 description: UTXO-sharing for off-chain bitcoin payments and such.
 ---
 
+_As with anything Arké right now, this text is not final and will be improved._
+
 Arké is an iOS wallet implementing the Ark protocol, a UTXO-sharing scheme for off-chain bitcoin payments. It provides instant, cheap transactions with non-custodial guarantees and unilateral exit to the base layer.
 
 This page covers the architecture, trust assumptions, and tradeoffs. For protocol-level detail, see the [Ark documentation](https://docs.second.tech/ark-protocol/intro/).
@@ -86,7 +88,7 @@ Instant. Sender's VTXO is spent, receiver gets a new VTXO in the same round. No 
 **From on-chain / other wallets:**
 User provides a bitcoin address. Once confirmed on-chain, the Ark server "lifts" the UTXO into a VTXO in the next round. The user then has an instantly-spendable Ark balance.
 
-**From Lightning (planned):**
+**From Lightning:**
 Ark server operates a Lightning node and can receive on behalf of users, converting inbound Lightning payments to VTXOs.
 
 ---
@@ -138,7 +140,7 @@ Arké is not a mixer or tumbler. Privacy comes from the protocol's structure, no
 | Unilateral exit | Yes (timelock) | Yes (force close) |
 | Maturity | Early | Mature |
 
-Ark and Lightning are complementary. Arké may support Lightning interoperability in the future.
+Ark and Lightning are complementary.
 
 ---
 

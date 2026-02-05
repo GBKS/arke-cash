@@ -7,6 +7,8 @@ description: Help us make Arké the best bitcoin wallet possible.
 
 As mentioned above, the **Payments** balance needs to be regularly refreshed, for the benefit of instant, low-fee transactions.
 
+In our test setup (using the signet network), a refresh is needed every 24 hours. Once Arké (and the Ark protocol) are live, this will be increased to a month.
+
 ::screenshots
 ---
 images: ["activity-refresh", "refresh-1", "refresh-2"]
@@ -17,7 +19,7 @@ captions: ["", "", "", ""]
 
 ##### 7.1: Look out for a refresh indicator
 
-The balance card on the **Activity* screen will show an indicator if it's the time to refresh is coming up.
+The balance card on the **Activity** screen will show an indicator if it's the time to refresh is coming up.
 
 ##### 7.2: Navigate to the refresh options
 
