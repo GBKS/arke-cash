@@ -13,16 +13,9 @@ useSeoMeta({
   <div class="content-page">
     <div class="header">
       <NuxtLink to="/">Arké</NuxtLink>
-      <h1>How it works.</h1>
-
-      <div class="tech-toggle">
-        <NuxtLink to="/how">Normal</NuxtLink>
-        <NuxtLink to="/how-technical">Technical</NuxtLink>
-      </div>
+      <h1>Privacy policy</h1>
     </div>
     <ContentRenderer v-if="home" class="content" :value="home" />
-
-    <TrySection />
 
     <SiteFooter />
   </div>
