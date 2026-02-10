@@ -19,7 +19,9 @@ export default defineNuxtConfig({
         '/test-6',
         '/test-7',
         '/test-8',
-        '/test-9'
+        '/test-9',
+        '/privacy-policy',
+        '/terms-and-conditions'
       ]
     }
   },
