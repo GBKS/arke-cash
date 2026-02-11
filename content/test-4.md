@@ -9,7 +9,7 @@ Now let's exchange bitcoin with other testers. You'll need to join the [Discord 
 
 ::screenshots
 ---
-images: ["receive-1", "receive-2", "create-contact"]
+images: ["receive-1", "receive-2"]
 alts: ["", "", ""]
 captions: ["Navigate to the \"Receive\" tab.", "Tap the toggle at the top to see your addresses directly. Copy your \"Payments address\".", ""]
 ---
@@ -27,9 +27,15 @@ Now copy your **Payments address**. Head over to [Discord](https://discord.gg/TH
 
 ##### 4.3: Create a contact for your testing partner
 
-Once you have received a payment from someone, create a contact for them. This helps you keep your activity list organized.
+::screenshots
+---
+images: ["send-1", "create-contact"]
+alts: ["", "", ""]
+captions: ["Tap the contacts button on the bottom left.", "Create a new contact, then add your partners address.", ""]
+---
+::
 
-If an incoming payment matches an address from someone in your contacts, they will be auto-assigned.
+Once you have received a payment from someone, create a contact for them. This helps you keep your activity list organized.
 
 Now send them some bitcoin back to return the favour.
 

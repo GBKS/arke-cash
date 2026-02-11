@@ -15,9 +15,9 @@ Technically speaking, this transfers bitcoin from the second-layer Ark network t
 
 ::screenshots
 ---
-images: ["balance", "offboard-1", "offboard-3", "fee-summary"]
-alts: ["", "", "", "", ""]
-captions: ["Tap the balance card on the activity screen to see your balance breakdown. Tap the circular button with the arrow pointing down.", "Now you're about to start a transfer. Enter an amount, like 5,000.", "The transfer is going to take some time until it completes, that's normal.", "Find the fee summary in settings to see a breakdown of the fees you paid so far."]
+images: ["balance", "offboard-1", "offboard-3"]
+alts: ["", "", "", ""]
+captions: ["Tap the balance card on the activity screen to see your balance breakdown. Tap the circular button with the arrow pointing down.", "Now you're about to start a transfer. Enter an amount, like 5,000.", "The transfer is going to take some time until it completes, that's normal."]
 ---
 ::
 
@@ -41,6 +41,14 @@ You may have noticed different types of fees already:
 - The payments balance requires monthly maintenance (via a refresh)
 - Balance transfers require a fee
 - Payments have varying fees, based on how the bitcoin are being sent (on the technical side)
+
+::screenshots
+---
+images: ["fee-summary"]
+alts: [""]
+captions: ["Find the fee summary in settings to see a breakdown of the fees you paid so far."]
+---
+::
 
 ---
 

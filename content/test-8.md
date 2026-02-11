@@ -23,7 +23,7 @@ In **Settings*, navigate to "Recover your payments balance". You'll see a quick 
 
 ##### 8.2: Follow the progress
 
-A recovery can take a day or more. Three are multiple steps involved. You'll find a special entry in your **Activity* with the latest status.
+A recovery can take a day or more. Three are multiple steps involved. You'll find a special entry in your **Activity** with the latest status.
 
 ##### 8.3: Confirm the withdrawal
 

@@ -27,7 +27,7 @@ Here we test making a payment over the lightning network, which Arké is fully i
 
 ::screenshots
 ---
-images: ["byte-store", "byte-store-invoice", "send-paste", byte-store-payment]
+images: ["byte-store", "byte-store-invoice", "send-paste", "byte-store-payment"]
 alts: ["", ""]
 captions: ["Visit the Byte Store (link above).", "Tap \"Buy now\" on the \"Kibbles 'n Bits\" and the copy icon button on the bottom right.", "On the \"Send\" screen, tap the paste button on the right, above the tabs.", "Tap \"Send\" to pay the invoice."]
 ---

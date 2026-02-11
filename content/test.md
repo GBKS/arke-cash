@@ -37,7 +37,6 @@ Before you start, [join us on Discord](https://discord.gg/THhNW5H26H). It's wher
 
 Get started with [Test 1: Create your wallet](/test-1).
 
-<!--
 ---
 
 ## Known issues
@@ -45,9 +44,9 @@ Get started with [Test 1: Create your wallet](/test-1).
 The following features are incomplete or not working in this build:
 
 - **Onchain transactions don't appear in activity**: Deposits and onchain sends won't show in your transaction history yet. Your balance will update correctly, but the individual transactions aren't listed.
-- **Some fees may be 0**: Some fees are simpley not implemented or finalized yet.
-- **No choice of Ark server:** Eventually, we want you to be able to choose between different servers. At this early stage, there simply aren't any other ones than the signet one by Second.
--->
+- **Some fees may be 0**: Some fees are not implemented or finalized yet.
+- **No choice of Ark server:** Eventually, you'll be able to choose between different servers. At this early stage, there is only one.
+-- **Stay in the app for refreshes and solo moves:** These two actions involved multiple steps that the app needs to do over time. This will be smoothened out.
 
 ---
 
