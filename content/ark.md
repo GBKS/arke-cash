@@ -1,6 +1,7 @@
 ---
 title: What is Ark?
 description: What the Ark protocol is and why it matters.
+image: https://www.arke.cash/assets/images/ark-preview.jpg
 ---
 
 Arké is built on a protocol called Ark. This page explains what that means and why it matters.
@@ -49,7 +50,7 @@ Ark is not finished. The protocol is young and actively developed. Arké runs on
 
 ## Who built it
 
-Ark was invented in 2023 by Burak, a bitcoin developer. The protocol is open source and being developed by two independent teams: [Ark Labs](https://arklabs.xyz) and [Second](https://second.tech). Arké is built on Second's implementation.
+Ark was invented in 2023 by Burak, a bitcoin developer. The protocol is open source and being developed by two independent teams: [Ark Labs](https://arklabs.xyz) and [Second](https://second.tech). Arké is built on Second's implementation, which focuses on bitcoin payments.
 
 ---
 

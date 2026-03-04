@@ -1,6 +1,7 @@
 ---
 title: Terms and Conditions
 description: A bitcoin wallet focused on instant, low-fee payments.
+image: https://www.arke.cash/assets/images/terms-and-conditions-preview.jpg
 ---
 
 # Terms of Service

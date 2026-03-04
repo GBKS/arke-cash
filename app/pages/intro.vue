@@ -4,7 +4,13 @@ const { data: home } = await useAsyncData(() => queryCollection('content').path(
 
 useSeoMeta({
   title: home.value?.title,
-  description: home.value?.description
+  description: home.value?.description,
+  ogTitle: home.value?.title,
+  ogDescription: home.value?.description,
+  twitterTitle: home.value?.title,
+  twitterDescription: home.value?.description,
+  ogImage: resolveSeoImage(home.value),
+  twitterImage: resolveSeoImage(home.value)
 })
 
 interface VideoSubtitle {

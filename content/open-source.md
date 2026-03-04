@@ -1,6 +1,7 @@
 ---
 title: Open Source
 description: Why Arké is open source and how to get involved.
+image: https://www.arke.cash/assets/images/open-source-preview.jpg
 ---
 
 Arké is free and open source. Every line of code is public. Every design decision is documented. That's not a feature — it's the point.

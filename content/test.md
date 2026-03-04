@@ -1,6 +1,7 @@
 ---
 title: Arké Test Guide
 description: Help us make Arké the best bitcoin wallet possible.
+image: https://www.arke.cash/assets/images/test-preview.jpg
 ---
 
 Welcome to the Arké TestFlight beta. This guide walks you through the app's features in a logical sequence, helping you experience the full functionality while providing valuable feedback.

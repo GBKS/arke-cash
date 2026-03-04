@@ -1,6 +1,7 @@
 ---
 title: Privacy Policy
 description: How Arké handles your information.
+image: https://www.arke.cash/assets/images/privacy-policy-preview.jpg
 ---
 
 # Privacy Policy

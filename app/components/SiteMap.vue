@@ -11,8 +11,8 @@
 		<NuxtLink to="/faq">FAQ</NuxtLink>
 		<NuxtLink to="/test">Test Guide</NuxtLink>
 		<a href="https://github.com/gbks/arke" target="_blank">Code</a>
-		<NuxtLink to="/privacy">Privacy Policy</NuxtLink>
-		<NuxtLink to="/terms">Terms of Service</NuxtLink>
+		<NuxtLink to="/privacy-policy">Privacy Policy</NuxtLink>
+		<NuxtLink to="/terms-and-conditions">Terms of Service</NuxtLink>
 	</nav>
   </section>
 </template>

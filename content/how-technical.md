@@ -1,6 +1,7 @@
 ---
 title: How Arké works, technically
 description: UTXO-sharing for off-chain bitcoin payments and such.
+image: https://www.arke.cash/assets/images/how-technical-preview.jpg
 ---
 
 Arké is an iOS wallet implementing the Ark protocol, a UTXO-sharing scheme for off-chain bitcoin payments. It provides instant, cheap transactions with non-custodial guarantees and unilateral exit to the base layer.

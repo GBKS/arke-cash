@@ -1,6 +1,7 @@
 ---
 title: Arké Test Guide
 description: Help us make Arké the best bitcoin wallet possible.
+image: https://www.arke.cash/assets/images/test-preview.jpg
 ---
 
 # Test 7: Refresh your payments balance

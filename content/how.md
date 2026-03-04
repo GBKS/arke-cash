@@ -1,6 +1,7 @@
 ---
 title: How Arké works
 description: A bitcoin wallet focused on instant, low-fee payments.
+image: https://www.arke.cash/assets/images/how-preview.jpg
 ---
 
 Arké is a bitcoin wallet. You hold your own bitcoin. You can send it to anyone, instantly. No one can stop you, freeze your account, or see what you're doing.

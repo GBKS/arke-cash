@@ -1,6 +1,7 @@
 ---
 title: Roadmap
 description: Where Arké is, and is going.
+image: https://www.arke.cash/assets/images/roadmap-preview.jpg
 ---
 
 *We build carefully. Here's where we are and where we're going.*

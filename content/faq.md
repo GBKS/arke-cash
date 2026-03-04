@@ -1,6 +1,7 @@
 ---
 title: FAQ
 description: Answers to common questions about Arké.
+image: https://www.arke.cash/assets/images/faq-preview.jpg
 ---
 
 ### Is my bitcoin safe?
