@@ -152,3 +152,13 @@ Regardless of which path the project takes:
 - **Bitcoin only.** No other assets. No compromises on self-custody.
 - **Open source.** The reference implementation value only exists if others can read, learn from, and build on it.
 - **Honest about where we are.** This document will be updated as things change. When a phase is complete, it will say so. When plans change, they will change here first.
+
+---
+
+## If it ends
+
+Worth naming directly: Arké is currently one person. The Ark protocol is young and may not mature as needed. Regulations in key markets could shift against self-custody wallets. The ecosystem might move in a different direction entirely. The project could simply stop.
+
+If it does: the code stays on GitHub. Your recovery phrase works in any compatible wallet. Your bitcoin is unaffected.
+
+Arké is built so that its failure mode is clean — it stops, not catastrophically. The open-source nature means the work remains available for whoever wants to continue it. That's a deliberate property of how this was built, not a fallback.
