@@ -21,7 +21,12 @@ export default defineNuxtConfig({
         '/test-8',
         '/test-9',
         '/privacy-policy',
-        '/terms-and-conditions'
+        '/terms-and-conditions',
+        '/roadmap',
+        '/design',
+        '/open-source',
+        '/ark',
+        '/faq'
       ]
     }
   },

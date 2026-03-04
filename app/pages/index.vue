@@ -2,6 +2,8 @@
   <div class="page home-page">
 	<HomeBanner />
 
+	<SiteMap />
+
 	<HomeSection
 		title="Yours."
 		description="Your keys. Your phone. Your bitcoin. That's the whole arrangement."
@@ -91,6 +93,8 @@
 	<TrySection />
 
 	<SiteFooter />
+
+	<SiteMap />
   </div>
 </template>
 

@@ -25,5 +25,7 @@ useSeoMeta({
     <TrySection />
 
     <SiteFooter />
+
+	  <SiteMap />
   </div>
 </template>

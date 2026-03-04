@@ -18,5 +18,7 @@ useSeoMeta({
     <ContentRenderer v-if="home" class="content" :value="home" />
 
     <SiteFooter />
+
+	  <SiteMap />
   </div>
 </template>

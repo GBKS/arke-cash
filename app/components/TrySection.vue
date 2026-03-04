@@ -12,7 +12,7 @@
 		</div>
 		<div class="copy">
 			<h2>Start using it</h2>
-			<p>Arké is currently in early development. For now, you'll have to compile the <a href="https://github.com/gbks/arke" target="_blank">code</a> yourself. A TestFlight version is being pondered.</p>
+			<p>Arké is currently in early development. Compile the <a href="https://github.com/gbks/arke" target="_blank">code</a> or join TestFlight.</p>
 
 			<a href="https://tally.so/r/9qQJQ5" class="button -primary -large" target="_blank">Join the Waitlist</a>
 		</div>

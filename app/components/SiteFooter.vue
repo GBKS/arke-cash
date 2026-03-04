@@ -41,8 +41,8 @@
 
 	@include mixins.media-query(medium-down) {
 		.content {
-			padding-top: 250px;
-			padding-bottom: 250px;
+			padding-top: 100px;
+			padding-bottom: 100px;
 
 			h2 {
 				font-size: 48px;
@@ -52,8 +52,8 @@
 
 	@include mixins.media-query(large) {
 		.content {
-			padding-top: 500px;
-			padding-bottom: 500px;
+			padding-top: 200px;
+			padding-bottom: 200px;
 
 			h2 {
 				font-size: 67px;

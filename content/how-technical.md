@@ -120,7 +120,7 @@ Arké is not a mixer or tumbler. Privacy comes from the protocol's structure, no
 
 **Alpha software.** Arké is in early development. Expect bugs.
 
-**Signet only.** Current release operates on Bitcoin Signet, not mainnet.
+**Signet only.** Current release operates on bitcoin signet, not mainnet.
 
 **Single Ark server.** The network currently has one Ark server (operated by [Second]). Ark server federation and multiple competing Ark servers are roadmap items.
 
