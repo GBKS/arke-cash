@@ -3,7 +3,9 @@ title: Design
 description: The design philosophy and creative direction behind Arké.
 ---
 
-Most bitcoin wallets look like fintech utilities. Arké doesn't. That's a deliberate choice, and this page explains it.
+Most bitcoin wallets look like fintech utilities. Arké doesn't.
+
+A bitcoin wallet shot like a fashion editorial. It's a strange combination. That's the point.
 
 ---
 
