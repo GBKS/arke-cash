@@ -1,6 +1,6 @@
 ---
 title: Open Source
-description: Where Arké is, and is going.
+description: Why Arké is open source and how to get involved.
 ---
 
 Arké is free and open source. Every line of code is public. Every design decision is documented. That's not a feature — it's the point.
@@ -47,7 +47,7 @@ This is harder than building quietly. It's also more useful to the ecosystem.
 
 The source code is on GitHub. Issues, pull requests, and honest feedback are welcome.
 
-**→ github.com/arke-wallet** *(placeholder — update with actual repo)*
+**→ [github.com/gbks/arke](https://github.com/gbks/arke)**
 
 ---
 

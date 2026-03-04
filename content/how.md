@@ -3,8 +3,6 @@ title: How Arké works
 description: A bitcoin wallet focused on instant, low-fee payments.
 ---
 
-_As with anything Arké right now, this text is not final and will be improved._
-
 Arké is a bitcoin wallet. You hold your own bitcoin. You can send it to anyone, instantly. No one can stop you, freeze your account, or see what you're doing.
 
 That's it. The rest of this page explains how.
@@ -66,7 +64,7 @@ When you set up Arké, you'll write down a recovery phrase—twelve words in a s
 ## How a payment actually happens
 
 1. You tap a contact, scan a QR code or manually enter an address
-2. The server you are connected to ensures the payment goes through
+2. The Ark server routes and settles the payment
 3. Done
 
 The whole thing takes a few seconds. Behind the scenes, cryptographic signatures are flying around and the Ark protocol is doing its thing. You don't need to know about any of that. It just works.
@@ -81,7 +79,7 @@ The whole thing takes a few seconds. Behind the scenes, cryptographic signatures
 
 **We don't require identity verification.** No KYC, no photo of your passport, no waiting for approval.
 
-**We can't reverse payments.** Bitcoin transactions are final. Send to the right person.
+**We can't reverse payments.** bitcoin transactions are final. Send to the right person.
 
 ---
 

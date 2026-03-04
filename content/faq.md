@@ -1,6 +1,6 @@
 ---
 title: FAQ
-description: Where Arké is, and is going.
+description: Answers to common questions about Arké.
 ---
 
 ### Is my bitcoin safe?

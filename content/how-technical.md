@@ -3,8 +3,6 @@ title: How Arké works, technically
 description: UTXO-sharing for off-chain bitcoin payments and such.
 ---
 
-_As with anything Arké right now, this text is not final and will be improved._
-
 Arké is an iOS wallet implementing the Ark protocol, a UTXO-sharing scheme for off-chain bitcoin payments. It provides instant, cheap transactions with non-custodial guarantees and unilateral exit to the base layer.
 
 This page covers the architecture, trust assumptions, and tradeoffs. For protocol-level detail, see the [Ark documentation](https://docs.second.tech/ark-protocol/intro/).
@@ -110,7 +108,7 @@ Arké is not a mixer or tumbler. Privacy comes from the protocol's structure, no
 
 **Derivation:** BIP-84 (native SegWit) with standard derivation paths.
 
-**Storage:** Keys are stored in iOS encrypted Keychain. VTXO data is stored in the users iCloud account.
+**Storage:** Keys are stored in iOS encrypted Keychain. VTXO data is stored in the user's iCloud account.
 
 **Backup:** Standard 12-word BIP-39 mnemonic. Currently VTXOs are not restored from the mnemonic.
 
@@ -122,7 +120,7 @@ Arké is not a mixer or tumbler. Privacy comes from the protocol's structure, no
 
 **Signet only.** Current release operates on bitcoin signet, not mainnet.
 
-**Single Ark server.** The network currently has one Ark server (operated by [Second]). Ark server federation and multiple competing Ark servers are roadmap items.
+**Single Ark server.** The network currently has one Ark server (operated by [Second](https://second.tech)). Ark server federation and multiple competing Ark servers are roadmap items.
 
 **VTXO expiry.** VTXOs have a validity window. If not refreshed (by transacting or explicit refresh), they must be exited on-chain before expiry. The wallet currently requires users to manually refresh.
 

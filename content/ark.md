@@ -1,6 +1,6 @@
 ---
 title: What is Ark?
-description: Where Arké is, and is going.
+description: What the Ark protocol is and why it matters.
 ---
 
 Arké is built on a protocol called Ark. This page explains what that means and why it matters.

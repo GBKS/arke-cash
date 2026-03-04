@@ -1,6 +1,6 @@
 ---
 title: Design
-description: Where Arké is, and is going.
+description: The design philosophy and creative direction behind Arké.
 ---
 
 Most Bitcoin wallets look like fintech utilities. Arké doesn't. That's a deliberate choice, and this page explains it.
