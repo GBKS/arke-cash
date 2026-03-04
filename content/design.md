@@ -3,7 +3,7 @@ title: Design
 description: The design philosophy and creative direction behind Arké.
 ---
 
-Most Bitcoin wallets look like fintech utilities. Arké doesn't. That's a deliberate choice, and this page explains it.
+Most bitcoin wallets look like fintech utilities. Arké doesn't. That's a deliberate choice, and this page explains it.
 
 ---
 
@@ -14,6 +14,14 @@ Beauty and self-custody are not in conflict.
 The bitcoin community has, understandably, prioritised trustlessness over aesthetics. The result is software that works — but rarely delights. Arké is a bet that this is a false tradeoff. That a wallet can be genuinely beautiful, genuinely private, and genuinely yours.
 
 If that sounds obvious, look at the landscape. It isn't obvious yet.
+
+---
+
+## Built for one person
+
+Arké doesn't try to reach everyone. The person we're building for already understands bitcoin at a meaningful level, is curious about Ark specifically, and wants a tool that respects their intelligence — not one that explains things they already know.
+
+Every feature, every screen, every line of copy is written for that person. Depth is a signal, not a flaw.
 
 ---
 
@@ -29,11 +37,9 @@ Arké is built to feel native to that culture. Not an imitation of Apple's aesth
 
 ## Creative direction
 
-The visual language of Arké is playful, editorial, and deliberately unconventional for the category. It draws from fashion, from print, from luxury goods — not from fintech or crypto.
+The visual language draws from fashion, from print, from luxury goods — not from fintech or crypto. The photography is editorial. The palette is deep and restrained. Nothing is there by accident.
 
-This is not decoration. The creative direction makes a claim: that bitcoin is worth taking seriously as a medium for daily life, not just as a speculative asset or a cypherpunk tool. The people who hold it, spend it, and send it deserve software that respects them.
-
-The palette is deep and restrained. The typography is considered. The photography is editorial. Nothing is there by accident.
+The fashion aesthetic is worn knowingly. It makes a claim: that bitcoin is worth taking seriously as a medium for daily life, not just as a speculative asset or a cypherpunk tool. The people who hold it, spend it, and send it deserve software that respects them.
 
 ---
 
