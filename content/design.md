@@ -22,9 +22,11 @@ If that sounds obvious, look at the landscape. It isn't obvious yet.
 
 ## Built for one person
 
-Arké doesn't try to reach everyone. The person we're building for already understands bitcoin at a meaningful level, is curious about Ark specifically, and wants a tool that respects their intelligence — not one that explains things they already know.
+Arké starts deep in the ecosystem — early users are Bitcoiners helping validate the protocol. But the product is not designed for them.
 
-Every feature, every screen, every line of copy is written for that person. Depth is a signal, not a flaw.
+Every decision is calibrated to someone who hasn't arrived yet: curious about Bitcoin, put off by everything they've seen so far, and unwilling to read a protocol explainer before sending money to a friend. If the product works for that person, it works for everyone. The reverse isn't true.
+
+As the technology matures, the audience widens. The design doesn't change — because it was never built for insiders.
 
 ---
 
