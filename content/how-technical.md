@@ -6,7 +6,7 @@ image: https://www.arke.cash/assets/images/how-technical-preview.jpg
 
 Arké is an iOS wallet implementing the Ark protocol, a UTXO-sharing scheme for off-chain bitcoin payments. It provides instant, cheap transactions with non-custodial guarantees and unilateral exit to the base layer.
 
-This page covers the architecture, trust assumptions, and tradeoffs. For protocol-level detail, see the [Ark documentation](https://docs.second.tech/ark-protocol/intro/).
+This page covers the architecture, trust assumptions, and tradeoffs. For protocol-level detail, see the [Ark documentation](https://docs.second.tech/ark-protocol/intro/). If you prefer a video intro, here's [a good one](https://www.youtube.com/watch?v=WvwmLv0SgAc).
 
 ---
 
@@ -71,7 +71,7 @@ Every VTXO includes a pre-signed exit path that lets the owner claim funds on-ch
 
 **Tradeoffs:**
 
-- Exit requires an on-chain transaction (fees apply)
+- Exit requires one or more on-chain transaction (fees apply)
 - Timelock delay before funds are spendable
 - If many users exit simultaneously, on-chain fees may spike
 
@@ -117,11 +117,11 @@ Arké is not a mixer or tumbler. Privacy comes from the protocol's structure, no
 
 ## Current limitations
 
-**Alpha software.** Arké is in early development. Expect bugs.
+**Beta software.** Arké is in early development. Expect bugs.
 
 **Signet only.** Current release operates on bitcoin signet, not mainnet.
 
-**Single Ark server.** The network currently has one Ark server (operated by [Second](https://second.tech)). Ark server federation and multiple competing Ark servers are roadmap items.
+**Single Ark server.** The network currently has one Ark server (operated by [Second](https://second.tech)). Ark server federation and multiple competing Ark servers are roadmap items. Server code is [open-source](https://gitlab.com/ark-bitcoin/bark).
 
 **VTXO expiry.** VTXOs have a validity window. If not refreshed (by transacting or explicit refresh), they must be exited on-chain before expiry. The wallet currently requires users to manually refresh.
 

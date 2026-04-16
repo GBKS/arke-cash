@@ -68,7 +68,7 @@ When you set up Arké, you'll write down a recovery phrase—twelve words in a s
 2. The Ark server routes and settles the payment
 3. Done
 
-The whole thing takes a few seconds. Behind the scenes, cryptographic signatures are flying around and the Ark protocol is doing its thing. You don't need to know about any of that. It just works.
+The whole thing takes a few seconds. Behind the scenes, cryptographic signatures are flying around and the Ark protocol is doing its thing. You don't need to know about any of that (if you want to, it's <NuxtLink to="/how-technical">described here</NuxtLink>). It just works.
 
 ---
 

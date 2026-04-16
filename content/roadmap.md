@@ -4,27 +4,26 @@ description: Where Arké is, and is going.
 image: https://www.arke.cash/assets/images/roadmap-preview.jpg
 ---
 
-*We build carefully. Here's where we are and where we're going.*
-*No dates. No promises. Just direction.*
+*We build carefully. Here's where we are and where we're going. No dates. No promises. Just direction.*
 
 ---
 
 ## What this project is
 
-Arké is an iOS Bitcoin wallet built on the Ark protocol. It has four goals, in order of certainty.
+Arké is an iOS bitcoin wallet built on the Ark protocol. It has four goals, in order of certainty.
 
-**Demonstrate what's possible.** The Bitcoin Design Guide describes best practices for wallet UX. Arké implements them — seriously, completely, and with a visual direction that proves design ambition and Bitcoin principles are not in conflict. If other builders see it and raise their own bar, that's a win.
+**Demonstrate what's possible.** The [Bitcoin Design Guide](https://bitcoin.design/guide/) describes best practices for wallet UX. Arké implements them — seriously, completely, and with a visual direction that proves design ambition and [bitcoin principles](https://bitcoin.design/guide/getting-started/principles/) are not in conflict. If other builders see it and raise their own bar, that's a win.
 
-**Accelerate Ark.** Arké serves as a reference wallet for the Ark ecosystem. A well-built, open-source iOS implementation helps the protocol reach users faster and gives other developers something concrete to learn from and build on.
+**Accelerate Ark.** Arké serves as a reference wallet for the Ark ecosystem (specifically, the [implementation by Second](https://second.tech/)). A well-built, open-source iOS implementation helps the protocol reach users faster and gives other developers something concrete to learn from and build on.
 
-**Expand the creative Overton window.** Most Bitcoin wallets look like fintech utilities. Arké doesn't. The creative direction is intentional and open-source — a demonstration that Bitcoin software can be genuinely beautiful.
+**Expand the creative Overton window.** Most bitcoin wallets look like fintech utilities. Arké doesn't. The creative direction is intentional and open-source — a demonstration that bitcoin software can be genuinely unique and beautiful.
 
-**Become a long-term product, if the demand is there.** If users show up and want to stay, Arké will grow into a dedicated wallet with a team, a business model, and a user community. If not, it remains a maintained open-source project. Both outcomes are valid. The project will not pretend otherwise.
+**Become a long-term product, if the demand is there.** If users show up and want to stay, Arké will grow into a dedicated wallet with a team, a user community, and a business model. If not, it remains a maintained open-source project. Both outcomes are valid. The project will not pretend otherwise.
 
 ---
 
 ## 01 — Foundations
-*Private alpha on signet. First users. First feedback.*
+*Private beta on signet. First users. First feedback.*
 
 **↳ Where we are now**
 
@@ -33,9 +32,9 @@ Learning, not shipping. Every conversation with a tester is worth more than any 
 This phase is also the beginning of the Bitcoin Design Guide implementation work: documenting decisions, noting where the guide needs refinement, and building in the open.
 
 **Prioritise**
+- Building the technical foundation as the Ark implementation becomes ready for mainnet
 - End-to-end wallet flows on signet, including Lightning via the Ark gateway
 - Qualitative feedback on both UX and brand — does the visual direction feel right or alienating?
-- The onchain layer, built right the first time
 - Every point of confusion documented — potential contributions back to the Bitcoin Design Guide
 - Public build notes: the ecosystem should be able to follow along
 
@@ -46,6 +45,11 @@ This phase is also the beginning of the Bitcoin Design Guide implementation work
 
 *The question: Does the core idea land without explanation — and does the product feel like it belongs?*
 
+Find the latest updates here:
+- [Discord](https://discord.gg/THhNW5H26H)
+- [GBKS' blog](https://gbks.substack.com)
+- [Second community thread](https://community.second.tech/t/arke-macos-prototype/156/32)
+
 ---
 
 ## 02 — Trusted Beta
@@ -53,7 +57,7 @@ This phase is also the beginning of the Bitcoin Design Guide implementation work
 
 **↳ Coming next**
 
-Deliberately introduce testers who are not Bitcoin developers. Technical users fill in gaps with their own knowledge. Civilians won't — and civilians are who this is ultimately for.
+Deliberately introduce testers who are not bitcoin developers. Technical users fill in gaps with their own knowledge. Civilians won't — and civilians are who this is ultimately for.
 
 This is also when Arké's value as a reference implementation becomes legible to the wider ecosystem. Real users hitting real friction points is exactly the kind of evidence that improves both the app and the guide.
 
@@ -96,11 +100,11 @@ Real money changes everything. Users who were relaxed on signet will be anxious 
 ---
 
 ## 04 — Community
-*Credibility within Bitcoin. The project earns its reputation.*
+*Credibility within bitcoin. The project earns its reputation.*
 
 **↳ Early growth**
 
-Growth at this stage comes from credibility, not spend. The Bitcoin and Ark ecosystems are the primary audience — developers, designers, and advocates who will judge the work honestly and share it if it deserves it.
+Growth at this stage comes from credibility, not spend. The bitcoin and Ark ecosystems are the primary audience — developers, designers, and advocates who will judge the work honestly and share it if it deserves it.
 
 This is also when demand signal becomes readable. Are users showing up and staying? Are they telling others? The answers determine how much of the roadmap beyond this point becomes relevant.
 
