@@ -1,9 +1,9 @@
 <template>
   <div class="home-banner">
 	<picture>
-		<source srcset="/assets/images/cover.jpg 1x, /assets/images/cover@2x.jpg 2x" type="image/jpeg">
+		<source srcset="/assets/images/cover-2.jpg 1x, /assets/images/cover-2@2x.jpg 2x" type="image/jpeg">
 		<img 
-			src="/assets/images/cover.jpg" 
+			src="/assets/images/cover-2.jpg" 
 			alt="Arké Cover"
 			class="cover-image"
 		>
