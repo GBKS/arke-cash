@@ -24,11 +24,7 @@ In **Settings*, navigate to "Recover your payments balance". You'll see a quick 
 
 ##### 8.2: Follow the progress
 
-A recovery can take a day or more. Three are multiple steps involved. You'll find a special entry in your **Activity** with the latest status.
-
-##### 8.3: Confirm the withdrawal
-
-The latest step involves withdrawing the bitcoin from your payments balance to your savings balance. This step requires an additional confirmation from you at the moment (this may change).
+A recovery can take 10 or more hours, and there are multiple steps involved. You'll find a special entry in your **Activity** with the latest status. While the steps progress automatically, you do need to check in every 1-2 hours for the app to continue with the process.
 
 ---
 
