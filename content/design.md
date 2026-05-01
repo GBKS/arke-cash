@@ -6,8 +6,6 @@ image: https://www.arke.cash/assets/images/design-preview.jpg
 
 Most bitcoin wallets look like fintech utilities. Arké doesn't.
 
-A bitcoin wallet shot like a fashion editorial. It's a strange combination. That's the point.
-
 ---
 
 ## The thesis
@@ -40,11 +38,13 @@ Arké is built to feel native to that culture. Not an imitation of Apple's aesth
 
 ---
 
-## Creative direction
+## Visual language
 
-The visual language draws from fashion, from print, from luxury goods — not from fintech or crypto. The photography is editorial. The palette is deep and restrained. Nothing is there by accident.
+Fortnite collaborates with Balenciaga. Travis Scott plays a concert inside a video game. Meme culture borrows freely from fashion shoots. AI generates outfits that don't exist yet.
 
-The fashion aesthetic is worn knowingly. It makes a claim: that bitcoin is worth taking seriously as a medium for daily life, not just as a speculative asset or a cypherpunk tool. The people who hold it, spend it, and send it deserve software that respects them.
+The boundaries between gaming, fashion, music, and internet culture have dissolved, and with them the idea that visual identity belongs to any particular world. You take from wherever makes sense.
+
+Arké's visual world lives in that space. The imagery draws from wherever it wants — fashion editorial, AI generation, street culture, surrealism — not to make a statement about luxury or aspiration, but because that's how visual culture actually works now. The aesthetic is a personality, not a positioning.
 
 ---
 
