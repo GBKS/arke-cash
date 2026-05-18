@@ -8,8 +8,8 @@
 		title="Yours."
 		description="Your keys. Your phone. Your bitcoin. That's the whole arrangement."
 		color="#231610"
-		image="/assets/images/bright-beige.jpg"
-		imageSourceSet="/assets/images/bright-beige.jpg 1x, /assets/images/bright-beige@2x.jpg 2x"
+		image="/assets/images/bright-beige-2.jpg"
+		imageSourceSet="/assets/images/bright-beige-2.jpg 1x, /assets/images/bright-beige-2@2x.jpg 2x"
 		imageAlt=""
 		:flip="true"
 	/>
@@ -17,18 +17,18 @@
 	<HomeSection
 		title="No middlemen."
 		description="You send it. They receive it. No bank in between, no approval, no waiting."
-		color="#20080F"
-		image="/assets/images/dark-red-blue.jpg"
-		imageSourceSet="/assets/images/dark-red-blue.jpg 1x, /assets/images/dark-red-blue@2x.jpg 2x"
+		color="#1A1205"
+		image="/assets/images/mushrooms.jpg"
+		imageSourceSet="/assets/images/mushrooms.jpg 1x, /assets/images/mushrooms@2x.jpg 2x"
 		imageAlt=""
 	/>
 
 	<HomeSection
 		title="Instant."
 		description="Payments settle in seconds. This is what bitcoin is supposed to feel like."
-		color="#30010A"
-		image="/assets/images/red.jpg"
-		imageSourceSet="/assets/images/red.jpg 1x, /assets/images/red@2x.jpg 2x"
+		color="#0F151B"
+		image="/assets/images/picnic-blanket.jpg"
+		imageSourceSet="/assets/images/picnic-blanket.jpg 1x, /assets/images/picnic-blanket@2x.jpg 2x"
 		imageAlt=""
 		:flip="true"
 	/>
@@ -36,18 +36,18 @@
 	<HomeSection
 		title="One tap."
 		description="Pay anyone who accepts bitcoin. As simple as it sounds."
-		color="#3B2428"
-		image="/assets/images/light-pink-blue.jpg"
-		imageSourceSet="/assets/images/light-pink-blue.jpg 1x, /assets/images/light-pink-blue@2x.jpg 2x"
+		color="#1B120A"
+		image="/assets/images/tilt.jpg"
+		imageSourceSet="/assets/images/tilt.jpg 1x, /assets/images/tilt@2x.jpg 2x"
 		imageAlt=""
 	/>
 
 	<HomeSection
 		title="Recoverable."
 		description="Phone gone? Bitcoin isn't. Back up once, restore anywhere."
-		color="#132D43"
-		image="/assets/images/skull.jpg"
-		imageSourceSet="/assets/images/skull.jpg 1x, /assets/images/skull@2x.jpg 2x"
+		color="#19170C"
+		image="/assets/images/byte.jpg"
+		imageSourceSet="/assets/images/byte.jpg 1x, /assets/images/byte@2x.jpg 2x"
 		imageAlt=""
 		:flip="true"
 	/>
@@ -55,18 +55,18 @@
 	<HomeSection
 		title="Everyday."
 		description="Coffee. Flights. Rent. Whatever you're buying, it comes with you."
-		color="#2D1C2D"
-		image="/assets/images/pink-puppy.jpg"
-		imageSourceSet="/assets/images/pink-puppy.jpg 1x, /assets/images/pink-puppy@2x.jpg 2x"
+		color="#1B0C05"
+		image="/assets/images/book.jpg"
+		imageSourceSet="/assets/images/book.jpg 1x, /assets/images/book@2x.jpg 2x"
 		imageAlt=""
 	/>
 
 	<HomeSection
 		title="Dark mode."
 		description="Obviously."
-		color="#131212"
-		image="/assets/images/black-snakeskin.jpg"
-		imageSourceSet="/assets/images/black-snakeskin.jpg 1x, /assets/images/black-snakeskin@2x.jpg 2x"
+		color="#0E170B"
+		image="/assets/images/pigeon.jpg"
+		imageSourceSet="/assets/images/pigeon.jpg 1x, /assets/images/pigeon@2x.jpg 2x"
 		imageAlt=""
 		:flip="true"
 	/>
@@ -74,18 +74,18 @@
 	<HomeSection
 		title="Secure."
 		description="Built on cryptography that doesn't ask you to trust anyone. Including us."
-		color="#2B2422"
-		image="/assets/images/alligator.jpg"
-		imageSourceSet="/assets/images/alligator.jpg 1x, /assets/images/alligator@2x.jpg 2x"
+		color="#161503"
+		image="/assets/images/tulips.jpg"
+		imageSourceSet="/assets/images/tulips.jpg 1x, /assets/images/tulips@2x.jpg 2x"
 		imageAlt=""
 	/>
 
 	<HomeSection
 		title="Private."
 		description="What you spend is your business. We don't see it. No one does."
-		color="#302B24"
-		image="/assets/images/venetian-mask.jpg"
-		imageSourceSet="/assets/images/venetian-mask.jpg 1x, /assets/images/venetian-mask@2x.jpg 2x"
+		color="#221110"
+		image="/assets/images/shades.jpg"
+		imageSourceSet="/assets/images/shades.jpg 1x, /assets/images/shades@2x.jpg 2x"
 		imageAlt=""
 		:flip="true"
 	/>

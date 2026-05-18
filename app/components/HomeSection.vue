@@ -62,14 +62,15 @@ const styleObject = computed(() => {
 		margin-right: auto;
 
 		.image {
-			background-color: black;
-			aspect-ratio: 1;
 			line-height: 0;
+
+			img {
+				aspect-ratio: 1.78;
+			}
 		}
 
 		.copy {
 			h2 {
-				font-size: 64px;
 				line-height: 1;
 				font-family: 'DM Serif Display';
 				font-weight: 400;
@@ -87,32 +88,59 @@ const styleObject = computed(() => {
 	}
 
 	@include mixins.media-query(small) {
+		// padding-top: 40px;
+		padding-bottom: 40px;
+
 		.content {
 			.image {
+				// padding-left: 15px;
+				// padding-right: 15px;
 				width: 100%;
+				box-sizing: border-box;
 
 				img {
 					width: 100%;
+					aspect-ratio: 1.5;
+					object-fit: cover;
+					// height: auto;
+					// border-radius: 15px;
 				}
 			}
 
 			.copy {
 				padding: 30px 20px 80px 20px;
+
+				h2 {
+					font-size: 48px;
+				}
 			}
 		}
 	}
 
 	@include mixins.media-query(medium-up) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+
 		.content {
 			display: flex;	
 			align-items: center;
 
 			.image {
-				width: 50%;
+				width: 60%;
+				box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.3);
+
+				img {
+					width: 100%;
+					border-radius: 20px;
+				}
 			}
 
 			.copy {
-				width: 50%;
+				width: 40%;
+
+				h2 {
+					font-size: 64px;
+				}
 			}
 		}
 

@@ -1,9 +1,9 @@
 <template>
   <div class="home-banner">
 	<picture>
-		<source srcset="/assets/images/cover-2.jpg 1x, /assets/images/cover-2@2x.jpg 2x" type="image/jpeg">
+		<source srcset="/assets/images/cover-3.jpg 1x, /assets/images/cover-3@2x.jpg 2x" type="image/jpeg">
 		<img 
-			src="/assets/images/cover-2.jpg" 
+			src="/assets/images/cover-3.jpg" 
 			alt="Arké Cover"
 			class="cover-image"
 		>
@@ -58,6 +58,7 @@
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
+		object-position: 46.4% 48.8%;
 	}
 
 	.copy {
