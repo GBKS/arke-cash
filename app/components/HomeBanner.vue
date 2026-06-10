@@ -20,7 +20,7 @@
 			</svg>
 		</h1>
 		<p>Spend bitcoin. Instantly.</p>
-		<a href="https://tally.so/r/9qQJQ5" class="button -primary -large" target="_blank">Join the Waitlist</a>
+		<a href="https://testflight.apple.com/join/UWBs893c" class="button -primary -large" target="_blank">Get Arké (TestFlight)</a>
 		<!--<div class="options">
 			<NuxtLink to="/how" class="button -secondary -medium">Info</NuxtLink>
 			<a href="https://community.second.tech/t/arke-macos-prototype/156/7" class="button -secondary -medium" target="_blank">Updates</a>
