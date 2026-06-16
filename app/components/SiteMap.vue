@@ -7,7 +7,7 @@
 		<NuxtLink to="/design">Design</NuxtLink>
 		<NuxtLink to="/open-source">Open Source</NuxtLink>
 		<NuxtLink to="/ark">About Ark</NuxtLink>
-		<a href="https://community.second.tech/t/arke-macos-prototype/156/7" target="_blank">Updates</a>
+		<a href="https://gbks.substack.com" target="_blank">Updates</a>
 		<NuxtLink to="/faq">FAQ</NuxtLink>
 		<NuxtLink to="/test">Test Guide</NuxtLink>
 		<a href="https://github.com/gbks/arke" target="_blank">Code</a>
