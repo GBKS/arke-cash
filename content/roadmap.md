@@ -20,14 +20,19 @@ Arké is an iOS bitcoin wallet built on the Ark protocol. It has four goals, in 
 
 **Become a long-term product, if the demand is there.** If users show up and want to stay, Arké will grow into a dedicated wallet with a team, a user community, and a business model. If not, it remains a maintained open-source project. Both outcomes are valid. The project will not pretend otherwise.
 
+**Current progress:**
+- [Discord](https://discord.gg/THhNW5H26H)
+- [GBKS' blog](https://gbks.substack.com)
+- [Bitcoin Design Guide](https://bitcoin.design/guide/)
+
 ---
 
 ## 01 — Foundations
 *Private beta on signet. First users. First feedback.*
 
-**↳ Where we are now**
+**↳ Complete**
 
-Learning, not shipping. Every conversation with a tester is worth more than any analytics tool. The goal is to understand where the mental model breaks — and whether the bold visual direction earns its place from the very first impression.
+This phase was about learning over shipping. Every conversation with a tester was worth more than any analytics tool. The goal was to understand where the mental model breaks — and whether the bold visual direction earned its place from the very first impression.
 
 This phase is also the beginning of the Bitcoin Design Guide implementation work: documenting decisions, noting where the guide needs refinement, and building in the open.
 
@@ -45,105 +50,119 @@ This phase is also the beginning of the Bitcoin Design Guide implementation work
 
 *The question: Does the core idea land without explanation — and does the product feel like it belongs?*
 
-Find the latest updates here:
-- [Discord](https://discord.gg/THhNW5H26H)
-- [GBKS' blog](https://gbks.substack.com)
-- [Second community thread](https://community.second.tech/t/arke-macos-prototype/156/32)
-
 ---
 
 ## 02 — Trusted Beta
 *Broader testing. First non-technical users. Honest onboarding.*
 
-**↳ Coming next**
+**↳ Complete**
 
-Deliberately introduce testers who are not bitcoin developers. Technical users fill in gaps with their own knowledge. Civilians won't — and civilians are who this is ultimately for.
+This happened differently than planned, but the core goal was met: real users, real friction points, real feedback. Instead of structured TestFlight cohorts, Arké went on a four-conference road show. Direct user testing at BTC Prague, in-person demos, payments tested at food stands and beer taps. The result was better than cohort testing would have provided — organic, high-bandwidth feedback from people actually trying to use it.
 
-This is also when Arké's value as a reference implementation becomes legible to the wider ecosystem. Real users hitting real friction points is exactly the kind of evidence that improves both the app and the guide.
+Key findings from this phase:
+- Video intros work (people actually watch them)
+- The tilt-to-share feature is a genuine delightful surprise
+- Visual design is an immediate differentiator
+- Users appreciate the lack of technical jargon
+- App startup smoothness, payment speed, and error handling are the real friction points
+- The ecosystem genuinely embraces Bark and Ark — there's real momentum and serious builders betting on the protocol
+- Bitcoin payments infrastructure has matured significantly, but the demand side remains unclear: who will make payments, for which use cases, in which geographies? No one had convincing answers
 
-**Prioritise**
-- Onboarding flow — can someone who uses Venmo understand what they're doing?
-- The "explain Ark in zero words" design challenge
-- TestFlight cohort diversity: people who have never self-custodied bitcoin
-- App Store compliance research — start early, not at submission
-- Whether the brand attracts or intimidates a non-technical iPhone user
-- Sharing findings publicly: write-ups, design decisions, guide contributions
-
-**Avoid**
-- Feature parity anxiety with existing wallets
-- Building in silence — the reference wallet value compounds with visibility
-
-*The question: What is the single most confusing moment in the first five minutes?*
+The reference implementation value became legible: real users hitting real friction points, documented publicly, feeding back into design and the Bitcoin Design Guide.
 
 ---
 
-## 03 — Mainnet
-*First real money. Small, careful, honest.*
+## 03 — Reliability & Stability
+*Real money, real scale. Getting the fundamentals solid.*
 
-**↳ Protocol-dependent**
+**↳ In progress**
 
-Real money changes everything. Users who were relaxed on signet will be anxious with sats on the line. This is a trust design problem as much as a technical one — and the solutions are worth documenting carefully for the ecosystem.
+Bark launched on mainnet June 9th. Arké is open on TestFlight with no waitlist. Real bitcoin, no training wheels.
+
+This phase is about proving the foundation can hold. Payment speed needs to reach ~2 seconds consistently. App startup needs to be instant. Error messages need to be honest and reassuring. Edge cases that only appear under real conditions need systematic attention.
 
 **Prioritise**
-- Conservative onboarding — small amounts first, clear communication
-- Visible, honest status: is the network healthy? When is the next settlement?
-- Personal support at this scale — a direct channel is a feature
-- Edge cases that only appear with real economic stakes
-- Open-sourcing the hard decisions: what broke, what worked, what the guide got right or wrong
+- Payment speed — getting closer to 2 seconds as the ideal
+- App startup smoothness and responsiveness
+- Error message clarity and reassurance ("something went wrong" UX)
+- Multi-device handling and migration flows
+- Unilateral exit reliability and clarity
+- Payment metadata handling (descriptions, contact info, etc.)
+- Watching for the edge cases that real usage reveals
+- Documentation of decisions back to the ecosystem
 
 **Avoid**
-- Press coverage or product launches — too early
-- Ignoring any user report of funds confusion, even if funds are safe
+- Adding features while stability is still being established
+- Pretending issues don't exist
+- Dismissing user reports, even when funds are provably safe
 
-*The question: What does the "something went wrong" experience feel like? Terrifying, or reassuring?*
+*The question: Can someone with real bitcoin feel confident and not terrified?*
+
+Recent announcements:
+- [Bark now on bitcoin mainnet](https://blog.second.tech/bark-now-on-bitcoin-mainnet/) (Second)
+- [Introducing Noah and Arké: Two new Bark-based wallets](https://blog.second.tech/introducing-noah-and-arke/) (Second)
+- [Down: Mid-roadshow update](https://gbks.substack.com/p/down) (GBKS)
+- [Toot: Arké on mainnet, conference tour reflections](https://gbks.substack.com/p/toot) (GBKS)
 
 ---
 
-## 04 — Community
-*Credibility within bitcoin. The project earns its reputation.*
+## 04 — Polish & Deepening
+*Reference implementation becomes tangibly better. Ecosystem grows with Bark.*
 
-**↳ Early growth**
+**↳ Next phase**
 
-Growth at this stage comes from credibility, not spend. The bitcoin and Ark ecosystems are the primary audience — developers, designers, and advocates who will judge the work honestly and share it if it deserves it.
+With the foundation solid, invest in the details that make the product genuinely delightful for long-term use. This is also when the ecosystem around Bark is maturing, bringing new possibilities (BOLT-12, BIP-353, etc.)
 
-This is also when demand signal becomes readable. Are users showing up and staying? Are they telling others? The answers determine how much of the roadmap beyond this point becomes relevant.
+Initial response has been positive. But it's only been days, and summer typically brings lower activity. This phase watches for sustained demand while deepening the product itself — better design, better reliability, better feature depth.
 
 **Prioritise**
-- Design polish — this is the moment to invest fully
-- The 30-second demo that raises the bar visibly
-- Active participation in Bitcoin Design Guide development — Arké as a living case study
-- Being known as the iOS Ark reference wallet
-- Watching for the demand signal: retention, word of mouth, unsolicited requests for features
+- Design refinement — visual polish, micro-interactions, consistency
+- Fiat value display (price, estimated cost in local currency)
+- Accessibility improvements — screen readers, color contrast, haptic feedback
+- Localization as adoption patterns emerge (which languages first?)
+- Video explanations for complex features (unilateral exit, Ark fundamentals, etc.)
+- Active participation in Bitcoin Design Guide — Arké as a living case study
+- Integration of new Bark features as they ship (BOLT-12, BIP-353, etc.)
+- Being known as the reference wallet: documentation, architecture clarity, code quality
 
 **Avoid**
-- Treating commercial goals as settled before the signal is clear
-- Feature bloat that compromises the reference implementation clarity
-- Silence — publish decisions, ship notes, be visible
+- Feature additions that pull focus from the core experience
+- Building things that sound good without data first
+- Localization without usage patterns to guide priorities
+- Designing Plus around assumptions rather than asking users
 
-*The question: Is anyone showing up who wasn't invited?*
+*The question: Can Ark deliver a bitcoin payments experience that users love — without needing to know or care about Ark?*
 
 ---
 
-## 05 — Product *(if the demand is there)*
-*A dedicated wallet with a team, a user base, and a business model.*
+## 05 — Product & Expansion *(if the demand is there)*
+*Desktop, Plus features, and dedicated stewardship.*
 
 **↳ Conditional**
 
-If meaningful demand materialises — users staying, growing, asking for more — Arké becomes a long-term product. The shape of that product will follow what users actually need, but the most likely direction is a Pro subscription for heavy users: people running payroll through it, paying contractors, sending regularly at volume.
+This phase becomes relevant only if sustained demand materializes over time. Initial response has been encouraging, but it's far too early to call. Users may stay and ask for more, or activity may settle into a steady state. Either way, this phase determines what happens next.
 
-If the demand isn't there, Arké remains exactly what it already is: a maintained open-source project, a reference implementation, a contribution to the ecosystem. That outcome is not a failure.
+Most likely (if demand is real): Arké becomes a long-term product with a Plus subscription. Desktop may follow (as companion or primary platform, depending on signal). But shape is determined by what users actually ask for, not assumptions.
+
+Worst case: Arké remains a maintained open-source project, a reference implementation, a contribution to the ecosystem. That outcome is not a failure.
 
 **Prioritise (if proceeding)**
-- Identifying the Pro feature set from real usage patterns, not assumptions
-- Recurring payments and batch sending as likely anchors
-- A pricing model that feels fair and doesn't compromise the free experience
-- Making Pro aspirational — something users grow into, not a gate they resent
-- A team structure that can sustain the project long-term
+- Understanding use cases from real patterns (who sends? how often? for what?)
+- Desktop implementation (if there's genuine demand; iOS remains core)
+- Plus feature identification from usage patterns, not guessing:
+  - Custom themes and visual personalization
+  - Enhanced payment metadata like images and data export
+  - Fiat value display and currency preferences
+  - BIP-353 Human Readable addresses
+- A pricing model that feels fair and doesn't compromise self-custody
+- Making Plus aspirational — something users grow into, not a gate they resent
+- Team structure that sustains the project long-term
 
 **Avoid**
-- Premature commitment to a commercial model before demand is confirmed
 - Paywalling anything that affects trust or self-custody fundamentals
-- Letting commercial pressure erode the open-source reference implementation
+- Building desktop without sustained demand
+- Letting commercial pressure erode the reference implementation
+- Guessing what power users need — listen and ask first
 
 *The question: Would a power user pay for this even if the free tier were good enough?*
 
@@ -153,9 +172,10 @@ If the demand isn't there, Arké remains exactly what it already is: a maintaine
 
 Regardless of which path the project takes:
 
-- **iOS only.** The Apple platform is the creative and technical constraint that makes the work coherent.
+- **iOS primary, native desktop conditional.** iOS is the core creative and technical constraint. The architecture is designed for cross-platform potential, but native desktop (macOS/Linux) would only be pursued if genuine demand warrants the UI work — and never at the expense of iOS quality.
 - **Bitcoin only.** No other assets. No compromises on self-custody.
 - **Open source.** The reference implementation value only exists if others can read, learn from, and build on it.
+- **Dependent on Bark.** Arké's success is tied to Bark's maturity and ongoing development by Second. If the protocol doesn't mature as needed, neither can Arké.
 - **Honest about where we are.** This document will be updated as things change. When a phase is complete, it will say so. When plans change, they will change here first.
 
 ---
