@@ -8,6 +8,7 @@
 		<NuxtLink to="/open-source">Open Source</NuxtLink>
 		<NuxtLink to="/ark">About Ark</NuxtLink>
 		<a href="https://gbks.substack.com" target="_blank">Updates</a>
+		<a href="https://discord.gg/THhNW5H26H" target="_blank">Discord</a>
 		<NuxtLink to="/faq">FAQ</NuxtLink>
 		<NuxtLink to="/test">Test Guide</NuxtLink>
 		<a href="https://github.com/gbks/arke" target="_blank">Code</a>

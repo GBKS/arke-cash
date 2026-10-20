@@ -82,7 +82,7 @@
 
 	<HomeSection
 		title="Private."
-		description="What you spend is your business. We don't see it. No one does."
+		description="What you spend is your business. No account, no name, no tracking."
 		color="#221110"
 		image="/assets/images/shades.jpg"
 		imageSourceSet="/assets/images/shades.jpg 1x, /assets/images/shades@2x.jpg 2x"
