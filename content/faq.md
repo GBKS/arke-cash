@@ -38,9 +38,7 @@ Arké is available on [TestFlight](https://testflight.apple.com/join/UWBs893c), 
 
 If you use iCloud, Arké backs up automatically and restores on a new phone when you sign in.
 
-For a backup that doesn't depend on iCloud, go to Manual backup in settings. You'll write down your recovery phrase and save a wallet data file. Together, they restore your bitcoin and your payment history. Contacts, notes, and tags can be saved to a separate file from the same screen.
-
-The recovery phrase on its own is an emergency option. It can get your bitcoin back, but your history won't come with it.
+For a backup that doesn't depend on iCloud, go to Manual backup in settings and save your recovery phrase and backup file. The recovery phrase on its own is an emergency option that gets your bitcoin back without your history. [How Arké works](/how) has the details.
 
 ---
 
@@ -62,7 +60,7 @@ That's the whole point of self-custody. We designed it so you never depend on us
 
 ### What happens if the Ark server goes offline?
 
-If it's down for a while, you can't make new payments, but your funds are safe. If it goes away for good, Arké can still withdraw your bitcoin to the main chain on its own. This is called a unilateral exit. It has to happen before your payments balance expires, so don't wait too long. Arké tells you when a refresh is due, which is a good sign the clock is running.
+If it's down for a while, you can't make new payments, but your funds are safe. If it goes away for good, Arké can still withdraw your bitcoin to the main chain on its own. This is called a unilateral exit. It has to happen before your payments balance expires, so don't wait too long.
 
 ---
 

@@ -28,7 +28,7 @@ A regular bitcoin transaction can take ten minutes to an hour to confirm. Paymen
 
 That balance runs on Ark, a bitcoin protocol for fast off-chain payments. Arké uses Second's implementation, called Bark, and connects to an Ark server that [Second](https://second.tech) operates. Think of it as a fast lane for everyday spending, with bitcoin underneath.
 
-The payments balance is self-custodial too. You hold the keys, not Second. Behind the scenes the app keeps your balance refreshed, which works as long as you open the app now and then.
+The payments balance is self-custodial too. You hold the keys, not Second. Behind the scenes the app keeps your balance refreshed, which works as long as you open the app now and then. Most refreshes are free, but some cost a small fee.
 
 **What this means for you:**
 - Pay for coffee or send money to a friend without waiting
@@ -62,9 +62,9 @@ Some activity is visible to others, though, and it's worth knowing where:
 
 Phones break, get lost, and go swimming. Your bitcoin doesn't have to go with them.
 
-For most situations, like a new phone, a reinstall, or a second device, iCloud handles recovery for you. Your bitcoin, contacts, notes, and payment history come back the way you left them. (Your key is always end-to-end encrypted. The rest of your wallet data is end-to-end encrypted in iCloud if you turn on Advanced Data Protection in iOS settings.)
+For most situations, like a new phone, a reinstall, or a second device, iCloud handles recovery for you. Your bitcoin, contacts, notes, and payment history come back the way you left them. Turn on Advanced Data Protection in iOS settings to end-to-end encrypt your wallet data in iCloud.
 
-If you want a way back that doesn't depend on iCloud, set up a manual backup in settings. You'll write down your recovery phrase and save a wallet data file. Together, they restore your bitcoin and payment history. Contacts, notes, and tags can be saved to a separate file from the same screen.
+If you want a way back that doesn't depend on iCloud, set up a manual backup in settings. You'll write down your recovery phrase and save a backup file. Together, they restore your bitcoin and payment history. Contacts, notes, and tags can be saved to a separate file from the same screen.
 
 The recovery phrase alone works as an emergency option. It gets your bitcoin back, but not your payment history.
 
@@ -110,10 +110,10 @@ If iCloud is set up, you won't need it to restore on a new phone or after a rein
 Yes. On-chain payments land in your savings balance, and Lightning payments land in your payments balance. You can move on-chain funds into your payments balance yourself, for a small fee.
 
 **What happens if Arké shuts down?**
-Your bitcoin is still yours. Any standard bitcoin wallet can restore your savings balance from your recovery phrase. For your payments balance, you can withdraw it to the main chain without Second's help (a fee applies), or restore it in another Bark-based wallet. The recovery phrase alone works there as an emergency option, but a proper restore should include your wallet data backup too. We designed it so you never depend on us.
+Your bitcoin is still yours. Any standard bitcoin wallet can restore your savings balance from your recovery phrase. For your payments balance, you can withdraw it to the main chain without Second's help (a fee applies), or restore it in another Bark-based wallet. We designed it so you never depend on us.
 
 **What happens if I don't use my payments balance for a while?**
-The app takes care of it. It refreshes your payments balance in the background and schedules reminders to keep that going. Opening the app every so often is enough. You don't need to make payments to keep the balance active. But if you don't open Arké for about a month, part of your payments balance can expire, and Second's server is allowed to claim it. For money you won't touch for a while, use your savings balance.
+The app takes care of it. It refreshes your payments balance in the background and schedules reminders to keep that going. Opening the app every so often is enough. You don't need to make payments to keep the balance active. But if you don't open Arké for a few weeks, part of your payments balance can expire, and Second's server is allowed to claim it. For money you won't touch for a while, use your savings balance.
 
 **Is this legal?**
 Using a self-custody bitcoin wallet is legal in most countries. You're responsible for any taxes on the transactions you make.

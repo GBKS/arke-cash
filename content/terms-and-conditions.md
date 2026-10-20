@@ -53,7 +53,7 @@ By using the App, you acknowledge and agree that you are solely responsible for:
 
 3. **Securing your Apple ID** — Your iCloud backup (if enabled) is protected by your Apple ID. Use a strong password and enable two-factor authentication.
 
-4. **Maintaining backups** — Ensure you have a secure backup before storing any significant value. A full backup consists of your recovery phrase and your wallet data file (or an iCloud backup). Your recovery phrase alone may recover your bitcoin but not your transaction history.
+4. **Maintaining backups** — Ensure you have a secure backup before storing any significant value. A full backup consists of your recovery phrase and your backup file (or an iCloud backup). Your recovery phrase alone may recover your bitcoin but not your transaction history.
 
 5. **Verifying transaction details** — Always verify recipient addresses and amounts before confirming transactions. Bitcoin transactions are irreversible.
 

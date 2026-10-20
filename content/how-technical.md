@@ -48,9 +48,9 @@ Users don't hold on-chain UTXOs directly. Instead, they hold VTXOs: off-chain ou
 
 The on-chain footprint is a single transaction per round, regardless of participant count.
 
-The branch data stored in step 5 is what the wallet data backup contains. The mnemonic alone can recover VTXOs as an emergency option, but complete recovery, including transaction history, uses both the mnemonic and the wallet data file. See Key management.
+The branch data stored in step 5 is what the backup file contains. The mnemonic alone can recover VTXOs as an emergency option, but complete recovery, including transaction history, uses both the mnemonic and the backup file. See Key management.
 
-VTXOs have a 28-day validity window. The app automatically requests a delegated refresh during the last 2 days of the lifecycle, which is a fee-free window, and schedules local reminders to ensure the next refresh cycle is triggered. The server executes the refresh on the user's behalf without requiring them to transact. See Current limitations for detail.
+VTXOs expire, at most 28 days after they're created; a VTXO you receive may have less time left. The app automatically requests a delegated refresh during the last 2 days of the lifecycle, which is a fee-free window, and schedules local reminders to ensure the next refresh cycle is triggered. The server executes the refresh on the user's behalf without requiring them to transact. Refreshes outside that window cost a fee, and the Bark daemon sometimes schedules an earlier, paid refresh when that's the better overall decision. See Current limitations for detail.
 
 **Out-of-round (OOR) payments**
 
@@ -148,7 +148,7 @@ Arké is not a mixer or tumbler. Privacy comes from the protocol's structure, no
 
 **Storage:** The mnemonic and derived keys are stored in the iOS encrypted Keychain. VTXO branch data is stored as a `.sqlite` file in the user's iCloud account. iCloud storage is end-to-end encrypted when the user enables Advanced Data Protection in iOS settings.
 
-**Backup:** Standard 12-word BIP-39 mnemonic for key material. Bark recently added mnemonic-based VTXO recovery, which restores a wallet's VTXOs from the seed alone. It's still being refined, particularly around VTXOs that are mid-refresh or mid-exit, and it can't restore transaction history, contacts, or notes. Arké treats it as an emergency path. Restoring balances and transaction history uses the mnemonic together with the `.sqlite` wallet data file. Contacts, notes, and tags are exported to a separate file. All of it is also included in the iCloud backup.
+**Backup:** Standard 12-word BIP-39 mnemonic for key material. Bark recently added mnemonic-based VTXO recovery, which restores a wallet's VTXOs from the seed alone. It's still being refined, particularly around VTXOs that are mid-refresh or mid-exit, and it can't restore transaction history, contacts, or notes. Arké treats it as an emergency path. Restoring balances and transaction history uses the mnemonic together with the backup file (a `.sqlite` file). Contacts, notes, and tags are exported to a separate file. All of it is also included in the iCloud backup.
 
 ---
 
@@ -160,7 +160,7 @@ Arké is not a mixer or tumbler. Privacy comes from the protocol's structure, no
 
 **Single Ark server.** The network currently has one Ark server (operated by [Second](https://second.tech)). Ark server federation and multiple competing Ark servers are roadmap items. Server code is [open-source](https://gitlab.com/ark-bitcoin/bark).
 
-**VTXO expiry.** VTXOs have a 28-day validity window. The app handles refresh automatically: it detects when VTXOs enter the last 2 days of their lifecycle (a fee-free refresh window), requests a delegated refresh from the Ark server, and schedules local reminders to trigger the next cycle. The server executes the refresh without requiring user action. Opening the app occasionally is sufficient to keep this cycle running. A VTXO has to be refreshed or exited (cooperatively via a round, or unilaterally if the server is unavailable) before it expires. After expiry, the Ark server can sweep the underlying funds, and [Second's terms](https://second.tech/terms) don't oblige it to return them.
+**VTXO expiry.** VTXOs expire at most 28 days after creation, and received VTXOs can have less time left. The app handles refresh automatically: it detects when VTXOs enter the last 2 days of their lifecycle (a fee-free refresh window), requests a delegated refresh from the Ark server, and schedules local reminders to trigger the next cycle. The server executes the refresh without requiring user action. Opening the app occasionally is sufficient to keep this cycle running. A VTXO has to be refreshed or exited (cooperatively via a round, or unilaterally if the server is unavailable) before it expires. After expiry, the Ark server can sweep the underlying funds, and [Second's terms](https://second.tech/terms) don't oblige it to return them.
 
 ---
 
