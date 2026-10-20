@@ -6,7 +6,7 @@ image: https://www.arke.cash/assets/images/terms-and-conditions-preview.jpg
 
 # Terms of Service
 
-**Last Updated: January 25, 2026**
+**Last Updated: October 20, 2026**
 
 ## Agreement to Terms
 
@@ -20,6 +20,16 @@ Arké is a self-custodial Bitcoin wallet application that implements the Ark pro
 - Send and receive Bitcoin
 - Interact with the Ark protocol for Bitcoin transactions
 - Store wallet data securely on your device using Apple Keychain and iCloud
+
+### Second's Ark Server
+
+To make payments from your payments balance, the App connects to an Ark server operated by TwoND, Inc., doing business as Second ("Second"). We do not operate or control this server. By using the App's payments balance, you also agree to [Second's Terms of Service](https://second.tech/terms), which govern your use of their server. Second's terms are a separate agreement between you and Second. Among other things, they allow Second to change or stop its service, to restrict access, and to claim bitcoin in expired VTXOs (see Risks below).
+
+## Experimental Software
+
+The App is experimental. It is built on a young protocol and is under active development. Features may change or be removed, and the App may contain bugs that affect your funds. Only use amounts you can afford to lose.
+
+We may stop developing or distributing the App at any time. Because the App is self-custodial, you can withdraw your bitcoin to the Bitcoin main chain without our involvement, as described in these Terms.
 
 ## Self-Custody and Your Responsibilities
 
@@ -43,7 +53,7 @@ By using the App, you acknowledge and agree that you are solely responsible for:
 
 3. **Securing your Apple ID** — Your iCloud backup (if enabled) is protected by your Apple ID. Use a strong password and enable two-factor authentication.
 
-4. **Maintaining backups** — Ensure you have a secure backup of your recovery phrase before storing any significant value.
+4. **Maintaining backups** — Ensure you have a secure backup before storing any significant value. A full backup consists of your recovery phrase and your wallet data file (or an iCloud backup). Your recovery phrase alone may recover your bitcoin but not your transaction history.
 
 5. **Verifying transaction details** — Always verify recipient addresses and amounts before confirming transactions. Bitcoin transactions are irreversible.
 
@@ -51,7 +61,11 @@ By using the App, you acknowledge and agree that you are solely responsible for:
 
 ### No Recovery Possible
 
-**IMPORTANT:** If you lose your recovery phrase and lose access to your device, your Bitcoin will be permanently lost. We have no ability to recover your funds under any circumstances. There is no "forgot password" option.
+**IMPORTANT:** If you lose your recovery phrase, lose access to your device, and have no iCloud backup, your Bitcoin will be permanently lost. We have no ability to recover your funds under any circumstances. There is no "forgot password" option.
+
+## Notifications
+
+Payment notifications are optional and provided on a best-effort basis. iOS may delay or limit them, apps that were force-quit may not be woken, and outages at Apple, the Ark server, or our relay can delay or drop them. Don't rely on notifications to learn about payments. Visible notifications may show payment amounts on your lock screen. We may change or stop the notification service at any time. See our [Privacy Policy](/privacy-policy) for what the relay processes.
 
 ## Risks
 
@@ -74,9 +88,11 @@ You acknowledge that:
 The Ark protocol involves specific considerations:
 
 - Ark is a relatively new protocol and may have undiscovered vulnerabilities
-- Interacting with Ark service providers requires trust in those operators
+- The App currently relies on a single Ark server, operated by Second. If it is unavailable, you cannot make payments from your payments balance until it returns, or until you withdraw to the Bitcoin main chain
+- Payments made before the next round depend on the Ark server not colluding with the sender
+- **VTXO expiry:** Funds in your payments balance are held in VTXOs that expire. The App refreshes them automatically when you open it. If a VTXO expires without being refreshed or withdrawn, for example because you did not open the App for an extended period, Second's terms allow it to claim the bitcoin in it, with no obligation to return it
 - Protocol upgrades or changes could affect functionality
-- Liquidity and availability of Ark services may vary
+- Liquidity and availability of Ark services may vary, and Second may restrict access in some jurisdictions
 
 ### No Investment Advice
 
@@ -151,7 +167,7 @@ We reserve the right to modify these Terms at any time. We will notify you of ma
 
 You may stop using the App at any time. We may terminate or suspend your access to the App immediately, without notice, for conduct that we believe violates these Terms or is harmful to other users, us, or third parties.
 
-Upon termination, your right to use the App ceases immediately. However, because this is a self-custodial wallet, your Bitcoin and recovery phrase remain yours. You can use your recovery phrase to access your funds through any compatible wallet software.
+Upon termination, your right to use the App ceases immediately. However, because this is a self-custodial wallet, your Bitcoin and recovery phrase remain yours. You can withdraw your payments balance to the Bitcoin main chain, and you can use your recovery phrase to access your savings balance through any compatible wallet software.
 
 ## Governing Law
 
@@ -167,7 +183,7 @@ If any provision of these Terms is found to be unenforceable, the remaining prov
 
 ## Entire Agreement
 
-These Terms, together with our Privacy Policy, constitute the entire agreement between you and GBKS limited regarding the App.
+These Terms, together with our Privacy Policy, constitute the entire agreement between you and GBKS limited regarding the App. Your use of Second's Ark server is governed separately by Second's Terms of Service.
 
 ## Contact
 

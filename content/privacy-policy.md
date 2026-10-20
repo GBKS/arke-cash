@@ -6,30 +6,28 @@ image: https://www.arke.cash/assets/images/privacy-policy-preview.jpg
 
 # Privacy Policy
 
-**Last Updated: January 25, 2026**
+**Last Updated: October 20, 2026**
 
 ## Introduction
 
-This Privacy Policy describes how Arké ("we," "our," or "the App") handles information when you use our self-custodial Bitcoin wallet application.
+This Privacy Policy describes how Arké ("we," "our," or "the App") handles information when you use our self-custodial Bitcoin wallet application. Arké is developed by GBKS limited.
 
-We built this app with privacy as a core principle. We do not collect, store, or transmit any of your personal data to our servers because we do not operate servers that interact with your wallet data.
+We built this app with privacy as a core principle. We don't have accounts, analytics, or tracking, and we never have access to your keys or funds. We operate one server. It hosts an optional notification relay, which handles the minimum data needed to tell your phone when a payment arrives, and a file of bitcoin exchange rates that the App downloads. Both are described below.
 
 ## Information We Do Not Collect
 
 We do not collect, track, or have access to:
 
 - Your name, email address, or contact information
-- Your Bitcoin addresses or transaction history
-- Your wallet balances
+- Your Bitcoin addresses, wallet balances, or transaction history
 - Your private keys or recovery phrases
-- Your IP address or location data
-- Device identifiers or advertising IDs
+- Your location
+- Advertising IDs
 - Usage analytics or behavioral data
-- Any other personally identifiable information
 
 ## How Your Data Is Stored
 
-Arké is a fully self-custodial wallet. All sensitive data remains entirely on your device and within your personal Apple ecosystem:
+Arké is a self-custodial wallet. Your wallet data stays on your device and within your personal Apple account:
 
 **On-Device Storage**
 - Your wallet data is stored locally on your device
@@ -41,15 +39,50 @@ Arké is a fully self-custodial wallet. All sensitive data remains entirely on y
 - We have no access to your iCloud account or any data stored within it
 - You can disable iCloud backup for this app in your device settings
 
+## Payment Notifications
+
+Notifications are off by default. If you turn them on, the App registers with a notification relay that we operate. The relay watches for incoming activity on your behalf and sends a push notification to your device through Apple.
+
+**What the relay stores while notifications are on**
+- A mailbox ID, which is a pseudonymous identifier tied to your wallet
+- A mailbox authorization token, which lets the relay read your wallet's Ark mailbox (the channel through which the Ark server delivers incoming payments and related messages). Tokens are valid for 30 days and can't be revoked early
+- Your device's Apple push notification token and the App's bundle ID
+- Which Ark server your wallet uses
+- Timestamps, the relay's read position in your mailbox, and a record of notifications already sent
+
+**What the relay reads**
+
+To build a notification, the relay reads incoming mailbox messages. These include incoming payments and their amounts, whether an outgoing Lightning payment succeeded, and round activity. The relay does not store message contents per user. It adds amounts and message counts to anonymous totals across all users.
+
+**Logs**
+
+The relay keeps an event log for 30 days. Entries contain only the first 8 characters of your mailbox ID and the last 8 characters of your device token, never the authorization token. After 30 days, only anonymous hourly counts are kept. IP addresses are held briefly in memory for rate limiting and are written to the log only when a request is rejected.
+
+**What the relay can't do**
+
+The relay never holds your keys and cannot move your funds. It can only read the notifications in your mailbox.
+
+**Turning it off**
+
+Turning off notifications in the App removes your registration from the relay. Registrations are also removed when Apple reports that the App was uninstalled.
+
 ## Third-Party Services
 
 **Apple Platform Services**
 
-The App uses Apple's platform services (Keychain and iCloud) for secure storage. Apple's handling of this data is governed by [Apple's Privacy Policy](https://www.apple.com/privacy/).
+The App uses Apple's platform services (Keychain, iCloud, and Apple Push Notification service) for storage and notifications. Notifications pass through Apple's servers. Visible notifications include the payment amount (for example, "Received ₿12,000"), which may appear on your lock screen. Apple's handling of this data is governed by [Apple's Privacy Policy](https://www.apple.com/privacy/).
 
-**Ark Protocol**
+**Second's Ark Server**
 
-The App implements the Ark protocol for Bitcoin transactions. When you make transactions, data is broadcast to the Bitcoin network and Ark service providers as necessary to complete your transactions. Transaction data broadcast to these networks becomes part of the public blockchain or is processed by Ark operators you choose to interact with.
+Payments from your payments balance go through an Ark server operated by TwoND, Inc., doing business as Second. To process those payments, Second's server receives your IP address, payment amounts and timing, and the data needed to co-sign and route each payment. It does not receive your name or any account information, because the App has no accounts. If notifications are on, our relay also connects to Second's server on your behalf to read your mailbox. Second's handling of this data is governed by its own terms and policies, available at [second.tech](https://second.tech/terms).
+
+**Exchange Rates**
+
+The App downloads current bitcoin exchange rates from our server so it can show amounts in your local currency. The request contains no wallet data. Like any web request, it reveals your IP address to our server.
+
+**Hosting**
+
+The notification relay runs on servers provided by Hetzner Online GmbH in the EU, which processes data on our behalf.
 
 **No Analytics or Tracking**
 
@@ -57,7 +90,13 @@ We do not integrate any third-party analytics, crash reporting, advertising, or 
 
 ## Bitcoin Network
 
-When you send or receive Bitcoin, transaction information is broadcast to the decentralized Bitcoin network. Bitcoin transactions are recorded on a public blockchain. This is inherent to how Bitcoin works and is not within our control.
+When you send or receive Bitcoin on-chain, transaction information is broadcast to the decentralized Bitcoin network and recorded on a public blockchain. This is inherent to how Bitcoin works and is not within our control.
+
+## Legal Basis and Your Rights
+
+We process notification relay data only to provide the notifications you turned on (performance of a contract). You can stop this processing at any time by turning off notifications.
+
+If you are in the EU or UK, you have the right to access, correct, or delete personal data we hold about you, to object to its processing, and to lodge a complaint with a data protection authority. Because the relay only knows your pseudonymous mailbox ID, we may need you to provide it from the App to act on a request.
 
 ## Your Responsibilities
 
@@ -68,7 +107,7 @@ As a self-custodial wallet, you are solely responsible for:
 - Managing your iCloud and Keychain security settings
 - Maintaining backups of your wallet
 
-If you lose access to your device and recovery phrase, we cannot help you recover your funds.
+If you lose access to your device, your recovery phrase, and your backups, we cannot help you recover your funds.
 
 ## Children's Privacy
 
@@ -88,8 +127,8 @@ knueffelbund@gmail.com
 
 ## Summary
 
-**What we collect:** Nothing.
+**What we collect:** Nothing beyond your IP address when the App fetches exchange rates, unless you turn on notifications. If you do, our relay stores a pseudonymous mailbox ID, an access token for your mailbox, and your device's push token, and it reads incoming payment notifications to alert you.
 
-**What we store:** Nothing on our servers. Your wallet data is stored locally on your device and optionally in your personal iCloud account.
+**What we store:** Your wallet data stays on your device and, optionally, in your personal iCloud account. The relay keeps registration data while notifications are on and short-lived logs for 30 days.
 
-**Who we share data with:** No one. We have no data to share.
+**Who we share data with:** Apple delivers notifications, including payment amounts. Hetzner hosts the relay. Second runs the Ark server your payments go through.
