@@ -4,13 +4,13 @@ description: Help us make Arké the best bitcoin wallet possible.
 image: https://www.arke.cash/assets/images/test-preview.jpg
 ---
 
-Welcome to Arké. It's experimental, so your testing really helps. This guide walks you through the app's features in a logical sequence, helping you experience the full functionality while providing valuable feedback.
+Welcome to Arké. It's experimental, so your testing really helps. This guide walks you through the app's features in order, so you get to see everything and we get to hear what breaks.
 
 Don't have the app yet? <a href="https://testflight.apple.com/join/UWBs893c" target="_blank">Get Arké on TestFlight</a>.
 
 ## Join the community
 
-Before you start, [join us on Discord](https://discord.gg/THhNW5H26H). It's where testers share feedback, ask questions, and find partners for send/receive testing. You'll need a testing partner later in this guide, and it's helpful to have the community available if you get stuck.
+Before you start, [join us on Discord](https://discord.gg/THhNW5H26H). It's where testers share feedback, ask questions, and find partners to test payments with. You'll need one for Test 4, and it's helpful to have the community available if you get stuck.
 
 <a href="https://discord.gg/THhNW5H26H" class="prominent-button -dark" target="_blank">Join us on Discord</a>
 
@@ -19,17 +19,22 @@ Before you start, [join us on Discord](https://discord.gg/THhNW5H26H). It's wher
 ## What you'll need
 
 - Arké installed via TestFlight
-- About 20 minutes for solo testing
-- A testing partner for send/receive features (you'll find one on Discord)
+- A small amount of bitcoin you can afford to lose, and another wallet to send it from
+- About 20 minutes of hands-on time, plus some waiting for onchain steps in Tests 6 and 8
+- Another Arké user to swap payments with in Test 4 (you can find one on Discord)
+
+Arké runs on bitcoin mainnet, so you're testing with real bitcoin. The app is experimental, so please only use small amounts.
+
+If you're a developer and would rather test without real funds, you can pick signet on the intro screen. Signet is a test network with free test bitcoin. Where signet works differently, the guide says so.
 
 ---
 
 ## Table of contents
 
 1. [Test 1: Create your wallet](/test-1)
-2. [Test 2: Get your first test bitcoin](/test-2)
+2. [Test 2: Add some bitcoin](/test-2)
 3. [Test 3: Make your first payments](/test-3)
-4. [Test 4: Send and receive with others](/test-4)
+4. [Test 4: Pay another Arké user](/test-4)
 5. [Test 5: Tag your transactions](/test-5)
 6. [Test 6: Manage your balance](/test-6)
 7. [Test 7: Refresh your payments balance](/test-7)
@@ -44,10 +49,8 @@ Get started with [Test 1: Create your wallet](/test-1).
 
 The following features are incomplete or not working in this build:
 
-- **Onchain transactions don't appear in activity**: Deposits and onchain sends won't show in your transaction history yet. Your balance will update correctly, but the individual transactions aren't listed.
-- **Some fees may be 0**: Some fees are not implemented or finalized yet.
-- **No choice of Ark server:** Eventually, you'll be able to choose between different servers. At this early stage, there is only one.
--- **Stay in the app for refreshes and solo moves:** These two actions involved multiple steps that the app needs to do over time. This will be smoothened out.
+- **No choice of Ark server:** Eventually, you'll be able to choose between different servers. For now, there is only one.
+- **Force moves need check-ins:** A force move to savings goes through several steps and can take 10 hours or more. The app can only continue while it's open, so it sends you reminders to open it every so often until the move is done. We're working on making this smoother.
 
 ---
 
@@ -58,8 +61,6 @@ Found a bug? Have a suggestion? Love it? Hate it? We'd love to hear from you.
 - Report issues directly in TestFlight
 - Discuss on [Discord](https://discord.gg/THhNW5H26H)
 - Note anything confusing, slow, broken, or unexpected
-- Share whacky (or non-whacky) ideas for improvement
+- Share wacky (or not so wacky) ideas for improvement
 
 Thank you for testing Arké.
-
-</section>

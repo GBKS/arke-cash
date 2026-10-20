@@ -6,7 +6,9 @@ image: https://www.arke.cash/assets/images/test-preview.jpg
 
 # Test 1: Create your wallet
 
-When you first open Arké, you'll go through a simple setup process. Tap "Create Wallet", follow the next few steps, and you're good to go.
+When you first open Arké, you'll go through a simple setup process. Tap "Create wallet", follow the next few steps, and you're good to go.
+
+Your wallet will be on bitcoin mainnet by default. If you're a developer and want to test with free test bitcoin instead, switch to signet on the intro screen before you create your wallet.
 
 ::screenshots
 ---
@@ -18,4 +20,4 @@ captions: ["When you first launch Arké, you'll land on this cover screen.", "He
 
 ---
 
-[→ Test #2: Get your first test bitcoin](/test-2)
+[→ Test 2: Add some bitcoin](/test-2)

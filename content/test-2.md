@@ -4,39 +4,57 @@ description: Help us make Arké the best bitcoin wallet possible.
 image: https://www.arke.cash/assets/images/test-preview.jpg
 ---
 
-# Test 2: Get your first test bitcoin
+# Test 2: Add some bitcoin
 
-Arké runs on a test network called signet, which uses test bitcoin that have no value. It's specifically for testing. Let's get some of those worthless test bitcoin into your wallet.
+Arké runs on bitcoin mainnet, so this is real bitcoin. Arké is experimental, so only add a small amount that you'd be okay with losing.
+
+::screenshots
+---
+images: ["receive-1", "receive-invoice", "receive-2"]
+alts: ["", "", ""]
+captions: ["On the \"Receive\" tab, enter an amount and tap the checkmark.", "Pay this Lightning invoice from another wallet.", "Switch to the list view to copy your addresses instead."]
+---
+::
+
+##### 2.1: Create a Lightning invoice
+
+Go to the **Receive** tab, enter a small amount, and tap the checkmark. Arké creates a Lightning invoice and shows it as a QR code.
+
+##### 2.2: Pay it from another wallet
+
+Scan or copy the invoice and pay it from another Lightning wallet you own. If you don't have one, ask on [Discord](https://discord.gg/THhNW5H26H). Someone may be happy to send you a few sats.
+
+The bitcoin lands in your payments balance, which is what the next tests use.
+
+##### 2.3: Wait for it to arrive
+
+Go back to the **Activity** screen and wait for the payment to show up. You can pull down to refresh. Lightning payments arrive within seconds.
+
+If something breaks, let us know on [Discord](https://discord.gg/THhNW5H26H) and we'll look at it right away.
+
+##### Other ways to receive
+
+The toggle at the top of the **Receive** tab switches to a list of your addresses. Your **Payments address** works for payments from other Ark wallets. Your **Savings address** is a regular bitcoin address for onchain payments. Bitcoin sent there lands in your savings balance. To use it for payments, tap the balance card, then the circular button with the arrow pointing up, and move it over. This takes a little while and has a small fee.
+
+Onchain deposits need a block confirmation before they show up, so they can take a while.
+
+---
+
+## On signet
+
+If you picked signet on the intro screen, you can get free test bitcoin from a built-in contact instead.
 
 ::screenshots
 ---
 images: ["send", "contacts", "contact-faucetto", "activity-faucetto"]
-alts: ["", ""]
-captions: ["Navigate to \"Send\". Then tap the contacts icon on the left, right above the tabs.", "Tap \"Faucetto Signetto\".", "Tap the \"Request\" button.", "You should receive test bitcoin within a few minutes."]
+alts: ["", "", "", ""]
+captions: ["Navigate to \"Send\". Then tap the contacts icon on the left, right above the tabs.", "Tap \"Faucetto Signetto\".", "Tap \"Ask for test bitcoin\".", "You should receive test bitcoin within a few minutes."]
 ---
 ::
 
-##### 2.1: Navigate to "Send"
+Contacts are on the **Send** screen. Open the default contact called **Faucetto Signetto** and tap **Ask for test bitcoin**. Faucetto will send a small amount to your wallet, usually within a few minutes.
 
-Contacts are accessible via the **Send** view. The button currently shows an avatar of a dog. Once you create more contacts and add their images, this button will update accordingly.
-
-##### 2.2: Find Faucetto Signetto
-
-Open Arké and navigate to your contacts. You'll see a default contact called **Faucetto Signetto**. This is your test bitcoin source.
-
-##### 2.3: Request test bitcoin
-
-Open the Faucetto Signetto contact and tap **Ask for test bitcoin** to ask for test bitcoin. They will automatically send a small amount to your wallet.
-
-There's a delay before you can request again. You are welcome to make multiple requests if you need them for testing, but please don't drain all of Faucetto's hard-earned test bitcoin.
-
-##### 2.4: Wait for confirmation
-
-Return to the **Activity** view and wait for the transaction to arrive. You can pull down to refresh. This should take just a few minutes. You'll see your payments balance update once it arrives.
-
-If this does not work, then we probably ran out of test bitcoin. [Join us on Discord](https://discord.gg/THhNW5H26H), we'll make sure to help you there. 
-
-Arké is experimental, so things might also break for other reasons. If they do, please let us know and we'll try to fix them right away.
+There's a delay before you can ask again. Feel free to ask a few times if you need more for testing, but please leave some for everyone else. If nothing arrives, Faucetto has probably run dry. [Let us know on Discord](https://discord.gg/THhNW5H26H) and we'll top it up.
 
 ---
 
