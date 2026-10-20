@@ -64,14 +64,14 @@ Phones break, get lost, and go swimming. Your bitcoin doesn't have to go with th
 
 For most situations, like a new phone, a reinstall, or a second device, iCloud handles recovery for you. Your bitcoin, contacts, notes, and payment history come back the way you left them. (Your key is always end-to-end encrypted. The rest of your wallet data is end-to-end encrypted in iCloud if you turn on Advanced Data Protection in iOS settings.)
 
-If you want a way back that doesn't depend on iCloud, set up a manual backup in settings. You'll write down your recovery phrase and save a wallet data file. Together, they restore everything.
+If you want a way back that doesn't depend on iCloud, set up a manual backup in settings. You'll write down your recovery phrase and save a wallet data file. Together, they restore your bitcoin and payment history. Contacts, notes, and tags can be saved to a separate file from the same screen.
 
-The recovery phrase alone works as an emergency option. It gets your bitcoin back, but not your payment history, contacts, or notes.
+The recovery phrase alone works as an emergency option. It gets your bitcoin back, but not your payment history.
 
 **What this means for you:**
 - New phone or reinstall: sign in to iCloud and you're back
 - Your wallet follows your iCloud account across devices
-- For a full backup outside iCloud, use Manual backup in settings
+- For a backup outside iCloud, use Manual backup in settings
 
 ---
 
@@ -110,7 +110,7 @@ If iCloud is set up, you won't need it to restore on a new phone or after a rein
 Yes. On-chain payments land in your savings balance, and Lightning payments land in your payments balance. You can move on-chain funds into your payments balance yourself, for a small fee.
 
 **What happens if Arké shuts down?**
-Your bitcoin is still yours. Any standard bitcoin wallet can restore your savings balance from your recovery phrase. For your payments balance, you can withdraw it to the main chain without Second's help (a fee applies), or restore it in another Bark-based wallet with your recovery phrase and wallet data backup. We designed it so you never depend on us.
+Your bitcoin is still yours. Any standard bitcoin wallet can restore your savings balance from your recovery phrase. For your payments balance, you can withdraw it to the main chain without Second's help (a fee applies), or restore it in another Bark-based wallet. The recovery phrase alone works there as an emergency option, but a proper restore should include your wallet data backup too. We designed it so you never depend on us.
 
 **What happens if I don't use my payments balance for a while?**
 The app takes care of it. It refreshes your payments balance in the background and schedules reminders to keep that going. Opening the app every so often is enough. You don't need to make payments to keep the balance active. But if you don't open Arké for about a month, part of your payments balance can expire, and Second's server is allowed to claim it. For money you won't touch for a while, use your savings balance.

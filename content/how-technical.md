@@ -148,7 +148,7 @@ Arké is not a mixer or tumbler. Privacy comes from the protocol's structure, no
 
 **Storage:** The mnemonic and derived keys are stored in the iOS encrypted Keychain. VTXO branch data is stored as a `.sqlite` file in the user's iCloud account. iCloud storage is end-to-end encrypted when the user enables Advanced Data Protection in iOS settings.
 
-**Backup:** Standard 12-word BIP-39 mnemonic for key material. Bark recently added mnemonic-based VTXO recovery, which restores a wallet's VTXOs from the seed alone. It's still being refined, particularly around VTXOs that are mid-refresh or mid-exit, and it can't restore transaction history, contacts, or notes. Arké treats it as an emergency path. Full recovery uses the mnemonic together with the `.sqlite` wallet data file.
+**Backup:** Standard 12-word BIP-39 mnemonic for key material. Bark recently added mnemonic-based VTXO recovery, which restores a wallet's VTXOs from the seed alone. It's still being refined, particularly around VTXOs that are mid-refresh or mid-exit, and it can't restore transaction history, contacts, or notes. Arké treats it as an emergency path. Restoring balances and transaction history uses the mnemonic together with the `.sqlite` wallet data file. Contacts, notes, and tags are exported to a separate file. All of it is also included in the iCloud backup.
 
 ---
 

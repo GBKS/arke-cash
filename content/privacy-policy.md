@@ -48,7 +48,7 @@ Notifications are off by default. If you turn them on, the App registers with a 
 - A mailbox authorization token, which lets the relay read your wallet's Ark mailbox (the channel through which the Ark server delivers incoming payments and related messages). Tokens are valid for 30 days and can't be revoked early
 - Your device's Apple push notification token and the App's bundle ID
 - Which Ark server your wallet uses
-- Timestamps, the relay's read position in your mailbox, and a record of notifications already sent
+- Timestamps, including the time of your wallet's most recent notification event, the relay's read position in your mailbox, and a record of notifications already sent
 
 **What the relay reads**
 
@@ -56,7 +56,11 @@ To build a notification, the relay reads incoming mailbox messages. These includ
 
 **Logs**
 
-The relay keeps an event log for 30 days. Entries contain only the first 8 characters of your mailbox ID and the last 8 characters of your device token, never the authorization token. After 30 days, only anonymous hourly counts are kept. IP addresses are held briefly in memory for rate limiting and are written to the log only when a request is rejected.
+Logs never contain your authorization token, full mailbox ID, or full device token. They use only the first 8 characters of your mailbox ID and the last 8 characters of your device token.
+
+- **Event log:** kept for 30 days. After that, only anonymous hourly counts remain.
+- **System logs:** the relay and our web server write operational logs to the server's system journal, kept for up to 14 days.
+- **IP addresses:** held briefly in memory for rate limiting. They are written to disk only when a request is rejected (stored in the event log for 30 days) or fails (which can appear in the web server's error log). Our web server keeps no access logs.
 
 **What the relay can't do**
 
@@ -64,7 +68,7 @@ The relay never holds your keys and cannot move your funds. It can only read the
 
 **Turning it off**
 
-Turning off notifications in the App removes your registration from the relay. Registrations are also removed when Apple reports that the App was uninstalled.
+Turning off notifications in the App deletes your registration from the relay. Registrations are also deleted when Apple reports that the App was uninstalled, and automatically 30 days after their authorization token expires, for example if you stop using the App.
 
 ## Third-Party Services
 
@@ -78,7 +82,7 @@ Payments from your payments balance go through an Ark server operated by TwoND, 
 
 **Exchange Rates**
 
-The App downloads current bitcoin exchange rates from our server so it can show amounts in your local currency. The request contains no wallet data. Like any web request, it reveals your IP address to our server.
+The App downloads current bitcoin exchange rates from our server so it can show amounts in your local currency. The request contains no wallet data. Like any web request, it reveals your IP address to our server. We don't keep access logs, so it isn't stored unless the request fails.
 
 **Hosting**
 
@@ -127,8 +131,8 @@ knueffelbund@gmail.com
 
 ## Summary
 
-**What we collect:** Nothing beyond your IP address when the App fetches exchange rates, unless you turn on notifications. If you do, our relay stores a pseudonymous mailbox ID, an access token for your mailbox, and your device's push token, and it reads incoming payment notifications to alert you.
+**What we collect:** Nothing, unless you turn on notifications. (Fetching exchange rates shows your IP address to our server, but we don't log it.) If you do turn on notifications, our relay stores a pseudonymous mailbox ID, an access token for your mailbox, and your device's push token, and it reads incoming payment notifications to alert you.
 
-**What we store:** Your wallet data stays on your device and, optionally, in your personal iCloud account. The relay keeps registration data while notifications are on and short-lived logs for 30 days.
+**What we store:** Your wallet data stays on your device and, optionally, in your personal iCloud account. The relay keeps registration data while notifications are on, deletes it when you turn them off or stop using the App, and keeps logs for no more than 30 days.
 
 **Who we share data with:** Apple delivers notifications, including payment amounts. Hetzner hosts the relay. Second runs the Ark server your payments go through.
