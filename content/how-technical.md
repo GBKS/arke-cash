@@ -152,7 +152,7 @@ Arké is not a mixer or tumbler. Privacy comes from the protocol's structure, no
 
 ## Current limitations
 
-**Early release.** Arké is distributed via TestFlight and under active development. Stability and performance are the current focus; rough edges remain.
+**Experimental.** Arké is distributed via TestFlight and under active development. Stability and performance are the current focus; rough edges remain.
 
 **Signet available.** Mainnet is the default. A signet option is available on the intro screen for developer testing.
 

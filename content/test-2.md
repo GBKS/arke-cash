@@ -36,7 +36,7 @@ Return to the **Activity** view and wait for the transaction to arrive. You can 
 
 If this does not work, then we probably ran out of test bitcoin. [Join us on Discord](https://discord.gg/THhNW5H26H), we'll make sure to help you there. 
 
-At this early stage, things might also break for other reasons. If they do, please let us know and we'll try to fix them right away.
+Arké is experimental, so things might also break for other reasons. If they do, please let us know and we'll try to fix them right away.
 
 ---
 

@@ -4,9 +4,9 @@ description: Help us make Arké the best bitcoin wallet possible.
 image: https://www.arke.cash/assets/images/test-preview.jpg
 ---
 
-Welcome to the Arké TestFlight beta. This guide walks you through the app's features in a logical sequence, helping you experience the full functionality while providing valuable feedback.
+Welcome to Arké. It's experimental, so your testing really helps. This guide walks you through the app's features in a logical sequence, helping you experience the full functionality while providing valuable feedback.
 
-Don't have access yet? <a href="https://tally.so/r/9qQJQ5" target="_blank">Join the Waitlist</a>.
+Don't have the app yet? <a href="https://testflight.apple.com/join/UWBs893c" target="_blank">Get Arké on TestFlight</a>.
 
 ## Join the community
 

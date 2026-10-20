@@ -77,7 +77,7 @@ The reference implementation value became legible: real users hitting real frict
 
 **↳ In progress**
 
-Bark launched on mainnet June 9th. Arké is open on TestFlight with no waitlist. Real bitcoin, no training wheels.
+Bark launched on mainnet June 9th. Arké is open on TestFlight with no waitlist. Real bitcoin, still experimental.
 
 This phase is about proving the foundation can hold. Payment speed needs to reach ~2 seconds consistently. App startup needs to be instant. Error messages need to be honest and reassuring. Edge cases that only appear under real conditions need systematic attention.
 
@@ -140,7 +140,7 @@ Initial response has been positive. But it's only been days, and summer typicall
 
 **↳ Conditional**
 
-This phase becomes relevant only if sustained demand materializes over time. Initial response has been encouraging, but it's far too early to call. Users may stay and ask for more, or activity may settle into a steady state. Either way, this phase determines what happens next.
+This phase becomes relevant only if sustained demand materializes over time. Initial response has been encouraging, but it's far too early to call. Users may stay and ask for more, or activity may settle into a steady state. Either way, this phase determines what happens next. A decision on Arké's direction comes at the end of 2026.
 
 Most likely (if demand is real): Arké becomes a long-term product with a Plus subscription. Desktop may follow (as companion or primary platform, depending on signal). But shape is determined by what users actually ask for, not assumptions.
 

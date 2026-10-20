@@ -21,6 +21,7 @@
 		</h1>
 		<p>Spend bitcoin. Instantly.</p>
 		<a href="https://testflight.apple.com/join/UWBs893c" class="button -primary -large" target="_blank">Get Arké (TestFlight)</a>
+		<p class="status">Experimental · Real bitcoin, early software</p>
 		<!--<div class="options">
 			<NuxtLink to="/how" class="button -secondary -medium">Info</NuxtLink>
 			<a href="https://community.second.tech/t/arke-macos-prototype/156/7" class="button -secondary -medium" target="_blank">Updates</a>
@@ -94,6 +95,15 @@
 
 		> a {
 			margin-top: 25px;
+		}
+
+		p.status {
+			margin-top: 15px;
+			font-size: 15px;
+			font-weight: 500;
+			letter-spacing: 0.5px;
+			text-transform: none;
+			opacity: 0.85;
 		}
 
 		.options {

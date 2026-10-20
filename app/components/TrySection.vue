@@ -12,9 +12,9 @@
 		</div>
 		<div class="copy">
 			<h2>Start using it</h2>
-			<p>Arké is currently in early development. Compile the <a href="https://github.com/gbks/arke" target="_blank">code</a> or join TestFlight.</p>
+			<p>Arké is experimental. It uses real bitcoin, so start small and tell us what breaks. Get it on TestFlight or compile the <a href="https://github.com/gbks/arke" target="_blank">code</a>.</p>
 
-			<a href="https://tally.so/r/9qQJQ5" class="button -primary -large" target="_blank">Join the Waitlist</a>
+			<a href="https://testflight.apple.com/join/UWBs893c" class="button -primary -large" target="_blank">Get Arké (TestFlight)</a>
 		</div>
 	</div>
   </section>

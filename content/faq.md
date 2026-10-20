@@ -8,7 +8,21 @@ image: https://www.arke.cash/assets/images/faq-preview.jpg
 
 Your bitcoin is controlled by your private key, which lives on your device and nowhere else. The Ark server coordinates payments but never holds your funds. If Arké disappeared tomorrow, your bitcoin would still be yours — recoverable with your seed phrase in any compatible wallet.
 
-The honest caveat: Ark is a young protocol and Arké is in early development. Don't put more in than you'd be comfortable testing with.
+The honest caveat: Arké is experimental, and Ark is a young protocol. Don't put more in than you'd be comfortable testing with.
+
+---
+
+### What does "experimental" mean?
+
+The Ark protocol is new, and the app is still coming together. Your bitcoin is self-custodial and you can always recover it with your seed phrase, but expect rough edges, features that change, and the odd bug. Use amounts you're okay testing with, and tell us what breaks.
+
+There's no set date for dropping the label. Bitcoin software is getting a lot of scrutiny right now, and we want Arké to hold up to it before we call it anything more.
+
+---
+
+### What's next for Arké?
+
+We'll decide on Arké's direction at the end of 2026 and share it here. Either way, your bitcoin stays yours. You can always withdraw to the bitcoin main chain or restore your wallet with your seed phrase, without needing us.
 
 ---
 
@@ -58,13 +72,13 @@ Because doing one thing well is better than doing two things adequately. The App
 
 ### What is signet?
 
-Signet is a bitcoin test network. It uses test bitcoin with no real value, which lets developers build and test wallets without risking real funds. Arké is currently on signet while the Ark protocol matures. Mainnet comes when it's ready. You'll know.
+Signet is a bitcoin test network. It uses test bitcoin with no real value, which lets developers build and test wallets without risking real funds. Arké runs on mainnet by default. Developers can switch to signet on the intro screen.
 
 ---
 
-### How do I join the beta?
+### How do I get Arké?
 
-Arké is in private TestFlight beta. Join the waitlist on the [home page](/) and you'll be invited when space opens up.
+Arké is available on [TestFlight](https://testflight.apple.com/join/UWBs893c), open to anyone with an iPhone. No waitlist.
 
 ---
 
@@ -78,4 +92,4 @@ Everything is open source. Read it, fork it, contribute to it.
 
 ### I have a question that isn't here.
 
-Find us on GitHub or reach out at the address on the site. We read everything.
+Ask us on [Discord](https://discord.gg/THhNW5H26H) or open an issue on [GitHub](https://github.com/gbks/arke). We read everything.
