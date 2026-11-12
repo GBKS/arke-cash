@@ -71,7 +71,7 @@ OOR payments have zero on-chain footprint and zero fee. Rounds exist to periodic
 
 **What the Ark server can do:**
 
-- Refuse to include you in rounds (censorship; there is currently one operator, Second; see Current limitations)
+- Refuse to include you in rounds (censorship; a wallet is bound to the server it was created on; see Current limitations)
 - Go offline, preventing new Ark transactions
 
 **What the Ark server cannot do:**
@@ -158,9 +158,9 @@ Arké is not a mixer or tumbler. Privacy comes from the protocol's structure, no
 
 **Signet available.** Mainnet is the default. A signet option is available on the intro screen for developer testing.
 
-**Single Ark server.** The network currently has one Ark server (operated by [Second](https://second.tech)). Ark server federation and multiple competing Ark servers are roadmap items. Server code is [open-source](https://gitlab.com/ark-bitcoin/bark).
+**Server choice is fixed per wallet.** Arké connects to the Ark server operated by [Second](https://second.tech) by default. A few smaller community-run servers can be selected on the intro screen before wallet creation. A wallet is bound to the server it was created on and can't migrate to another. Restoring from mnemonic and backup file requires selecting the same server. [servers.arke.cash](https://servers.arke.cash) tracks uptime and advertised fees for public servers. Server code is [open-source](https://gitlab.com/ark-bitcoin/bark).
 
-**VTXO expiry.** VTXOs expire at most 28 days after creation, and received VTXOs can have less time left. The app handles refresh automatically: it detects when VTXOs enter the last 2 days of their lifecycle (a fee-free refresh window), requests a delegated refresh from the Ark server, and schedules local reminders to trigger the next cycle. The server executes the refresh without requiring user action. Opening the app occasionally is sufficient to keep this cycle running. A VTXO has to be refreshed or exited (cooperatively via a round, or unilaterally if the server is unavailable) before it expires. After expiry, the Ark server can sweep the underlying funds, and [Second's terms](https://second.tech/terms) don't oblige it to return them.
+**VTXO expiry.** VTXOs expire at most 28 days after creation, and received VTXOs can have less time left. The app handles refresh automatically: it detects when VTXOs enter the last 2 days of their lifecycle (a fee-free refresh window), requests a delegated refresh from the Ark server, and schedules local reminders to trigger the next cycle. The server executes the refresh without requiring user action. Opening the app occasionally is sufficient to keep this cycle running. A VTXO has to be refreshed or exited (cooperatively via a round, or unilaterally if the server is unavailable) before it expires. After expiry, the Ark server can sweep the underlying funds, and [Second's terms](https://second.tech/terms) don't oblige it to return them. Other operators set their own terms.
 
 ---
 
@@ -186,3 +186,4 @@ Ark and Lightning are complementary, and Arké uses both. The Ark server's Light
 - [Arké GitHub repository](https://github.com/gbks/arke)
 - [Second (Bark developers)](https://second.tech/)
 - [Bark server (open-source)](https://gitlab.com/ark-bitcoin/bark)
+- [Ark(é) Servers](https://servers.arke.cash) (public servers, uptime, and fees)

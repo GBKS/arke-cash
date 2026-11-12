@@ -10,6 +10,8 @@ When you first open Arké, you'll go through a simple setup process. Tap "Create
 
 Your wallet will be on bitcoin mainnet by default. If you're a developer and want to test with free test bitcoin instead, switch to signet on the intro screen before you create your wallet.
 
+The same screen lets you pick an Ark server. Keep the default, Second, unless you want to test a community server on purpose. You can't change the server after the wallet is created. You can compare servers at [servers.arke.cash](https://servers.arke.cash).
+
 ::screenshots
 ---
 images: ["cover", "activity-empty"]

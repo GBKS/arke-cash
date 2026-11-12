@@ -52,7 +52,7 @@ Ark is not finished. The protocol is young and still changing, which is a big pa
 
 Ark was first described in 2023 by Burak, a bitcoin developer. It's an open protocol design rather than a fixed specification, and teams build their own implementations of it.
 
-Arké uses [Bark](https://docs.second.tech), the implementation by [Second](https://second.tech), through Second's SDK. Second also runs the Ark server that Arké connects to.
+Arké uses [Bark](https://docs.second.tech), the implementation by [Second](https://second.tech), through Second's SDK. Second also runs the Ark server that Arké connects to by default. A few community-run servers exist too. You can see them all, with their uptime and fees, at [servers.arke.cash](https://servers.arke.cash).
 
 ---
 
@@ -60,4 +60,5 @@ Arké uses [Bark](https://docs.second.tech), the implementation by [Second](http
 
 - [Ark protocol overview](https://ark-protocol.org)
 - [Second](https://second.tech), the team behind Bark
+- [Ark(é) Servers](https://servers.arke.cash), public Ark servers and their uptime
 - [Bitcoin Design Guide](https://bitcoin.design/guide/), the UX practices Arké is built on

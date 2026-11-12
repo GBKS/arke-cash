@@ -6,7 +6,7 @@ image: https://www.arke.cash/assets/images/terms-and-conditions-preview.jpg
 
 # Terms of Service
 
-**Last Updated: October 20, 2026**
+**Last Updated: November 12, 2026**
 
 ## Agreement to Terms
 
@@ -21,9 +21,11 @@ Arké is a self-custodial Bitcoin wallet application that implements the Ark pro
 - Interact with the Ark protocol for Bitcoin transactions
 - Store wallet data securely on your device using Apple Keychain and iCloud
 
-### Second's Ark Server
+### Ark Servers
 
-To make payments from your payments balance, the App connects to an Ark server operated by TwoND, Inc., doing business as Second ("Second"). We do not operate or control this server. By using the App's payments balance, you also agree to [Second's Terms of Service](https://second.tech/terms), which govern your use of their server. Second's terms are a separate agreement between you and Second. Among other things, they allow Second to change or stop its service, to restrict access, and to claim bitcoin in expired VTXOs (see Risks below).
+To make payments from your payments balance, the App connects to an Ark server. By default, this is a server operated by TwoND, Inc., doing business as Second ("Second"). When you create a wallet, you can choose a server run by a different, independent operator instead. Your wallet stays tied to the server it was created on and cannot be moved to another. We do not operate or control any Ark server.
+
+By using the App's payments balance, you also agree to the terms of the operator of the server you use. For the default server, that is [Second's Terms of Service](https://second.tech/terms). These terms are a separate agreement between you and that operator. Among other things, Second's terms allow it to change or stop its service, to restrict access, and to claim bitcoin in expired VTXOs (see Risks below). Other operators may have different terms, or none.
 
 ## Experimental Software
 
@@ -88,11 +90,11 @@ You acknowledge that:
 The Ark protocol involves specific considerations:
 
 - Ark is a relatively new protocol and may have undiscovered vulnerabilities
-- The App currently relies on a single Ark server, operated by Second. If it is unavailable, you cannot make payments from your payments balance until it returns, or until you withdraw to the Bitcoin main chain
+- Your wallet relies on the single Ark server it was created on and cannot switch to another. If that server is unavailable, you cannot make payments from your payments balance until it returns, or until you withdraw to the Bitcoin main chain
 - Payments made before the next round depend on the Ark server not colluding with the sender
-- **VTXO expiry:** Funds in your payments balance are held in VTXOs that expire. The App refreshes them automatically when you open it. If a VTXO expires without being refreshed or withdrawn, for example because you did not open the App for an extended period, Second's terms allow it to claim the bitcoin in it, with no obligation to return it
+- **VTXO expiry:** Funds in your payments balance are held in VTXOs that expire. The App refreshes them automatically when you open it. If a VTXO expires without being refreshed or withdrawn, for example because you did not open the App for an extended period, the server operator may be allowed to claim the bitcoin in it, with no obligation to return it. Second's terms allow this
 - Protocol upgrades or changes could affect functionality
-- Liquidity and availability of Ark services may vary, and Second may restrict access in some jurisdictions
+- Liquidity and availability vary by server. Community-run servers may have less liquidity and a shorter track record than the default server, and operators may restrict access in some jurisdictions
 
 ### No Investment Advice
 
@@ -183,7 +185,7 @@ If any provision of these Terms is found to be unenforceable, the remaining prov
 
 ## Entire Agreement
 
-These Terms, together with our Privacy Policy, constitute the entire agreement between you and GBKS limited regarding the App. Your use of Second's Ark server is governed separately by Second's Terms of Service.
+These Terms, together with our Privacy Policy, constitute the entire agreement between you and GBKS limited regarding the App. Your use of an Ark server is governed separately by its operator's terms.
 
 ## Contact
 

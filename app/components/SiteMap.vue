@@ -7,12 +7,12 @@
 		<NuxtLink to="/design">Design</NuxtLink>
 		<NuxtLink to="/open-source">Open Source</NuxtLink>
 		<NuxtLink to="/ark">About Ark</NuxtLink>
+		<a href="https://servers.arke.cash" target="_blank">Ark servers</a>
 		<a href="https://gbks.substack.com" target="_blank">Updates</a>
 		<a href="https://discord.gg/THhNW5H26H" target="_blank">Discord</a>
 		<NuxtLink to="/faq">FAQ</NuxtLink>
 		<NuxtLink to="/test">Test Guide</NuxtLink>
-		<NuxtLink to="/privacy-policy">Privacy Policy</NuxtLink>
-		<NuxtLink to="/terms-and-conditions">Terms of Service</NuxtLink>
+		<div class="pair"><NuxtLink to="/terms-and-conditions">Terms</NuxtLink> &amp; <NuxtLink to="/privacy-policy">Privacy</NuxtLink></div>
 	</nav>
   </section>
 </template>
@@ -40,7 +40,7 @@
 		column-gap: 20px;
 		width: 100%;
 		
-		a {
+		> a, > .pair {
 			display: block;
 			break-inside: avoid;
 			color: white;
@@ -49,13 +49,17 @@
 			border-bottom: 1px solid rgba(var(--goldRGB), 0.25);
 			@include mixins.r('font-size', 14, 16);			
 		}
+
+		.pair a {
+			color: inherit;
+		}
 	}
 
 	@include mixins.media-query(large) {
 		nav {
 			column-count: 4;
 
-			a {
+			> * {
 				&:nth-child(3n) {
 					border-width: 0;
 				}
@@ -67,7 +71,7 @@
 		nav {
 			column-count: 3;
 
-			a {
+			> * {
 				&:nth-child(4n) {
 					border-width: 0;
 				}
@@ -79,7 +83,7 @@
 		nav {
 			column-count: 2;
 
-			a {
+			> * {
 				&:nth-child(6n) {
 					border-width: 0;
 				}

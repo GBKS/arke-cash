@@ -4,7 +4,7 @@ description: Answers to common questions about Arké.
 image: https://www.arke.cash/assets/images/faq-preview.jpg
 ---
 
-*Last updated: October 20, 2026*
+*Last updated: November 12, 2026*
 
 ### Is my bitcoin safe?
 
@@ -46,7 +46,7 @@ For a backup that doesn't depend on iCloud, go to Manual backup in settings and 
 
 We don't keep track. Arké has no analytics and no accounts, and we don't know who you are. If you turn on notifications, our relay reads incoming payment amounts to alert you, but it only knows your wallet by a random ID and doesn't store individual payments.
 
-Others can see a bit, depending on how you pay. On-chain payments are on bitcoin's public ledger, like any bitcoin transaction. Payments from your payments balance go through Second's Ark server, which sees amounts, timing, and your IP address, but not your name. Nobody publishes your activity, and nobody can tie it to you through an account. [How Arké works](/how) has the details.
+Others can see a bit, depending on how you pay. On-chain payments are on bitcoin's public ledger, like any bitcoin transaction. Payments from your payments balance go through your Ark server (Second's, unless you picked another), which sees amounts, timing, and your IP address, but not your name. Nobody publishes your activity, and nobody can tie it to you through an account. [How Arké works](/how) has the details.
 
 ---
 
@@ -61,6 +61,20 @@ That's the whole point of self-custody. We designed it so you never depend on us
 ### What happens if the Ark server goes offline?
 
 If it's down for a while, you can't make new payments, but your funds are safe. If it goes away for good, Arké can still withdraw your bitcoin to the main chain on its own. This is called a unilateral exit. It has to happen before your payments balance expires, so don't wait too long.
+
+You can check whether your server is online at [servers.arke.cash](https://servers.arke.cash).
+
+---
+
+### Can I use a different Ark server?
+
+Yes, but only when you create your wallet. Arké connects to Second's server by default, and that's the one we recommend. Second builds the Ark software and runs its server professionally.
+
+You can pick another server on the cover screen before you create your wallet. The others are small community servers, often run by one or a few people, so they may have less liquidity and less experience behind them.
+
+The choice is permanent. A wallet stays on the server it was created on. If you ever import it from your recovery phrase and backup file, pick the same server again.
+
+[servers.arke.cash](https://servers.arke.cash) lists the available servers, how reliable they've been, and the fees they charge.
 
 ---
 

@@ -8,7 +8,7 @@ image: https://www.arke.cash/assets/images/test-preview.jpg
 
 Bitcoin in your payments balance expires, at most 28 days after you receive it, and needs a refresh before then. That's the trade-off for instant, low-fee payments.
 
-Arké handles this for you. In the last 2 days, when refreshes are free, it asks Second's server to do the refresh, so the app doesn't need to stay open. Opening it now and then is enough. Sometimes it refreshes earlier for a small fee, when that works out better. The Fee Summary in settings shows what you've paid.
+Arké handles this for you. In the last 2 days, when refreshes are free, it asks the Ark server to do the refresh, so the app doesn't need to stay open. Opening it now and then is enough. Sometimes it refreshes earlier for a small fee, when that works out better. The Fee Summary in settings shows what you've paid.
 
 You might not see a refresh come up while working through this guide. Check back in a week or two, or start one by hand as described below. On signet, refreshes come up much more often (every 24 hours), so it's easier to test there.
 

@@ -49,7 +49,6 @@ Get started with [Test 1: Create your wallet](/test-1).
 
 The following features are incomplete or not working in this build:
 
-- **No choice of Ark server:** Eventually, you'll be able to choose between different servers. For now, there is only one.
 - **Force moves need check-ins:** A force move to savings goes through several steps and can take 10 hours or more. The app can only continue while it's open, so it sends you reminders to open it every so often until the move is done. We're working on making this smoother.
 
 ---

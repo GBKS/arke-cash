@@ -6,7 +6,7 @@ image: https://www.arke.cash/assets/images/test-preview.jpg
 
 # Test 8: Recover your payments balance
 
-Your payments balance runs through Second's Ark server. If that server ever stops cooperating, you can still pull your bitcoin out on your own with a force move. It works like the regular move to savings from Test 6, except the server isn't involved. Your wallet already holds everything it needs.
+Your payments balance runs through your Ark server. If that server ever stops cooperating, you can still pull your bitcoin out on your own with a force move. It works like the regular move to savings from Test 6, except the server isn't involved. Your wallet already holds everything it needs.
 
 The regular move is faster and cheaper. This is the emergency version.
 

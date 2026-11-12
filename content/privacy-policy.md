@@ -6,7 +6,7 @@ image: https://www.arke.cash/assets/images/privacy-policy-preview.jpg
 
 # Privacy Policy
 
-**Last Updated: October 20, 2026**
+**Last Updated: November 12, 2026**
 
 ## Introduction
 
@@ -76,9 +76,11 @@ Turning off notifications in the App deletes your registration from the relay. R
 
 The App uses Apple's platform services (Keychain, iCloud, and Apple Push Notification service) for storage and notifications. Notifications pass through Apple's servers. Visible notifications include the payment amount (for example, "Received ₿12,000"), which may appear on your lock screen. Apple's handling of this data is governed by [Apple's Privacy Policy](https://www.apple.com/privacy/).
 
-**Second's Ark Server**
+**Ark Servers**
 
-Payments from your payments balance go through an Ark server operated by TwoND, Inc., doing business as Second. To process those payments, Second's server receives your IP address, payment amounts and timing, and the data needed to co-sign and route each payment. It does not receive your name or any account information, because the App has no accounts. If notifications are on, our relay also connects to Second's server on your behalf to read your mailbox. Second's handling of this data is governed by its own terms and policies, available at [second.tech](https://second.tech/terms).
+Payments from your payments balance go through the Ark server your wallet uses. By default, this is a server operated by TwoND, Inc., doing business as Second. When you create a wallet, you can choose a server run by a different, independent operator instead. We do not operate any Ark server.
+
+To process your payments, the server receives your IP address, payment amounts and timing, and the data needed to co-sign and route each payment. It does not receive your name or any account information, because the App has no accounts. If notifications are on, our relay also connects to that server on your behalf to read your mailbox. Each operator's handling of this data is governed by its own terms and policies. Second's are available at [second.tech](https://second.tech/terms).
 
 **Exchange Rates**
 
@@ -135,4 +137,4 @@ knueffelbund@gmail.com
 
 **What we store:** Your wallet data stays on your device and, optionally, in your personal iCloud account. The relay keeps registration data while notifications are on, deletes it when you turn them off or stop using the App, and keeps logs for no more than 30 days.
 
-**Who we share data with:** Apple delivers notifications, including payment amounts. Hetzner hosts the relay. Second runs the Ark server your payments go through.
+**Who we share data with:** Apple delivers notifications, including payment amounts. Hetzner hosts the relay. Your payments go through the Ark server your wallet uses, which is Second's unless you chose another.

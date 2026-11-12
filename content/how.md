@@ -26,9 +26,9 @@ Most apps that deal with money work differently. A bank or an exchange holds you
 
 A regular bitcoin transaction can take ten minutes to an hour to confirm. Payments from your payments balance arrive in seconds.
 
-That balance runs on Ark, a bitcoin protocol for fast off-chain payments. Arké uses Second's implementation, called Bark, and connects to an Ark server that [Second](https://second.tech) operates. Think of it as a fast lane for everyday spending, with bitcoin underneath.
+That balance runs on Ark, a bitcoin protocol for fast off-chain payments. Arké uses Second's implementation, called Bark, and connects to an Ark server. By default, that's the one [Second](https://second.tech) operates. Think of it as a fast lane for everyday spending, with bitcoin underneath.
 
-The payments balance is self-custodial too. You hold the keys, not Second. Behind the scenes the app keeps your balance refreshed, which works as long as you open the app now and then. Most refreshes are free, but some cost a small fee.
+The payments balance is self-custodial too. You hold the keys, not the server. Behind the scenes the app keeps your balance refreshed, which works as long as you open the app now and then. Most refreshes are free, but some cost a small fee.
 
 **What this means for you:**
 - Pay for coffee or send money to a friend without waiting
@@ -47,14 +47,14 @@ Some activity is visible to others, though, and it's worth knowing where:
 
 **Bitcoin network:** On-chain transactions are recorded on bitcoin's public ledger, where anyone can see the addresses and amounts, though not your name. That comes with bitcoin itself. Arké doesn't run a server that touches your on-chain activity.
 
-**Payments balance:** Payments go through Second's Ark server. It sees the payments it helps make: amounts, timing, and your IP address. It doesn't know who you are, since there's no sign-up and no account, but it could link some of your payments to each other. That's far less than a bank or a payment app knows about you, and none of it is published.
+**Payments balance:** Payments go through your Ark server, which is Second's unless you picked another. It sees the payments it helps make: amounts, timing, and your IP address. It doesn't know who you are, since there's no sign-up and no account, but it could link some of your payments to each other. That's far less than a bank or a payment app knows about you, and none of it is published.
 
 **Notifications:** If you turn on notifications, a relay we run watches for incoming payments and sends an alert to your phone through Apple. To write "Received ₿12,000", it has to read the amount. It knows your wallet only by a random ID, doesn't store individual payments, and keeps only anonymous totals. Alerts can show amounts on your lock screen. You can turn notifications off at any time.
 
 **What this means for you:**
 - No one at Arké knows who you are or what you do with your money
 - There's no personal data for us to sell, leak, or hand over
-- Second's server sees some payment details, but not your identity
+- Your Ark server sees some payment details, but not your identity
 
 ---
 
@@ -67,6 +67,8 @@ For most situations, like a new phone, a reinstall, or a second device, iCloud h
 If you want a way back that doesn't depend on iCloud, set up a manual backup in settings. You'll write down your recovery phrase and save a backup file. Together, they restore your bitcoin and payment history. Contacts, notes, and tags can be saved to a separate file from the same screen.
 
 The recovery phrase alone works as an emergency option. It gets your bitcoin back, but not your payment history.
+
+If you created your wallet on a server other than the default, note which one. You'll need to pick it again when you import your wallet.
 
 **What this means for you:**
 - New phone or reinstall: sign in to iCloud and you're back
@@ -91,7 +93,7 @@ The whole thing takes a few seconds. If you want to know what's happening undern
 
 ## What Arké doesn't do
 
-**We don't hold your bitcoin.** We can't move it, freeze it, or recover it for you. Nobody can touch your savings balance. Your payments balance is yours as well: you hold the keys, not us and not Second.
+**We don't hold your bitcoin.** We can't move it, freeze it, or recover it for you. Nobody can touch your savings balance. Your payments balance is yours as well: you hold the keys, not us and not the server.
 
 **We don't track you.** No analytics, no session data, nothing tied to your identity. The privacy section above covers what others can see.
 
@@ -110,10 +112,13 @@ If iCloud is set up, you won't need it to restore on a new phone or after a rein
 Yes. On-chain payments land in your savings balance, and Lightning payments land in your payments balance. You can move on-chain funds into your payments balance yourself, for a small fee.
 
 **What happens if Arké shuts down?**
-Your bitcoin is still yours. Any standard bitcoin wallet can restore your savings balance from your recovery phrase. For your payments balance, you can withdraw it to the main chain without Second's help (a fee applies), or restore it in another Bark-based wallet. We designed it so you never depend on us.
+Your bitcoin is still yours. Any standard bitcoin wallet can restore your savings balance from your recovery phrase. For your payments balance, you can withdraw it to the main chain without the server's help (a fee applies), or restore it in another Bark-based wallet. We designed it so you never depend on us.
 
 **What happens if I don't use my payments balance for a while?**
-The app takes care of it. It refreshes your payments balance in the background and schedules reminders to keep that going. Opening the app every so often is enough. You don't need to make payments to keep the balance active. But if you don't open Arké for a few weeks, part of your payments balance can expire, and Second's server is allowed to claim it. For money you won't touch for a while, use your savings balance.
+The app takes care of it. It refreshes your payments balance in the background and schedules reminders to keep that going. Opening the app every so often is enough. You don't need to make payments to keep the balance active. But if you don't open Arké for a few weeks, part of your payments balance can expire, and the Ark server is allowed to claim it. For money you won't touch for a while, use your savings balance.
+
+**Can I use a different Ark server?**
+Only when you create your wallet. Second's server is the default, and the one we recommend. A few small community servers are also available on the cover screen. Your wallet stays on the server you picked, and you can't switch later. [servers.arke.cash](https://servers.arke.cash) compares them.
 
 **Is this legal?**
 Using a self-custody bitcoin wallet is legal in most countries. You're responsible for any taxes on the transactions you make.

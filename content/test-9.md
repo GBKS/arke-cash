@@ -36,7 +36,7 @@ The screen warns you about your payments balance. That's fine here, since you're
 
 ##### 9.4: Start the import
 
-After deletion, you will find yourself back on the cover screen. Tap the **Import wallet** option.
+After deletion, you will find yourself back on the cover screen. If you created your wallet on a server other than the default, pick that same server first. Then tap the **Import wallet** option.
 
 ##### 9.5: Complete the import
 
@@ -46,7 +46,7 @@ If any of this didn't work, tell us. Recovery is the one thing that has to work.
 
 ---
 
-If you are more on the technical side, you can also import your recovery phrase and backup file into other [Bark wallets](https://second.tech/).
+If you are more on the technical side, you can also import your recovery phrase and backup file into other [Bark wallets](https://second.tech/), as long as they connect to the same Ark server.
 
 ---
 
