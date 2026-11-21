@@ -9,7 +9,13 @@ const title = 'Screens'
 const description = 'Screens from Arké, a bitcoin wallet built on Ark, grouped by flow and dated.'
 
 // Smooth scrolling for the flow links, only while this page is open.
-useHead({ htmlAttrs: { class: 'smooth-scroll' } })
+useHead({
+  htmlAttrs: { class: 'smooth-scroll' },
+  link: [
+    { rel: 'alternate', type: 'application/json', href: '/screens.json', title: 'Arké screens (JSON)' },
+    { rel: 'license', href: 'https://creativecommons.org/licenses/by-nc/4.0/' }
+  ]
+})
 
 useSeoMeta({
   title,
@@ -41,7 +47,8 @@ function size(id: string) {
     </div>
 
     <div class="intro">
-      <p>Screens from Arké's development builds, grouped by flow. Most were taken on signet, Bitcoin's test network, so the amounts are test coins. The app keeps changing, so every screen shows the date it was captured.</p>    </div>
+      <p>Screens from Arké's development builds, grouped by flow. Most were taken on signet, Bitcoin's test network, so the amounts are test coins. The app keeps changing, so every screen shows the date it was captured.</p>
+    </div>
 
     <div class="controls">
       <nav aria-label="Flows">
@@ -76,6 +83,14 @@ function size(id: string) {
           </figure>
         </div>
       </section>
+
+      <p class="usage">
+        Screenshots are shared under
+        <a href="https://creativecommons.org/licenses/by-nc/4.0/" rel="license">CC BY-NC 4.0</a>:
+        reuse them with credit to Arké, not for commercial use.
+        For tools and agents, the full list with captions, dates and image links is at
+        <a href="/screens.json" type="application/json">screens.json</a>.
+      </p>
     </div>
 
     <SiteFooter />
@@ -156,6 +171,20 @@ function size(id: string) {
   padding-bottom: 120px;
   background-color: var(--paper);
   color: var(--ink);
+}
+
+.usage {
+  max-width: 770px;
+  margin: 100px auto 0;
+  padding: 0 15px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: rgba(30, 21, 17, 0.65);
+
+  a {
+    color: var(--ink);
+    text-decoration: underline;
+  }
 }
 
 .flow {

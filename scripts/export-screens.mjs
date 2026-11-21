@@ -4,8 +4,9 @@
 //
 // Reads PNGs from Arke-sessions/screenshots (override with SCREENS_SOURCE),
 // prefers `<source>@3x.png` over `<source>.png`, never upscales, and writes
-// public/assets/images/screens/<id>.webp plus app/data/screen-sizes.json
-// (pixel sizes, so the page can reserve space before images load).
+// public/assets/images/screens/<id>.webp, app/data/screen-sizes.json
+// (pixel sizes, so the page can reserve space before images load) and
+// public/screens.json (an index for agents and tools).
 // Needs ImageMagick 7 (`magick`) on the PATH.
 
 import { execFileSync } from 'node:child_process'
@@ -66,6 +67,46 @@ for (const file of readdirSync(outDir)) {
 }
 
 writeFileSync(sizesFile, JSON.stringify(sizes, null, 2) + '\n')
+
+// Machine-readable index for agents and tools, served at /screens.json.
+const SITE = 'https://www.arke.cash'
+const capturedOn = source => source.slice(0, 10)
+const index = {
+  title: 'Arké screens',
+  description: 'Screens from development builds of Arké, a self-custodial bitcoin wallet for iPhone built on the Ark protocol, grouped by flow. Most were captured on signet, so amounts are test coins. Captions are written by the designer; each screen carries the date it was captured, and older screens may show an earlier design.',
+  page: `${SITE}/screens`,
+  license: {
+    name: 'CC BY-NC 4.0',
+    url: 'https://creativecommons.org/licenses/by-nc/4.0/',
+    attribution: 'Arké, arke.cash'
+  },
+  updated: screens.map(s => capturedOn(s.source)).sort().at(-1),
+  fields: {
+    state: 'default | empty | filled | loading | success | error | warning',
+    network: 'mainnet | signet',
+    arkSpecific: 'true when the screen exists because of how the Ark protocol works'
+  },
+  flows: flows.map(flow => ({
+    id: flow.id,
+    title: flow.title,
+    intro: flow.intro,
+    url: `${SITE}/screens#${flow.id}`,
+    screens: flow.screens.map(screen => ({
+      id: screen.id,
+      caption: screen.caption,
+      state: screen.state,
+      network: screen.network,
+      arkSpecific: screen.ark,
+      captured: capturedOn(screen.source),
+      url: `${SITE}/screens#${screen.id}`,
+      image: {
+        url: `${SITE}/assets/images/screens/${screen.id}.webp`,
+        ...sizes[screen.id]
+      }
+    }))
+  }))
+}
+writeFileSync(join(root, 'public', 'screens.json'), JSON.stringify(index, null, 2) + '\n')
 
 if (missing.length) {
   console.error(`\nMissing sources:\n  ${missing.join('\n  ')}`)

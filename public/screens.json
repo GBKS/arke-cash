@@ -1,0 +1,1154 @@
+{
+  "title": "Arké screens",
+  "description": "Screens from development builds of Arké, a self-custodial bitcoin wallet for iPhone built on the Ark protocol, grouped by flow. Most were captured on signet, so amounts are test coins. Captions are written by the designer; each screen carries the date it was captured, and older screens may show an earlier design.",
+  "page": "https://www.arke.cash/screens",
+  "license": {
+    "name": "CC BY-NC 4.0",
+    "url": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "attribution": "Arké, arke.cash"
+  },
+  "updated": "2026-11-20",
+  "fields": {
+    "state": "default | empty | filled | loading | success | error | warning",
+    "network": "mainnet | signet",
+    "arkSpecific": "true when the screen exists because of how the Ark protocol works"
+  },
+  "flows": [
+    {
+      "id": "onboarding",
+      "title": "First use",
+      "intro": "Before a wallet exists, Arké asks which Ark server to use. A wallet stays with one server for its whole life, so the choice comes first.",
+      "url": "https://www.arke.cash/screens#onboarding",
+      "screens": [
+        {
+          "id": "welcome-mainnet",
+          "caption": "The cover, with Create and Import. The button at the top left opens the server choice.",
+          "state": "default",
+          "network": "mainnet",
+          "arkSpecific": false,
+          "captured": "2026-10-30",
+          "url": "https://www.arke.cash/screens#welcome-mainnet",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/welcome-mainnet.webp",
+            "width": 440,
+            "height": 956
+          }
+        },
+        {
+          "id": "welcome-signet",
+          "caption": "On the test server, the video and a line under the buttons change, so a test wallet is never mistaken for a real one.",
+          "state": "default",
+          "network": "signet",
+          "arkSpecific": true,
+          "captured": "2026-11-08",
+          "url": "https://www.arke.cash/screens#welcome-signet",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/welcome-signet.webp",
+            "width": 390,
+            "height": 844
+          }
+        },
+        {
+          "id": "server-sheet-default",
+          "caption": "One sentence on what a server is, the default server, and a link to its operator's terms.",
+          "state": "default",
+          "network": "mainnet",
+          "arkSpecific": true,
+          "captured": "2026-10-30",
+          "url": "https://www.arke.cash/screens#server-sheet-default",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/server-sheet-default.webp",
+            "width": 440,
+            "height": 956
+          }
+        },
+        {
+          "id": "server-options",
+          "caption": "Default, Development and Custom server, each with who runs it.",
+          "state": "default",
+          "network": "mainnet",
+          "arkSpecific": true,
+          "captured": "2026-10-30",
+          "url": "https://www.arke.cash/screens#server-options",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/server-options.webp",
+            "width": 440,
+            "height": 956
+          }
+        },
+        {
+          "id": "server-sheet-development",
+          "caption": "Picking Development switches to signet, where coins have no value.",
+          "state": "default",
+          "network": "signet",
+          "arkSpecific": true,
+          "captured": "2026-10-30",
+          "url": "https://www.arke.cash/screens#server-sheet-development",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/server-sheet-development.webp",
+            "width": 440,
+            "height": 956
+          }
+        },
+        {
+          "id": "custom-server-found",
+          "caption": "Checking a custom address reports its network and prefills the block explorer.",
+          "state": "success",
+          "network": "mainnet",
+          "arkSpecific": true,
+          "captured": "2026-10-30",
+          "url": "https://www.arke.cash/screens#custom-server-found",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/custom-server-found.webp",
+            "width": 440,
+            "height": 956
+          }
+        },
+        {
+          "id": "custom-server-error",
+          "caption": "A failed check says so plainly, with the raw error underneath for those who need it.",
+          "state": "error",
+          "network": "mainnet",
+          "arkSpecific": true,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#custom-server-error",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/custom-server-error.webp",
+            "width": 750,
+            "height": 1623
+          }
+        },
+        {
+          "id": "server-sheet-custom",
+          "caption": "A saved custom server, shown by its host name.",
+          "state": "default",
+          "network": "mainnet",
+          "arkSpecific": true,
+          "captured": "2026-10-30",
+          "url": "https://www.arke.cash/screens#server-sheet-custom",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/server-sheet-custom.webp",
+            "width": 440,
+            "height": 956
+          }
+        },
+        {
+          "id": "create-wallet",
+          "caption": "A short animation plays while the wallet is created.",
+          "state": "loading",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#create-wallet",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/create-wallet.webp",
+            "width": 750,
+            "height": 1623
+          }
+        },
+        {
+          "id": "wallet-created",
+          "caption": "The new wallet is ready.",
+          "state": "success",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#wallet-created",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/wallet-created.webp",
+            "width": 750,
+            "height": 1623
+          }
+        }
+      ]
+    },
+    {
+      "id": "restore",
+      "title": "Restore",
+      "intro": "Restoring takes the recovery phrase and, optionally, a backup file that brings back history and anything still in progress.",
+      "url": "https://www.arke.cash/screens#restore",
+      "screens": [
+        {
+          "id": "phrase-empty",
+          "caption": "One field per word, with paste in the first field.",
+          "state": "empty",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-11-13",
+          "url": "https://www.arke.cash/screens#phrase-empty",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/phrase-empty.webp",
+            "width": 402,
+            "height": 874
+          }
+        },
+        {
+          "id": "phrase-autocomplete",
+          "caption": "After two letters, chips suggest words from the recovery word list.",
+          "state": "filled",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-11-13",
+          "url": "https://www.arke.cash/screens#phrase-autocomplete",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/phrase-autocomplete.webp",
+            "width": 402,
+            "height": 874
+          }
+        },
+        {
+          "id": "phrase-valid",
+          "caption": "A valid phrase enables Continue. Switching to 24 words is a quiet link.",
+          "state": "success",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#phrase-valid",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/phrase-valid.webp",
+            "width": 750,
+            "height": 1623
+          }
+        },
+        {
+          "id": "phrase-checksum-error",
+          "caption": "Every word is on the list, but the phrase as a whole doesn't check out.",
+          "state": "error",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#phrase-checksum-error",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/phrase-checksum-error.webp",
+            "width": 750,
+            "height": 1623
+          }
+        },
+        {
+          "id": "phrase-invalid-word",
+          "caption": "A word that isn't on the list is outlined and named.",
+          "state": "error",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#phrase-invalid-word",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/phrase-invalid-word.webp",
+            "width": 750,
+            "height": 1623
+          }
+        },
+        {
+          "id": "backup-file",
+          "caption": "The backup file restores history and payments in progress. Without it, funds still come back from the network.",
+          "state": "default",
+          "network": "signet",
+          "arkSpecific": true,
+          "captured": "2026-11-13",
+          "url": "https://www.arke.cash/screens#backup-file",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/backup-file.webp",
+            "width": 402,
+            "height": 874
+          }
+        },
+        {
+          "id": "import-custom-server",
+          "caption": "Restoring on a custom server says plainly which funds come back.",
+          "state": "warning",
+          "network": "mainnet",
+          "arkSpecific": true,
+          "captured": "2026-10-30",
+          "url": "https://www.arke.cash/screens#import-custom-server",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/import-custom-server.webp",
+            "width": 440,
+            "height": 956
+          }
+        },
+        {
+          "id": "import-success",
+          "caption": "Wallet imported.",
+          "state": "success",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#import-success",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/import-success.webp",
+            "width": 750,
+            "height": 1623
+          }
+        }
+      ]
+    },
+    {
+      "id": "home",
+      "title": "Home and activity",
+      "intro": "One balance on top, everything that happened below, including the background work Ark needs.",
+      "url": "https://www.arke.cash/screens#home",
+      "screens": [
+        {
+          "id": "home-empty",
+          "caption": "A new wallet with nothing in it points to the test guide.",
+          "state": "empty",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#home-empty",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/home-empty.webp",
+            "width": 750,
+            "height": 1623
+          }
+        },
+        {
+          "id": "home-balance",
+          "caption": "The balance card over the activity list.",
+          "state": "default",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-11-08",
+          "url": "https://www.arke.cash/screens#home-balance",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/home-balance.webp",
+            "width": 390,
+            "height": 844
+          }
+        },
+        {
+          "id": "home-refreshing",
+          "caption": "Refreshes keep coins from expiring. They run in the background and show up in activity.",
+          "state": "loading",
+          "network": "signet",
+          "arkSpecific": true,
+          "captured": "2026-10-21",
+          "url": "https://www.arke.cash/screens#home-refreshing",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/home-refreshing.webp",
+            "width": 390,
+            "height": 844
+          }
+        },
+        {
+          "id": "activity-filters",
+          "caption": "Tapping a tag filters the activity list.",
+          "state": "filled",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#activity-filters",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/activity-filters.webp",
+            "width": 750,
+            "height": 1623
+          }
+        },
+        {
+          "id": "transaction-detail",
+          "caption": "A payment with its contact and tag, and room for a note.",
+          "state": "default",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#transaction-detail",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/transaction-detail.webp",
+            "width": 750,
+            "height": 1623
+          }
+        },
+        {
+          "id": "transaction-technical",
+          "caption": "Technical details of the same payment, one tap away.",
+          "state": "default",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#transaction-technical",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/transaction-technical.webp",
+            "width": 750,
+            "height": 1623
+          }
+        }
+      ]
+    },
+    {
+      "id": "balances",
+      "title": "Balances, boarding and refresh",
+      "intro": "Arké holds two balances. Payments lives on Ark for fast, cheap payments. Savings is plain on-chain bitcoin. Moving funds onto Ark is called boarding, and coins on Ark need a refresh before they expire.",
+      "url": "https://www.arke.cash/screens#balances",
+      "screens": [
+        {
+          "id": "balance-detail",
+          "caption": "Payments and Savings side by side, with the refresh status in between.",
+          "state": "default",
+          "network": "signet",
+          "arkSpecific": true,
+          "captured": "2026-11-08",
+          "url": "https://www.arke.cash/screens#balance-detail",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/balance-detail.webp",
+            "width": 390,
+            "height": 844
+          }
+        },
+        {
+          "id": "move-to-payments-empty",
+          "caption": "Boarding in one paragraph, with the minimum and fees up front.",
+          "state": "empty",
+          "network": "signet",
+          "arkSpecific": true,
+          "captured": "2026-11-08",
+          "url": "https://www.arke.cash/screens#move-to-payments-empty",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/move-to-payments-empty.webp",
+            "width": 390,
+            "height": 844
+          }
+        },
+        {
+          "id": "move-to-payments-filled",
+          "caption": "The Ark fee is shown separately from the network fee.",
+          "state": "filled",
+          "network": "signet",
+          "arkSpecific": true,
+          "captured": "2026-11-08",
+          "url": "https://www.arke.cash/screens#move-to-payments-filled",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/move-to-payments-filled.webp",
+            "width": 390,
+            "height": 844
+          }
+        },
+        {
+          "id": "transfer-started",
+          "caption": "Boarding started. Funds arrive once the transaction confirms.",
+          "state": "success",
+          "network": "signet",
+          "arkSpecific": true,
+          "captured": "2026-11-08",
+          "url": "https://www.arke.cash/screens#transfer-started",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/transfer-started.webp",
+            "width": 390,
+            "height": 844
+          }
+        },
+        {
+          "id": "balance-detail-pending",
+          "caption": "Both balances show pending amounts while boarding confirms. The next refresh is a day away.",
+          "state": "loading",
+          "network": "signet",
+          "arkSpecific": true,
+          "captured": "2026-11-08",
+          "url": "https://www.arke.cash/screens#balance-detail-pending",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/balance-detail-pending.webp",
+            "width": 390,
+            "height": 844
+          }
+        },
+        {
+          "id": "refresh-form",
+          "caption": "A refresh keeps the Payments balance active. When none is needed yet, Start stays off.",
+          "state": "default",
+          "network": "signet",
+          "arkSpecific": true,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#refresh-form",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/refresh-form.webp",
+            "width": 750,
+            "height": 1623
+          }
+        },
+        {
+          "id": "offboard-form",
+          "caption": "Moving funds back to Savings, with the maximum shown up front.",
+          "state": "empty",
+          "network": "signet",
+          "arkSpecific": true,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#offboard-form",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/offboard-form.webp",
+            "width": 750,
+            "height": 1623
+          }
+        },
+        {
+          "id": "offboard-form-filled",
+          "caption": "With an amount, the fee estimate appears.",
+          "state": "filled",
+          "network": "signet",
+          "arkSpecific": true,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#offboard-form-filled",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/offboard-form-filled.webp",
+            "width": 750,
+            "height": 1623
+          }
+        },
+        {
+          "id": "offboard-running",
+          "caption": "Preparing the transfer.",
+          "state": "loading",
+          "network": "signet",
+          "arkSpecific": true,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#offboard-running",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/offboard-running.webp",
+            "width": 750,
+            "height": 1623
+          }
+        },
+        {
+          "id": "offboard-success",
+          "caption": "The transfer has started and completes on its own.",
+          "state": "success",
+          "network": "signet",
+          "arkSpecific": true,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#offboard-success",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/offboard-success.webp",
+            "width": 750,
+            "height": 1623
+          }
+        }
+      ]
+    },
+    {
+      "id": "receive",
+      "title": "Receive",
+      "intro": "Ask for an amount, or share addresses.",
+      "url": "https://www.arke.cash/screens#receive",
+      "screens": [
+        {
+          "id": "request-payment",
+          "caption": "A payment request starts with the amount.",
+          "state": "empty",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-10-27",
+          "url": "https://www.arke.cash/screens#request-payment",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/request-payment.webp",
+            "width": 390,
+            "height": 844
+          }
+        },
+        {
+          "id": "receive-lightning-qr",
+          "caption": "A Lightning request as a QR code, with the amount underneath.",
+          "state": "default",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#receive-lightning-qr",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/receive-lightning-qr.webp",
+            "width": 750,
+            "height": 1623
+          }
+        },
+        {
+          "id": "share-addresses",
+          "caption": "An Ark address and an on-chain fallback, each with its own copy button.",
+          "state": "default",
+          "network": "signet",
+          "arkSpecific": true,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#share-addresses",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/share-addresses.webp",
+            "width": 750,
+            "height": 1623
+          }
+        }
+      ]
+    },
+    {
+      "id": "send",
+      "title": "Send",
+      "intro": "One field takes any address or payment request. The fee is shown as early as possible and only as exact as it can be.",
+      "url": "https://www.arke.cash/screens#send",
+      "screens": [
+        {
+          "id": "scan-camera-denied",
+          "caption": "Without camera access, the scan view explains why and links to Settings.",
+          "state": "error",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-10-27",
+          "url": "https://www.arke.cash/screens#scan-camera-denied",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/scan-camera-denied.webp",
+            "width": 390,
+            "height": 844
+          }
+        },
+        {
+          "id": "quick-send-address-found",
+          "caption": "A pasted Ark address is recognised and marked valid.",
+          "state": "filled",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#quick-send-address-found",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/quick-send-address-found.webp",
+            "width": 750,
+            "height": 1623
+          }
+        },
+        {
+          "id": "send-fee-approximate",
+          "caption": "Before there is an amount, the fee is an approximate grey value with a tilde.",
+          "state": "filled",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-10-27",
+          "url": "https://www.arke.cash/screens#send-fee-approximate",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/send-fee-approximate.webp",
+            "width": 390,
+            "height": 844
+          }
+        },
+        {
+          "id": "send-fee-priced",
+          "caption": "With an amount, the exact fee replaces the estimate.",
+          "state": "filled",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-10-27",
+          "url": "https://www.arke.cash/screens#send-fee-priced",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/send-fee-priced.webp",
+            "width": 390,
+            "height": 844
+          }
+        },
+        {
+          "id": "fee-speed-sheet",
+          "caption": "Each speed shows its own fee, not just a rate.",
+          "state": "default",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-10-27",
+          "url": "https://www.arke.cash/screens#fee-speed-sheet",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/fee-speed-sheet.webp",
+            "width": 390,
+            "height": 844
+          }
+        },
+        {
+          "id": "send-below-minimum",
+          "caption": "Below the minimum, an orange hint names it.",
+          "state": "warning",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-10-27",
+          "url": "https://www.arke.cash/screens#send-below-minimum",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/send-below-minimum.webp",
+            "width": 390,
+            "height": 844
+          }
+        },
+        {
+          "id": "send-estimating",
+          "caption": "While the fee is estimated, Send waits. Space for the caption is reserved, so nothing jumps.",
+          "state": "loading",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-10-27",
+          "url": "https://www.arke.cash/screens#send-estimating",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/send-estimating.webp",
+            "width": 390,
+            "height": 844
+          }
+        },
+        {
+          "id": "send-success",
+          "caption": "Payment sent. A contact, tag or note can be added right away.",
+          "state": "success",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#send-success",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/send-success.webp",
+            "width": 750,
+            "height": 1623
+          }
+        },
+        {
+          "id": "send-lightning-address",
+          "caption": "A lightning address is recognised as valid.",
+          "state": "filled",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#send-lightning-address",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/send-lightning-address.webp",
+            "width": 750,
+            "height": 1623
+          }
+        },
+        {
+          "id": "send-lightning-form",
+          "caption": "Paying a lightning address, with the fee shown before sending.",
+          "state": "filled",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#send-lightning-form",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/send-lightning-form.webp",
+            "width": 750,
+            "height": 1623
+          }
+        },
+        {
+          "id": "send-lightning-progress",
+          "caption": "Sending.",
+          "state": "loading",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#send-lightning-progress",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/send-lightning-progress.webp",
+            "width": 750,
+            "height": 1623
+          }
+        },
+        {
+          "id": "send-payment-request",
+          "caption": "A payment request fills in the amount and the destination.",
+          "state": "filled",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-10-27",
+          "url": "https://www.arke.cash/screens#send-payment-request",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/send-payment-request.webp",
+            "width": 390,
+            "height": 844
+          }
+        },
+        {
+          "id": "send-insufficient",
+          "caption": "When funds fall short, the gap is shown as an amount.",
+          "state": "error",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-11-04",
+          "url": "https://www.arke.cash/screens#send-insufficient",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/send-insufficient.webp",
+            "width": 390,
+            "height": 844
+          }
+        },
+        {
+          "id": "send-paste-error",
+          "caption": "Text that isn't an address or payment request is marked invalid right away.",
+          "state": "error",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#send-paste-error",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/send-paste-error.webp",
+            "width": 750,
+            "height": 1623
+          }
+        },
+        {
+          "id": "send-foreign-ark-address",
+          "caption": "The address is valid, but on another server. One line says why it can't be paid.",
+          "state": "warning",
+          "network": "signet",
+          "arkSpecific": true,
+          "captured": "2026-11-04",
+          "url": "https://www.arke.cash/screens#send-foreign-ark-address",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/send-foreign-ark-address.webp",
+            "width": 390,
+            "height": 844
+          }
+        },
+        {
+          "id": "quick-send-foreign-ark-address",
+          "caption": "The same case after pasting. The card shows only the reason.",
+          "state": "warning",
+          "network": "signet",
+          "arkSpecific": true,
+          "captured": "2026-11-04",
+          "url": "https://www.arke.cash/screens#quick-send-foreign-ark-address",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/quick-send-foreign-ark-address.webp",
+            "width": 390,
+            "height": 844
+          }
+        },
+        {
+          "id": "contact-foreign-ark-address",
+          "caption": "The same case when paying a contact.",
+          "state": "warning",
+          "network": "signet",
+          "arkSpecific": true,
+          "captured": "2026-11-04",
+          "url": "https://www.arke.cash/screens#contact-foreign-ark-address",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/contact-foreign-ark-address.webp",
+            "width": 390,
+            "height": 844
+          }
+        }
+      ]
+    },
+    {
+      "id": "contacts",
+      "title": "Contacts",
+      "intro": "Contacts keep addresses and payment history together, so paying someone again is a tap.",
+      "url": "https://www.arke.cash/screens#contacts",
+      "screens": [
+        {
+          "id": "contacts-list",
+          "caption": "Contacts, each with a quick pay button.",
+          "state": "default",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#contacts-list",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/contacts-list.webp",
+            "width": 750,
+            "height": 1623
+          }
+        },
+        {
+          "id": "contact-detail",
+          "caption": "A contact with totals sent and received, and the addresses used.",
+          "state": "default",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#contact-detail",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/contact-detail.webp",
+            "width": 750,
+            "height": 1623
+          }
+        },
+        {
+          "id": "faucet-intro",
+          "caption": "On the test network, a sheet explains how to get test coins from a contact called Faucetto Signetto.",
+          "state": "default",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#faucet-intro",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/faucet-intro.webp",
+            "width": 750,
+            "height": 1623
+          }
+        },
+        {
+          "id": "faucet-requesting",
+          "caption": "Requesting test coins from Faucetto's contact card.",
+          "state": "loading",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#faucet-requesting",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/faucet-requesting.webp",
+            "width": 750,
+            "height": 1623
+          }
+        }
+      ]
+    },
+    {
+      "id": "settings",
+      "title": "Settings",
+      "intro": "Backup, devices and preferences, plus X-Ray, which shows the raw wallet for anyone who wants to see what Ark is doing underneath.",
+      "url": "https://www.arke.cash/screens#settings",
+      "screens": [
+        {
+          "id": "settings-top",
+          "caption": "Profile, units, currency, theme, notifications and security.",
+          "state": "default",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#settings-top",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/settings-top.webp",
+            "width": 750,
+            "height": 1623
+          }
+        },
+        {
+          "id": "settings-advanced",
+          "caption": "Fee details, address history and X-Ray, then experiments and a danger zone.",
+          "state": "default",
+          "network": "signet",
+          "arkSpecific": true,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#settings-advanced",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/settings-advanced.webp",
+            "width": 750,
+            "height": 1623
+          }
+        },
+        {
+          "id": "phrase-show",
+          "caption": "The recovery phrase stays under a scratch-off surface until you reveal it.",
+          "state": "default",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#phrase-show",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/phrase-show.webp",
+            "width": 750,
+            "height": 1623
+          }
+        },
+        {
+          "id": "backup-export",
+          "caption": "The backup file holds the payment history. A new wallet has nothing to back up yet.",
+          "state": "empty",
+          "network": "signet",
+          "arkSpecific": true,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#backup-export",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/backup-export.webp",
+            "width": 750,
+            "height": 1623
+          }
+        },
+        {
+          "id": "link-device",
+          "caption": "Other devices on the same iCloud account appear here, view-only until they take over.",
+          "state": "default",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#link-device",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/link-device.webp",
+            "width": 750,
+            "height": 1623
+          }
+        },
+        {
+          "id": "fee-schedule",
+          "caption": "The server's fee for each operation, including how refresh fees rise as coins near expiry.",
+          "state": "default",
+          "network": "signet",
+          "arkSpecific": true,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#fee-schedule",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/fee-schedule.webp",
+            "width": 750,
+            "height": 1623
+          }
+        },
+        {
+          "id": "address-patterns",
+          "caption": "An experiment that gives every address a visual pattern, so two addresses can be compared at a glance.",
+          "state": "default",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#address-patterns",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/address-patterns.webp",
+            "width": 750,
+            "height": 1623
+          }
+        },
+        {
+          "id": "currency-setting",
+          "caption": "A currency for reference values. Amounts always stay in bitcoin.",
+          "state": "default",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#currency-setting",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/currency-setting.webp",
+            "width": 750,
+            "height": 1623
+          }
+        },
+        {
+          "id": "theme-setting",
+          "caption": "Themes change the balance card and backgrounds.",
+          "state": "default",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#theme-setting",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/theme-setting.webp",
+            "width": 750,
+            "height": 1623
+          }
+        },
+        {
+          "id": "xray",
+          "caption": "The wallet's VTXOs, exits, pending rounds and configuration.",
+          "state": "default",
+          "network": "signet",
+          "arkSpecific": true,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#xray",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/xray.webp",
+            "width": 750,
+            "height": 1623
+          }
+        },
+        {
+          "id": "vtxo-detail",
+          "caption": "One VTXO with its outpoint and expiry, and actions to refresh, offboard or exit.",
+          "state": "default",
+          "network": "signet",
+          "arkSpecific": true,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#vtxo-detail",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/vtxo-detail.webp",
+            "width": 750,
+            "height": 1623
+          }
+        },
+        {
+          "id": "xray-parameters",
+          "caption": "The server's Ark parameters, such as round interval, expiry and exit deltas, and limits.",
+          "state": "default",
+          "network": "signet",
+          "arkSpecific": true,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#xray-parameters",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/xray-parameters.webp",
+            "width": 750,
+            "height": 1623
+          }
+        },
+        {
+          "id": "xray-background",
+          "caption": "Exchange rates, background activity and debug log export.",
+          "state": "default",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#xray-background",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/xray-background.webp",
+            "width": 750,
+            "height": 1623
+          }
+        }
+      ]
+    },
+    {
+      "id": "delete",
+      "title": "Deleting a wallet",
+      "intro": "Deleting is deliberate. A copy of the backup file comes first, then two words of the recovery phrase, then a final slide.",
+      "url": "https://www.arke.cash/screens#delete",
+      "screens": [
+        {
+          "id": "delete-wallet",
+          "caption": "The three steps, up front. With coins on Ark, a warning says when they'll be lost unless the wallet is restored and refreshed in time.",
+          "state": "warning",
+          "network": "signet",
+          "arkSpecific": true,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#delete-wallet",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/delete-wallet.webp",
+            "width": 750,
+            "height": 1623
+          }
+        },
+        {
+          "id": "delete-export",
+          "caption": "First, save a copy of the backup file. Continue stays off until you do.",
+          "state": "default",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#delete-export",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/delete-export.webp",
+            "width": 750,
+            "height": 1623
+          }
+        },
+        {
+          "id": "delete-export-download",
+          "caption": "The backup file leaves through the share sheet.",
+          "state": "default",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#delete-export-download",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/delete-export-download.webp",
+            "width": 750,
+            "height": 1623
+          }
+        },
+        {
+          "id": "delete-phrase-confirm",
+          "caption": "Then two words of the recovery phrase confirm it's written down.",
+          "state": "filled",
+          "network": "signet",
+          "arkSpecific": false,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#delete-phrase-confirm",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/delete-phrase-confirm.webp",
+            "width": 750,
+            "height": 1623
+          }
+        },
+        {
+          "id": "after-delete-cover",
+          "caption": "Afterwards the app is back at the cover, on the default server.",
+          "state": "default",
+          "network": "mainnet",
+          "arkSpecific": false,
+          "captured": "2026-11-20",
+          "url": "https://www.arke.cash/screens#after-delete-cover",
+          "image": {
+            "url": "https://www.arke.cash/assets/images/screens/after-delete-cover.webp",
+            "width": 750,
+            "height": 1623
+          }
+        }
+      ]
+    }
+  ]
+}
