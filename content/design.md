@@ -52,6 +52,8 @@ That's where Arké's imagery lives. It pulls from fashion editorials, AI generat
 
 The design system, visual assets, and design decisions are open source along with the code. Other wallet builders are welcome to take whatever is useful, whether that's components, patterns, or the reasoning behind them.
 
+To see the app as it stands, browse the [screen gallery](/screens). It shows Arké's main flows screen by screen, each one dated.
+
 One of Arké's goals is to widen what people think bitcoin software can look like. That only works if the work is out in the open for others to use.
 
 ---

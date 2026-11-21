@@ -1,0 +1,306 @@
+{
+  "welcome-mainnet": {
+    "width": 440,
+    "height": 956
+  },
+  "welcome-signet": {
+    "width": 390,
+    "height": 844
+  },
+  "server-sheet-default": {
+    "width": 440,
+    "height": 956
+  },
+  "server-options": {
+    "width": 440,
+    "height": 956
+  },
+  "server-sheet-development": {
+    "width": 440,
+    "height": 956
+  },
+  "custom-server-found": {
+    "width": 440,
+    "height": 956
+  },
+  "custom-server-error": {
+    "width": 750,
+    "height": 1623
+  },
+  "server-sheet-custom": {
+    "width": 440,
+    "height": 956
+  },
+  "create-wallet": {
+    "width": 750,
+    "height": 1623
+  },
+  "wallet-created": {
+    "width": 750,
+    "height": 1623
+  },
+  "phrase-empty": {
+    "width": 402,
+    "height": 874
+  },
+  "phrase-autocomplete": {
+    "width": 402,
+    "height": 874
+  },
+  "phrase-valid": {
+    "width": 750,
+    "height": 1623
+  },
+  "phrase-checksum-error": {
+    "width": 750,
+    "height": 1623
+  },
+  "phrase-invalid-word": {
+    "width": 750,
+    "height": 1623
+  },
+  "backup-file": {
+    "width": 402,
+    "height": 874
+  },
+  "import-custom-server": {
+    "width": 440,
+    "height": 956
+  },
+  "import-success": {
+    "width": 750,
+    "height": 1623
+  },
+  "home-empty": {
+    "width": 750,
+    "height": 1623
+  },
+  "home-balance": {
+    "width": 390,
+    "height": 844
+  },
+  "home-refreshing": {
+    "width": 390,
+    "height": 844
+  },
+  "activity-filters": {
+    "width": 750,
+    "height": 1623
+  },
+  "transaction-detail": {
+    "width": 750,
+    "height": 1623
+  },
+  "transaction-technical": {
+    "width": 750,
+    "height": 1623
+  },
+  "balance-detail": {
+    "width": 390,
+    "height": 844
+  },
+  "move-to-payments-empty": {
+    "width": 390,
+    "height": 844
+  },
+  "move-to-payments-filled": {
+    "width": 390,
+    "height": 844
+  },
+  "transfer-started": {
+    "width": 390,
+    "height": 844
+  },
+  "balance-detail-pending": {
+    "width": 390,
+    "height": 844
+  },
+  "refresh-form": {
+    "width": 750,
+    "height": 1623
+  },
+  "offboard-form": {
+    "width": 750,
+    "height": 1623
+  },
+  "offboard-form-filled": {
+    "width": 750,
+    "height": 1623
+  },
+  "offboard-running": {
+    "width": 750,
+    "height": 1623
+  },
+  "offboard-success": {
+    "width": 750,
+    "height": 1623
+  },
+  "request-payment": {
+    "width": 390,
+    "height": 844
+  },
+  "receive-lightning-qr": {
+    "width": 750,
+    "height": 1623
+  },
+  "share-addresses": {
+    "width": 750,
+    "height": 1623
+  },
+  "scan-camera-denied": {
+    "width": 390,
+    "height": 844
+  },
+  "quick-send-address-found": {
+    "width": 750,
+    "height": 1623
+  },
+  "send-fee-approximate": {
+    "width": 390,
+    "height": 844
+  },
+  "send-fee-priced": {
+    "width": 390,
+    "height": 844
+  },
+  "fee-speed-sheet": {
+    "width": 390,
+    "height": 844
+  },
+  "send-below-minimum": {
+    "width": 390,
+    "height": 844
+  },
+  "send-estimating": {
+    "width": 390,
+    "height": 844
+  },
+  "send-success": {
+    "width": 750,
+    "height": 1623
+  },
+  "send-lightning-address": {
+    "width": 750,
+    "height": 1623
+  },
+  "send-lightning-form": {
+    "width": 750,
+    "height": 1623
+  },
+  "send-lightning-progress": {
+    "width": 750,
+    "height": 1623
+  },
+  "send-payment-request": {
+    "width": 390,
+    "height": 844
+  },
+  "send-insufficient": {
+    "width": 390,
+    "height": 844
+  },
+  "send-paste-error": {
+    "width": 750,
+    "height": 1623
+  },
+  "send-foreign-ark-address": {
+    "width": 390,
+    "height": 844
+  },
+  "quick-send-foreign-ark-address": {
+    "width": 390,
+    "height": 844
+  },
+  "contact-foreign-ark-address": {
+    "width": 390,
+    "height": 844
+  },
+  "contacts-list": {
+    "width": 750,
+    "height": 1623
+  },
+  "contact-detail": {
+    "width": 750,
+    "height": 1623
+  },
+  "faucet-intro": {
+    "width": 750,
+    "height": 1623
+  },
+  "faucet-requesting": {
+    "width": 750,
+    "height": 1623
+  },
+  "settings-top": {
+    "width": 750,
+    "height": 1623
+  },
+  "settings-advanced": {
+    "width": 750,
+    "height": 1623
+  },
+  "phrase-show": {
+    "width": 750,
+    "height": 1623
+  },
+  "backup-export": {
+    "width": 750,
+    "height": 1623
+  },
+  "link-device": {
+    "width": 750,
+    "height": 1623
+  },
+  "fee-schedule": {
+    "width": 750,
+    "height": 1623
+  },
+  "address-patterns": {
+    "width": 750,
+    "height": 1623
+  },
+  "currency-setting": {
+    "width": 750,
+    "height": 1623
+  },
+  "theme-setting": {
+    "width": 750,
+    "height": 1623
+  },
+  "xray": {
+    "width": 750,
+    "height": 1623
+  },
+  "vtxo-detail": {
+    "width": 750,
+    "height": 1623
+  },
+  "xray-parameters": {
+    "width": 750,
+    "height": 1623
+  },
+  "xray-background": {
+    "width": 750,
+    "height": 1623
+  },
+  "delete-wallet": {
+    "width": 750,
+    "height": 1623
+  },
+  "delete-export": {
+    "width": 750,
+    "height": 1623
+  },
+  "delete-export-download": {
+    "width": 750,
+    "height": 1623
+  },
+  "delete-phrase-confirm": {
+    "width": 750,
+    "height": 1623
+  },
+  "after-delete-cover": {
+    "width": 750,
+    "height": 1623
+  }
+}

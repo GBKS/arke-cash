@@ -1,0 +1,513 @@
+# Screens shown on /screens.
+#
+# `source` is a path under Arke-sessions/screenshots without the extension.
+# scripts/export-screens.mjs prefers `<source>@3x.png` when it exists and
+# writes public/assets/images/screens/<id>.webp. Run it after editing this
+# file. `id` doubles as the anchor on the page, so keep ids stable, unique,
+# and different from every flow id.
+#
+# state: default | empty | filled | loading | success | error | warning
+# network: mainnet | signet
+# ark: true when the screen exists because of Ark
+
+flows:
+  - id: onboarding
+    title: First use
+    intro: Before a wallet exists, Arké asks which Ark server to use. A wallet stays with one server for its whole life, so the choice comes first.
+    screens:
+      - id: welcome-mainnet
+        source: 2026-10-30/180721
+        state: default
+        network: mainnet
+        ark: false
+        caption: The cover, with Create and Import. The button at the top left opens the server choice.
+      - id: welcome-signet
+        source: 2026-11-08/172101
+        state: default
+        network: signet
+        ark: true
+        caption: On the test server, the video and a line under the buttons change, so a test wallet is never mistaken for a real one.
+      - id: server-sheet-default
+        source: 2026-10-30/180732
+        state: default
+        network: mainnet
+        ark: true
+        caption: One sentence on what a server is, the default server, and a link to its operator's terms.
+      - id: server-options
+        source: 2026-10-30/180745
+        state: default
+        network: mainnet
+        ark: true
+        caption: Default, Development and Custom server, each with who runs it.
+      - id: server-sheet-development
+        source: 2026-10-30/180759
+        state: default
+        network: signet
+        ark: true
+        caption: Picking Development switches to signet, where coins have no value.
+      - id: custom-server-found
+        source: 2026-10-30/180857
+        state: success
+        network: mainnet
+        ark: true
+        caption: Checking a custom address reports its network and prefills the block explorer.
+      - id: custom-server-error
+        source: 2026-11-20/165051
+        state: error
+        network: mainnet
+        ark: true
+        caption: A failed check says so plainly, with the raw error underneath for those who need it.
+      - id: server-sheet-custom
+        source: 2026-10-30/180911
+        state: default
+        network: mainnet
+        ark: true
+        caption: A saved custom server, shown by its host name.
+      - id: create-wallet
+        source: 2026-11-20/165502
+        state: loading
+        network: signet
+        ark: false
+        caption: A short animation plays while the wallet is created.
+      - id: wallet-created
+        source: 2026-11-20/165519
+        state: success
+        network: signet
+        ark: false
+        caption: The new wallet is ready.
+
+  - id: restore
+    title: Restore
+    intro: Restoring takes the recovery phrase and, optionally, a backup file that brings back history and anything still in progress.
+    screens:
+      - id: phrase-empty
+        source: 2026-11-13/111729
+        state: empty
+        network: signet
+        ark: false
+        caption: One field per word, with paste in the first field.
+      - id: phrase-autocomplete
+        source: 2026-11-13/113929
+        state: filled
+        network: signet
+        ark: false
+        caption: After two letters, chips suggest words from the recovery word list.
+      - id: phrase-valid
+        source: 2026-11-20/190630
+        state: success
+        network: signet
+        ark: false
+        caption: A valid phrase enables Continue. Switching to 24 words is a quiet link.
+      - id: phrase-checksum-error
+        source: 2026-11-20/165437
+        state: error
+        network: signet
+        ark: false
+        caption: Every word is on the list, but the phrase as a whole doesn't check out.
+      - id: phrase-invalid-word
+        source: 2026-11-20/165406
+        state: error
+        network: signet
+        ark: false
+        caption: A word that isn't on the list is outlined and named.
+      - id: backup-file
+        source: 2026-11-13/082734
+        state: default
+        network: signet
+        ark: true
+        caption: The backup file restores history and payments in progress. Without it, funds still come back from the network.
+      - id: import-custom-server
+        source: 2026-10-30/104702
+        state: warning
+        network: mainnet
+        ark: true
+        caption: Restoring on a custom server says plainly which funds come back.
+      - id: import-success
+        source: 2026-11-20/190722
+        state: success
+        network: signet
+        ark: false
+        caption: Wallet imported.
+
+  - id: home
+    title: Home and activity
+    intro: One balance on top, everything that happened below, including the background work Ark needs.
+    screens:
+      - id: home-empty
+        source: 2026-11-20/165551
+        state: empty
+        network: signet
+        ark: false
+        caption: A new wallet with nothing in it points to the test guide.
+      - id: home-balance
+        source: 2026-11-08/184921
+        state: default
+        network: signet
+        ark: false
+        caption: The balance card over the activity list.
+      - id: home-refreshing
+        source: 2026-10-21/import-08-main-screen-settled
+        state: loading
+        network: signet
+        ark: true
+        caption: Refreshes keep coins from expiring. They run in the background and show up in activity.
+      - id: activity-filters
+        source: 2026-11-20/171310
+        state: filled
+        network: signet
+        ark: false
+        caption: Tapping a tag filters the activity list.
+      - id: transaction-detail
+        source: 2026-11-20/170850
+        state: default
+        network: signet
+        ark: false
+        caption: A payment with its contact and tag, and room for a note.
+      - id: transaction-technical
+        source: 2026-11-20/170916
+        state: default
+        network: signet
+        ark: false
+        caption: Technical details of the same payment, one tap away.
+
+  - id: balances
+    title: Balances, boarding and refresh
+    intro: Arké holds two balances. Payments lives on Ark for fast, cheap payments. Savings is plain on-chain bitcoin. Moving funds onto Ark is called boarding, and coins on Ark need a refresh before they expire.
+    screens:
+      - id: balance-detail
+        source: 2026-11-08/185727
+        state: default
+        network: signet
+        ark: true
+        caption: Payments and Savings side by side, with the refresh status in between.
+      - id: move-to-payments-empty
+        source: 2026-11-08/185739
+        state: empty
+        network: signet
+        ark: true
+        caption: Boarding in one paragraph, with the minimum and fees up front.
+      - id: move-to-payments-filled
+        source: 2026-11-08/185800
+        state: filled
+        network: signet
+        ark: true
+        caption: The Ark fee is shown separately from the network fee.
+      - id: transfer-started
+        source: 2026-11-08/185811
+        state: success
+        network: signet
+        ark: true
+        caption: Boarding started. Funds arrive once the transaction confirms.
+      - id: balance-detail-pending
+        source: 2026-11-08/185822
+        state: loading
+        network: signet
+        ark: true
+        caption: Both balances show pending amounts while boarding confirms. The next refresh is a day away.
+      - id: refresh-form
+        source: 2026-11-20/165514
+        state: default
+        network: signet
+        ark: true
+        caption: A refresh keeps the Payments balance active. When none is needed yet, Start stays off.
+      - id: offboard-form
+        source: 2026-11-20/165548
+        state: empty
+        network: signet
+        ark: true
+        caption: Moving funds back to Savings, with the maximum shown up front.
+      - id: offboard-form-filled
+        source: 2026-11-20/191145
+        state: filled
+        network: signet
+        ark: true
+        caption: With an amount, the fee estimate appears.
+      - id: offboard-running
+        source: 2026-11-20/191201
+        state: loading
+        network: signet
+        ark: true
+        caption: Preparing the transfer.
+      - id: offboard-success
+        source: 2026-11-20/191224
+        state: success
+        network: signet
+        ark: true
+        caption: The transfer has started and completes on its own.
+
+  - id: receive
+    title: Receive
+    intro: Ask for an amount, or share addresses.
+    screens:
+      - id: request-payment
+        source: 2026-10-27/103253
+        state: empty
+        network: signet
+        ark: false
+        caption: A payment request starts with the amount.
+      - id: receive-lightning-qr
+        source: 2026-11-20/165650
+        state: default
+        network: signet
+        ark: false
+        caption: A Lightning request as a QR code, with the amount underneath.
+      - id: share-addresses
+        source: 2026-11-20/165712
+        state: default
+        network: signet
+        ark: true
+        caption: An Ark address and an on-chain fallback, each with its own copy button.
+
+  - id: send
+    title: Send
+    intro: One field takes any address or payment request. The fee is shown as early as possible and only as exact as it can be.
+    screens:
+      - id: scan-camera-denied
+        source: 2026-10-27/094333
+        state: error
+        network: signet
+        ark: false
+        caption: Without camera access, the scan view explains why and links to Settings.
+      - id: quick-send-address-found
+        source: 2026-11-20/170010
+        state: filled
+        network: signet
+        ark: false
+        caption: A pasted Ark address is recognised and marked valid.
+      - id: send-fee-approximate
+        source: 2026-10-27/104324
+        state: filled
+        network: signet
+        ark: false
+        caption: Before there is an amount, the fee is an approximate grey value with a tilde.
+      - id: send-fee-priced
+        source: 2026-10-27/104401
+        state: filled
+        network: signet
+        ark: false
+        caption: With an amount, the exact fee replaces the estimate.
+      - id: fee-speed-sheet
+        source: 2026-10-27/104433
+        state: default
+        network: signet
+        ark: false
+        caption: Each speed shows its own fee, not just a rate.
+      - id: send-below-minimum
+        source: 2026-10-27/175903
+        state: warning
+        network: signet
+        ark: false
+        caption: Below the minimum, an orange hint names it.
+      - id: send-estimating
+        source: 2026-10-27/183127
+        state: loading
+        network: signet
+        ark: false
+        caption: While the fee is estimated, Send waits. Space for the caption is reserved, so nothing jumps.
+      - id: send-success
+        source: 2026-11-20/170132
+        state: success
+        network: signet
+        ark: false
+        caption: Payment sent. A contact, tag or note can be added right away.
+      - id: send-lightning-address
+        source: 2026-11-20/170317
+        state: filled
+        network: signet
+        ark: false
+        caption: A lightning address is recognised as valid.
+      - id: send-lightning-form
+        source: 2026-11-20/190856
+        state: filled
+        network: signet
+        ark: false
+        caption: Paying a lightning address, with the fee shown before sending.
+      - id: send-lightning-progress
+        source: 2026-11-20/190909
+        state: loading
+        network: signet
+        ark: false
+        caption: Sending.
+      - id: send-payment-request
+        source: 2026-10-27/213752
+        state: filled
+        network: signet
+        ark: false
+        caption: A payment request fills in the amount and the destination.
+      - id: send-insufficient
+        source: 2026-11-04/115314
+        state: error
+        network: signet
+        ark: false
+        caption: When funds fall short, the gap is shown as an amount.
+      - id: send-paste-error
+        source: 2026-11-20/165914
+        state: error
+        network: signet
+        ark: false
+        caption: Text that isn't an address or payment request is marked invalid right away.
+      - id: send-foreign-ark-address
+        source: 2026-11-04/125749
+        state: warning
+        network: signet
+        ark: true
+        caption: The address is valid, but on another server. One line says why it can't be paid.
+      - id: quick-send-foreign-ark-address
+        source: 2026-11-04/125947
+        state: warning
+        network: signet
+        ark: true
+        caption: The same case after pasting. The card shows only the reason.
+      - id: contact-foreign-ark-address
+        source: 2026-11-04/130247
+        state: warning
+        network: signet
+        ark: true
+        caption: The same case when paying a contact.
+
+  - id: contacts
+    title: Contacts
+    intro: Contacts keep addresses and payment history together, so paying someone again is a tap.
+    screens:
+      - id: contacts-list
+        source: 2026-11-20/180758
+        state: default
+        network: signet
+        ark: false
+        caption: Contacts, each with a quick pay button.
+      - id: contact-detail
+        source: 2026-11-20/180847
+        state: default
+        network: signet
+        ark: false
+        caption: A contact with totals sent and received, and the addresses used.
+      - id: faucet-intro
+        source: 2026-11-20/190458
+        state: default
+        network: signet
+        ark: false
+        caption: On the test network, a sheet explains how to get test coins from a contact called Faucetto Signetto.
+      - id: faucet-requesting
+        source: 2026-11-20/190526
+        state: loading
+        network: signet
+        ark: false
+        caption: Requesting test coins from Faucetto's contact card.
+
+  - id: settings
+    title: Settings
+    intro: Backup, devices and preferences, plus X-Ray, which shows the raw wallet for anyone who wants to see what Ark is doing underneath.
+    screens:
+      - id: settings-top
+        source: 2026-11-20/164956
+        state: default
+        network: signet
+        ark: false
+        caption: Profile, units, currency, theme, notifications and security.
+      - id: settings-advanced
+        source: 2026-11-20/165029
+        state: default
+        network: signet
+        ark: true
+        caption: Fee details, address history and X-Ray, then experiments and a danger zone.
+      - id: phrase-show
+        source: 2026-11-20/190937
+        state: default
+        network: signet
+        ark: false
+        caption: The recovery phrase stays under a scratch-off surface until you reveal it.
+      - id: backup-export
+        source: 2026-11-20/165734
+        state: empty
+        network: signet
+        ark: true
+        caption: The backup file holds the payment history. A new wallet has nothing to back up yet.
+      - id: link-device
+        source: 2026-11-20/165434
+        state: default
+        network: signet
+        ark: false
+        caption: Other devices on the same iCloud account appear here, view-only until they take over.
+      - id: fee-schedule
+        source: 2026-11-20/165044
+        state: default
+        network: signet
+        ark: true
+        caption: The server's fee for each operation, including how refresh fees rise as coins near expiry.
+      - id: address-patterns
+        source: 2026-11-20/165240
+        state: default
+        network: signet
+        ark: false
+        caption: An experiment that gives every address a visual pattern, so two addresses can be compared at a glance.
+      - id: currency-setting
+        source: 2026-11-20/165405
+        state: default
+        network: signet
+        ark: false
+        caption: A currency for reference values. Amounts always stay in bitcoin.
+      - id: theme-setting
+        source: 2026-11-20/165350
+        state: default
+        network: signet
+        ark: false
+        caption: Themes change the balance card and backgrounds.
+      - id: xray
+        source: 2026-11-20/165110
+        state: default
+        network: signet
+        ark: true
+        caption: The wallet's VTXOs, exits, pending rounds and configuration.
+      - id: vtxo-detail
+        source: 2026-11-20/165126
+        state: default
+        network: signet
+        ark: true
+        caption: One VTXO with its outpoint and expiry, and actions to refresh, offboard or exit.
+      - id: xray-parameters
+        source: 2026-11-20/165211
+        state: default
+        network: signet
+        ark: true
+        caption: The server's Ark parameters, such as round interval, expiry and exit deltas, and limits.
+      - id: xray-background
+        source: 2026-11-20/165223
+        state: default
+        network: signet
+        ark: false
+        caption: Exchange rates, background activity and debug log export.
+
+  - id: delete
+    title: Deleting a wallet
+    intro: Deleting is deliberate. A copy of the backup file comes first, then two words of the recovery phrase, then a final slide.
+    screens:
+      - id: delete-wallet
+        source: 2026-11-20/165310
+        state: warning
+        network: signet
+        ark: true
+        caption: The three steps, up front. With coins on Ark, a warning says when they'll be lost unless the wallet is restored and refreshed in time.
+      - id: delete-export
+        source: 2026-11-20/165938
+        state: default
+        network: signet
+        ark: false
+        caption: First, save a copy of the backup file. Continue stays off until you do.
+      - id: delete-export-download
+        source: 2026-11-20/191154
+        state: default
+        network: signet
+        ark: false
+        caption: The backup file leaves through the share sheet.
+      - id: delete-phrase-confirm
+        source: 2026-11-20/191509
+        state: filled
+        network: signet
+        ark: false
+        caption: Then two words of the recovery phrase confirm it's written down.
+      - id: after-delete-cover
+        source: 2026-11-20/191632
+        state: default
+        network: mainnet
+        ark: false
+        caption: Afterwards the app is back at the cover, on the default server.

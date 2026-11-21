@@ -26,7 +26,8 @@ export default defineNuxtConfig({
         '/design',
         '/open-source',
         '/ark',
-        '/faq'
+        '/faq',
+        '/screens'
       ]
     }
   },
