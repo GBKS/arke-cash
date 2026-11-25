@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { PAGES } from './shared/site'
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
@@ -7,28 +9,7 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
-      routes: [
-        '/how',
-        '/how-technical',
-        '/test',
-        '/test-1',
-        '/test-2',
-        '/test-3',
-        '/test-4',
-        '/test-5',
-        '/test-6',
-        '/test-7',
-        '/test-8',
-        '/test-9',
-        '/privacy-policy',
-        '/terms-and-conditions',
-        '/roadmap',
-        '/design',
-        '/open-source',
-        '/ark',
-        '/faq',
-        '/screens'
-      ]
+      routes: [...PAGES, '/sitemap.xml']
     }
   },
 
@@ -60,6 +41,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: 'Arké',
+      htmlAttrs: { lang: 'en' },
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -75,10 +57,8 @@ export default defineNuxtConfig({
         { property: "og:description", content: "Pay with bitcoin. In stylé." },
         { property: "og:type", content: "product" },
         { property: "og:image", content: "https://www.arke.cash/assets/images/preview.jpg" },
-        { property: "og:url", content: "https://www.arke.cash" },
 
         { name: "robots", content: "index,follow" },
-        { name: "viewport", content: "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" },
         { name: "google", content: "notranslate" },
         { name: "HandheldFriendly", content: "true" },
         
@@ -86,7 +66,6 @@ export default defineNuxtConfig({
         { name: "mobile-web-app-status-bar-style", content: "black" }
       ],
       link: [
-        { rel: "canonical", href: "https://www.arke.cash" },
         { rel: "icon", type: "image/png", href: "/favicon-96x96.png", sizes: "96x96" },
         { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
         { rel: "shortcut icon", href: "/favicon.ico" },

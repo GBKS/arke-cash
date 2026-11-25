@@ -32,12 +32,15 @@ The site runs at http://localhost:3000.
 | `app/components/` | Site header, navigation, footer, site map, home page sections, and `Screenshots.vue`, used as `::screenshots` in the test guide |
 | `app/assets/css/` | Global styles and Sass variables |
 | `public/assets/` | Images, videos and fonts |
+| `shared/site.ts` | The site URL and the list of pages, used for prerendering, the sitemap, canonical URLs and the Markdown copies |
+| `modules/markdown-copies.ts` | Publishes each content page as Markdown at `/<page>.md` for agents |
+| `server/routes/sitemap.xml.ts` | Builds `/sitemap.xml` from the page list |
 | `server/api/faucet.post.ts` | Forwards a signet faucet request for an Ark address to `faucet.arke.cash` |
 | `scripts/export-screens.mjs` | Builds the gallery images and index from `content/screens.yml` |
 
 ## Adding or editing a page
 
-Most pages are Markdown in `content/` with a `title`, `description` and optional `image` in the front matter. The matching Vue file in `app/pages/` loads it by path. A new page needs both files. It also needs an entry in `nitro.prerender.routes` in `nuxt.config.ts` so it's prerendered, and a link in `app/components/SiteMap.vue` if it belongs in the menu.
+Most pages are Markdown in `content/` with a `title`, `description` and optional `image` in the front matter. The matching Vue file in `app/pages/` loads it by path. A new page needs both files. It also needs an entry in `CONTENT_PAGES` in `shared/site.ts`, which prerenders it, adds it to `/sitemap.xml` and publishes its Markdown at `/<page>.md`. Add a link in `app/components/SiteMap.vue` if it belongs in the menu, and in `public/llms.txt` if agents should find it.
 
 ## Screen gallery
 
