@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { CONTENT_PAGES, SITE_URL, canonicalPath } from '#shared/site'
+import { CONTENT_PAGES, normalizePath, pageUrl } from '#shared/site'
 
 // Canonical URL, og:url and, for content pages, the Markdown copy,
 // all derived from the current route.
 const route = useRoute()
-const path = computed(() => canonicalPath(route.path))
-const url = computed(() => `${SITE_URL}${path.value}`)
+const path = computed(() => normalizePath(route.path))
+const url = computed(() => pageUrl(route.path))
 
 useHead({
   link: () => [

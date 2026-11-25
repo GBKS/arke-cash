@@ -1,10 +1,10 @@
-import { PAGES, SITE_URL } from '#shared/site'
+import { PAGES, pageUrl } from '#shared/site'
 
 export default defineEventHandler((event) => {
   setHeader(event, 'Content-Type', 'application/xml; charset=utf-8')
 
   const urls = PAGES
-    .map(path => `  <url><loc>${SITE_URL}${path}</loc></url>`)
+    .map(path => `  <url><loc>${pageUrl(path)}</loc></url>`)
     .join('\n')
 
   return `<?xml version="1.0" encoding="UTF-8"?>

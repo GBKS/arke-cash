@@ -5,7 +5,7 @@
 import { mkdir, readFile, rm, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
 import { defineNuxtModule } from '@nuxt/kit'
-import { CONTENT_PAGES, SITE_URL } from '../shared/site'
+import { CONTENT_PAGES, SITE_URL, pageUrl } from '../shared/site'
 
 // `::screenshots` blocks are Vue components in the site. Turn them into
 // plain Markdown images with their captions.
@@ -52,7 +52,7 @@ export default defineNuxtModule({
     for (const path of CONTENT_PAGES) {
       const slug = path.slice(1)
       const source = await readFile(join(nuxt.options.rootDir, 'content', `${slug}.md`), 'utf8')
-      await writeFile(join(outDir, `${slug}.md`), addUrl(replaceScreenshots(source), `${SITE_URL}${path}`))
+      await writeFile(join(outDir, `${slug}.md`), addUrl(replaceScreenshots(source), pageUrl(path)))
     }
 
     nuxt.hook('nitro:config', (config) => {

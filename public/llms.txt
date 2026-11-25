@@ -2,25 +2,25 @@
 
 > Arké is an experimental, self-custodial bitcoin wallet for iPhone, focused on instant, low-fee payments. It is built on the Ark protocol and is open source. It runs on bitcoin mainnet and is available through TestFlight.
 
-The pages under "About the wallet" and "Optional" link to plain Markdown copies. Drop the `.md` for the HTML page. The test guide continues at `/test-1.md` to `/test-9.md`.
+The pages under "About the wallet" and "Optional" link to plain Markdown copies. For the HTML page, drop the `.md` and add a trailing slash. The test guide continues at `/test-1.md` to `/test-9.md`.
 
 ## Screens
 
-- [Screen gallery](https://www.arke.cash/screens): Screens from Arké's development builds, grouped by flow (first use, restore, home, balances and refresh, receive, send, contacts, settings, deleting a wallet), each with a caption and capture date. Most were captured on signet.
-- [Screen index (JSON)](https://www.arke.cash/screens.json): The same screens as data: flow, caption, state, network, whether the screen is Ark-specific, capture date and image URL. Screenshots are licensed CC BY-NC 4.0.
+- [Screen gallery](https://arke.cash/screens/): Screens from Arké's development builds, grouped by flow (first use, restore, home, balances and refresh, receive, send, contacts, settings, deleting a wallet), each with a caption and capture date. Most were captured on signet.
+- [Screen index (JSON)](https://arke.cash/screens.json): The same screens as data: flow, caption, state, network, whether the screen is Ark-specific, capture date and image URL. Screenshots are licensed CC BY-NC 4.0.
 
 ## About the wallet
 
-- [How Arké works](https://www.arke.cash/how.md): A bitcoin wallet focused on instant, low-fee payments.
-- [How Arké works, technically](https://www.arke.cash/how-technical.md): Architecture, trust model, key management, and tradeoffs for the Ark protocol implementation in Arké.
-- [What is Ark?](https://www.arke.cash/ark.md): What the Ark protocol is and why it matters.
-- [Design](https://www.arke.cash/design.md): The design philosophy and creative direction behind Arké.
-- [FAQ](https://www.arke.cash/faq.md): Answers to common questions about Arké.
+- [How Arké works](https://arke.cash/how.md): A bitcoin wallet focused on instant, low-fee payments.
+- [How Arké works, technically](https://arke.cash/how-technical.md): Architecture, trust model, key management, and tradeoffs for the Ark protocol implementation in Arké.
+- [What is Ark?](https://arke.cash/ark.md): What the Ark protocol is and why it matters.
+- [Design](https://arke.cash/design.md): The design philosophy and creative direction behind Arké.
+- [FAQ](https://arke.cash/faq.md): Answers to common questions about Arké.
 
 ## Optional
 
-- [Open Source](https://www.arke.cash/open-source.md): Why Arké is open source and how to get involved.
-- [Roadmap](https://www.arke.cash/roadmap.md): Where Arké is, and is going.
-- [Test guide](https://www.arke.cash/test.md): A walkthrough of the app's features for testers.
-- [Privacy Policy](https://www.arke.cash/privacy-policy.md)
-- [Terms and Conditions](https://www.arke.cash/terms-and-conditions.md)
+- [Open Source](https://arke.cash/open-source.md): Why Arké is open source and how to get involved.
+- [Roadmap](https://arke.cash/roadmap.md): Where Arké is, and is going.
+- [Test guide](https://arke.cash/test.md): A walkthrough of the app's features for testers.
+- [Privacy Policy](https://arke.cash/privacy-policy.md)
+- [Terms and Conditions](https://arke.cash/terms-and-conditions.md)

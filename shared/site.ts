@@ -1,6 +1,7 @@
 // Site-wide facts used by the app, the server routes and the build.
 
-export const SITE_URL = 'https://www.arke.cash'
+// Netlify serves the site on the bare domain and redirects www there.
+export const SITE_URL = 'https://arke.cash'
 
 // Pages rendered from a Markdown file in content/ with the same name.
 // Each one is also published as Markdown at <path>.md for agents.
@@ -29,6 +30,13 @@ export const CONTENT_PAGES = [
 // Every public page, in the order the sitemap lists them.
 export const PAGES = ['/', ...CONTENT_PAGES, '/screens']
 
-// The canonical URL for a route path: no trailing slash, except the homepage.
-export const canonicalPath = (path: string): string =>
+// A route path without its trailing slash, as listed above.
+export const normalizePath = (path: string): string =>
   path === '/' ? '/' : path.replace(/\/+$/, '')
+
+// The canonical URL for a route path. Netlify redirects /faq to /faq/,
+// so canonical URLs end in a slash.
+export const pageUrl = (path: string): string => {
+  const normalized = normalizePath(path)
+  return `${SITE_URL}${normalized === '/' ? '/' : `${normalized}/`}`
+}

@@ -1,4 +1,4 @@
 User-Agent: *
 Disallow:
 
-Sitemap: https://www.arke.cash/sitemap.xml
+Sitemap: https://arke.cash/sitemap.xml
